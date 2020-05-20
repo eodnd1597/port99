@@ -514,7 +514,7 @@
   float: right;
 }
 
-#down-footer2 .cont-r a {
+#down-footer2 .cont-r .family {
   position: relative;
   margin-top: 50px;
   width: 240px;
@@ -524,7 +524,7 @@
   border-radius: 23px;
 }
 
-#down-footer2 .cont-r a::after {
+#down-footer2 .cont-r .family::after {
   position: absolute;
   right: 25px;
   margin-top: -2px;
@@ -701,6 +701,8 @@
 }
 
 .edu .catergory-header .container .click {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   padding: 10px 26px;
   border: 1px solid #000;
   border-radius: 999px;
@@ -708,6 +710,14 @@
 
 .edu .catergory-header .container .click span {
   font-size: 1rem;
+}
+
+.edu .catergory-header .container .click:hover {
+  background: #333;
+}
+
+.edu .catergory-header .container .click:hover span {
+  color: #fff;
 }
 
 .edu .flex-wrap {
@@ -727,7 +737,7 @@
   display: inline;
 }
 
-.edu .flex-wrap ul li a {
+.edu .flex-wrap ul li span {
   min-width: 175px;
   padding: 16px 10px 12px;
   display: inline-block;
@@ -738,5 +748,189 @@
   color: #fff;
 }
 
+.contents .contents-list {
+  margin-right: 20%;
+}
+
+.contents .contents-list .flex-wrap1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contents .contents-list .flex-wrap1 .item {
+  width: 45%;
+  max-width: 502px;
+}
+
+.contents .contents-list .flex-wrap1 .item h3 {
+  font-size: 28px;
+  color: #539a00;
+}
+
+.contents .contents-list .flex-wrap1 .item .down {
+  margin-bottom: 40px;
+}
+
+.contents .contents-list .flex-wrap1 .item .img1 {
+  margin: 40px 0;
+}
+
+.contents .contents-list .flex-wrap1 .item .desc {
+  font-size: 20px;
+}
+
+.contents .contents-list .flex-wrap1 .item:nth-child(2) {
+  margin-top: 100px;
+}
+
+.contents .contents-list .flex-wrap1 .item .img2 {
+  margin-top: 40px;
+}
+
+.contents .contents-list .flex-wrap1 .item .img3 {
+  margin: 40px 0;
+}
+
+.contents .contents-list .flex-wrap1 .item .desc {
+  margin: 40px 0;
+}
+
+.contents .contents-list .flex-wrap1:nth-child(2) {
+  margin-top: 100px;
+}
+
+.full {
+  margin-top: 190px;
+  margin-left: 20%;
+  width: 60%;
+  min-width: 502px;
+}
+
+.full h3 {
+  font-size: 28px;
+  color: #539a00;
+}
+
+.full .img5 {
+  margin: 40px 0;
+}
+
+.full .desc {
+  font-size: 20px;
+}
+
 /* //오버뷰 */
+#contents .contents .header-wrap h2 {
+  margin-bottom: 20px;
+  position: relative;
+  padding-top: 51px;
+  font-size: 36px;
+}
+
+#contents .contents .header-wrap h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #96c11f;
+}
+
+#contents .contents .content-banner {
+  background: url(../img/youlchon10.png) no-repeat;
+  height: 650px;
+}
+
+#contents .contents .content-banner ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  padding-top: 235px;
+}
+
+#contents .contents .content-banner ul li {
+  margin-left: 40px;
+}
+
+#contents .contents .content-banner ul li span {
+  min-width: 175px;
+  padding: 16px 10px 12px;
+  display: inline-block;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  text-align: left;
+  font-size: 18px;
+  color: #fff;
+}
+
+.category-list {
+  margin-bottom: 100px;
+}
+
+.category-list .flex-wrap {
+  margin-right: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.category-list .flex-wrap .l-item {
+  padding-right: 8%;
+  width: 33%;
+  min-width: 502px;
+}
+
+.category-list .flex-wrap .l-item h3 {
+  font-size: 28px;
+  color: #539a00;
+}
+
+.category-list .flex-wrap .l-item img {
+  width: 100%;
+}
+
+.category-list .flex-wrap .l-item .img1 {
+  margin: 35px 0;
+}
+
+.category-list .flex-wrap .l-item .desc {
+  margin: 35px 0;
+  font-size: 20px;
+}
+
+.category-list .flex-wrap .l-item:nth-child(2) {
+  margin-top: 100px;
+}
+
+.category-list .l-item1 {
+  margin-left: 15%;
+  width: 45%;
+  min-width: 502px;
+}
+
+.category-list .l-item1 h3 {
+  font-size: 28px;
+  color: #539a00;
+}
+
+.category-list .l-item1 img {
+  margin: 40px 0;
+}
+
+.category-list .l-item1 .desc {
+  font-size: 20px;
+}
 /*# sourceMappingURL=style.css.map */
