@@ -1,0 +1,555 @@
+/* 레이아웃 */
+#header {
+    position: fixed;
+    left: 0; top: 0;
+    width: 100%;
+    z-index: 1;
+}
+#header.on {
+    top:-200px;
+    transition: all 0.7s ease;
+}
+#container {
+    width: 1900px;
+    margin: 0 auto;
+} 
+/* 헤더 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    h1 {
+        width: 140px; 
+        margin: 18px 0 0 20px;
+        
+        svg{
+            fill: #000;
+            transition: all 0.2s;
+        }
+    }
+    .nav {
+
+        li {
+            display: inline;
+            a {
+                font-size: 16px; color:#000;
+                font-weight: 500;
+                padding: 26px 20px;
+                display: inline-block;
+                span {
+                    position: relative;
+                    &::before {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        bottom: -3px; left: 50%;
+                        width: 100%; height: 0;
+                        border-top: 2px solid #d83832;
+                        transform: translatex(-50%);
+                    }
+                }
+            }
+        }
+        li img {
+            width: 70px;
+        }
+     }
+    .side-nav {
+        margin-right: 40px;
+        li {
+            display: inline;
+            a {
+                width: 25px;
+                display: inline-block;
+                padding: 28px 10px 20px 20px;   
+            }
+        }
+     }
+}
+#header-slide {
+    padding-top: 10px;
+    position: relative;
+    .header-slide {
+        display: flex;
+        .back {
+            padding: 13px 18px;
+            border: 1px solid #fff;margin: 0 30px;
+            
+        }
+        div {
+        
+            span {
+                
+                padding: 10px 18px 10px 0;
+                color : #fff;
+                font-size: 14px;
+                
+            }
+            i {
+                color: #fff;
+            }
+        } 
+    }
+    .dot-menu {
+        
+        padding: 13px 20px;
+        border: 1px solid #fff;
+        position: absolute; top: 0; right: 5%;
+        box-sizing: border-box;
+        a {
+            display: block;
+            color : #fff;
+        }
+    }
+} 
+
+/* //헤더  */
+
+
+/* 배너 */
+#banner {
+   .banner {
+        position: relative;
+        width: 100%;
+        height: 700px;
+       background: url(../img/hotel.jpg) no-repeat center center;
+       
+       .sbanner {
+           width: 100%;
+           h2 {
+               span {
+                color: #fff;
+                font-size: 64px;
+                position: absolute; left: 50%; top: 40%;
+                transform: translate(-50%,-50%);
+               }
+           }
+           p {
+               color: #fff;
+                position: absolute; left: 50%; top: 60%;
+                transform: translate(-50%,-50%);
+               font-size: 24px;
+               text-align: center;
+           }
+        }
+    }
+    
+    .btn-quick {
+        a {
+            display: block;
+            position: absolute; left: 50%; bottom: 170px;
+            transform: translatex(-50%);
+            z-index: 1000;
+            width: 50px; height: 50px;
+            background: #93c11f;
+            box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+            img {
+                width: 30px;
+                transform: rotate(-90deg);
+                padding-top: 20px;
+            }
+        }
+    }
+    .btn-quick {
+        a {
+            display: block;
+            position: absolute; left: 50%; bottom: 250px;
+            transform: translatex(-50%);
+            z-index: 1000;
+            width: 50px; height: 50px;
+            background: #93c11f;
+            box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+            img {
+                width: 30px;
+                transform: rotate(-90deg);
+                padding-top: 20px;
+            }
+        }
+    }
+}
+.line-1::before {
+    content: '';width: 450px;height: 2px;background-color: rgba(255,255,255,0.4); position: absolute; left: -45%;top: 100%
+}
+.line-1::after {
+    content: '';width: 2px;height: 150px;background-color: rgba(255,255,255,0.4); position: absolute; left: -45%;top: 100%;
+}
+.line-2::before { content: '';width: 500px;height: 2px;background-color: rgba(255,255,255,0.4); position: absolute; left: -25%;top: 170%; }
+.line-2::after {
+    content: ''; width: 2px; height: 200px; background-color: rgba(255,255,255,0.4); position: absolute; left: 130%; top: -105%;
+}
+.dot::before {
+    content: '';
+    width: 13px;
+    height: 13px;
+    opacity: 1;
+    background-color: #96c11f;
+    border-radius: 50%;
+    position: absolute; left: 50%; top: 47%;
+    transform: translate(-50%, -50%);
+}
+/* //네비 */
+.contents {
+    margin-left: 20%;
+    margin-top: 80px;
+    position: relative;
+    .circle::before {
+        width: 40px; height: 40px;
+        display: block;
+        position: absolute;
+        content: '';
+        top: -50px;
+        left: 0;
+        display: block;
+        border-radius: 50%;
+        background-color: #96c11f;
+    }
+    h2 {
+        font-size: 2rem;
+        padding-top: 20px;
+        font-weight: bold;
+    }
+    .text {
+        position: relative;
+        padding: 40px 50px;
+        margin-top: 40px;
+        margin-left: -40px;
+        background: #fff;
+        box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+        width: 550px;
+        z-index: 1;
+        strong {
+        font-size: 28px;
+        font-weight: bold;
+        color : #539a00;
+        }
+        strong::after {
+        content: '';
+        position: absolute;
+        left: 85%;
+        top: 25%;
+        display: block;
+        width: 80%;
+        height: 1px;
+        background-color: #539a00;
+    
+        }
+        p {
+            font-size: 20px;
+            padding-top: 40px;
+        }
+        
+    }
+    .img {
+        margin-right: 10%;
+        padding-right: 10%;
+        position: absolute; right: 0;top: 50px;
+        width: 800px;
+        height: 470px;
+        margin-bottom: 100px;
+    }
+    
+}
+.box {
+    text-align: center;
+    margin: 150px 0;
+    font-size: 20px;
+    border:  solid #e4e4e4;
+    border-width: 0 2px 2px 0;
+    box-sizing: border-box;
+}
+.article {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    .art-list {
+        display: flex;
+        .up {
+            display: block;
+            font-size: 24px;
+            margin: 0 0 50px 40px;
+        }
+        .number {
+            display: block;
+            font-size: 24px;
+            font-weight: 400;
+            position: relative;
+            text-align: center;
+            width: 50px; height: 50px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            span {
+                position: absolute; left: 50%; top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .list {
+            margin-left: 40px;
+            font-size: 16px;
+            color: #666;
+        }
+    }
+}
+.table {
+    margin-right: 20%;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: flex-end;
+    table {
+        border-top: 2px solid #000;
+        tbody {
+            
+            th {
+                font-size: 16px;
+                border-bottom: 1px solid #ccc;
+            }
+            td {
+                color: #666666;
+                font-size: 16px;
+                padding: 20px;
+                border-bottom: 1px solid #ccc;
+                a {
+                    transition: all 0.3s;
+                    font-size: 21px;
+                    color: inherit;
+                    border: 1px solid #666666;
+                    padding: 5px 15px;
+                }
+                a:hover {
+                    background: #999;
+                    color: #fff;
+                }
+            }
+        }
+        
+        caption {
+            font-size: 16px;
+            caption-side: bottom;
+            text-align: left;
+            color: #6c757d;
+        }
+    }
+}
+.foot-nav {
+    position: relative;
+    background: #f2f1de;
+    width: 100%;
+    .cont {
+        padding: 100px 0 150px 0 ;
+        display: flex;
+        div {
+            width: 33.3333%;
+        }
+    }
+}
+/* //컨텐츠 */
+
+/* footer2 */
+#down-footer2 {
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+    .cont-l {
+        float: left;
+        .uu {
+            padding: 30px;
+            .green {
+                font-weight: bold;
+                font-size: 17px;
+                color: #539a00;;
+            }
+            .red {
+                font-weight: bold;
+                font-size: 17px;
+                color: #ff6216;;
+            }
+            li {
+                font-size: 16px;
+                display: inline-block;
+            }
+        }
+        .cu {
+            padding: 30px;
+            li {
+                font-size: 16px;
+                display: inline-block;
+            }
+        }
+        .du {
+            padding: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+    }
+    .cont-r {
+        padding-top: 50px;
+        float:right;
+        a {
+            position: relative;
+            margin-top: 50px;
+            width: 240px;
+            height: 46px;
+            padding: 13px 60px 13px 35px;
+            border: 2px solid #e8e8e8;
+            border-radius: 23px;
+            &::after {
+                position: absolute;
+                right: 25px;
+                margin-top: -2px;
+                border-width: 5px 5px 0 5px;
+                content: "";
+                display: block;
+                position: absolute;
+                top: 50%;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-color: #333 transparent transparent transparent;
+            }
+        }
+        ul {
+            display: block;
+            margin-top: 50px;
+            li {
+                width: 374px;
+                display: inline;
+                img {
+                    width: 46px;height: 46px;
+                }
+            }
+            
+        }
+
+            
+    }
+    span {
+        color : rgba(0,0,0,0.3);
+    }
+}
+.swiper-slide {
+    position: relative;
+    span {
+        font-size: 24px;
+        color: #fff;
+        font-weight: 600;
+        position: absolute; left: 50%; top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* 율촌 재단 */
+#ybanner {
+    .ybanner {
+         position: relative;
+         width: 100%;
+         height: 700px;
+        background: url(../img/main_youlchon.png) no-repeat center center;
+        
+        .y-sbanner {
+            width: 100%;
+            h2 {
+                span {
+                 color: #fff;
+                 font-size: 64px;
+                 position: absolute; left: 50%; top: 40%;
+                 transform: translate(-50%,-50%);
+                }
+            }
+            p {
+                color: #fff;
+                 position: absolute; left: 50%; top: 60%;
+                 transform: translate(-50%,-50%);
+                font-size: 24px;
+                text-align: center;
+            }
+        }
+    }
+    .btn-quick {
+        a {
+            position: absolute; left: 50%; bottom: 27%;
+            z-index: 1000;
+            width: 50px; height: 50px;
+            margin-left: -25px;
+            background: #93c11f;
+            box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+            img {
+                width: 30px;
+                transform: rotate(-90deg);
+                padding-top: 20px;
+            }
+        }
+    }
+}
+.line-3::before {
+    content: '';width: 580px;height: 2px;background-color: rgba(255,255,255,0.4); position: absolute; left: -80%;top: 100%
+}
+.line-3::after {
+    content: '';width: 2px;height: 150px;background-color: rgba(255,255,255,0.4); position: absolute; left: -80%;top: 100%;
+}
+.line-4::before { content: '';width: 650px;height: 2px;background-color: rgba(255,255,255,0.4); position: absolute; left: -20%;top: 170%; }
+.line-4::after {
+    content: ''; width: 2px; height: 200px; background-color: rgba(255,255,255,0.4); position: absolute; left: 121%; top: -105%;
+}
+
+.edu {
+    margin-bottom: 45px;
+    .catergory-header {
+        .container {
+            display: flex;
+            justify-content: space-around;
+            .column {
+                margin-top: 100px;
+                margin-bottom: 40px;
+                .circle {
+                    padding-top: 51px;
+                    position: relative;
+                    font-size: 36px;
+                    &::before {
+                        position: absolute;
+                        left: 0; top: 0;
+                        content: '';
+                        width: 36px;
+                        height: 36px;
+                        background: #96c11f;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .click {
+                padding: 10px 26px;
+                border: 1px solid #000;
+                border-radius: 999px;
+                span {
+                    
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .flex-wrap {
+        background: url(../img/youlchon09.png)repeat-y;
+        width: 100%;
+        height: 500px;
+        position: relative;
+        ul{
+            text-align: center;
+            padding-top: 235px;
+            li {
+                margin-left: 40px;
+                display: inline;
+                a {
+                min-width: 175px;
+                padding: 16px 10px 12px;
+                display: inline-block;
+                border-bottom: 2px solid #fff;
+                border-right: 2px solid #fff;
+                    text-align: left;
+                    font-size: 18px;
+                    color: #fff;
+                }
+            }
+        }
+        
+    }
+}
+/* //오버뷰 */

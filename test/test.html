@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정부24</title>
+    <style>
+        * {margin: 0; padding: 0; margin: 0 auto;}
+        li {list-style: none;}
+        img {width: 100%;}
+
+        /* //리셋 */
+        #wrap {
+            overflow: hidden;
+            width: 1000px;
+        }
+
+        .header {
+            float: left;
+            width: 300px;
+        }
+        .header .main {
+            padding-top: 20px;
+            font-size: 30px;
+        }
+        .header .main li {color: #000;
+            font-size: 20px;
+            padding-top: 20px;
+            margin-left: 10px;
+        }
+        .header ul li ul li {border-bottom: 1px solid #ccc;}
+
+         /* //header */
+
+        .section {width: 700px; 
+        float: left;
+        }
+
+         /* //section */
+
+        .article1 { }
+        .article1 img { }
+
+         /* //article1 */
+
+        .article2 {
+            
+        }
+
+        .article2 div {
+            padding: 20px;
+            text-align: center; 
+         }
+        .article2 ul {
+            display: flex;
+        }
+
+        .article2 img {
+            width: 100px;
+        }
+        .article2 ul li {
+            text-align: center;
+        }
+        .article2 span {color: #ababab; }
+
+         /* //article2 */
+
+        .article3 {
+            margin-top: 50px;
+            display: flex; 
+            background: #f7f7f7;
+        }
+        .article3 h3 {
+            text-align: center;
+        }
+        .article3 div {
+            position: relative;
+            margin: 20px;
+            background: #fff;
+            border : 1px solid #ccc;
+            width: 31%;
+        }
+
+        .article3 .img {
+            display: flex;
+
+            padding: 30px;
+            width: 100px; 
+        }
+        .article3 ul {
+        }
+        .article3 ul li {
+            list-style: inside;
+        }
+        .article3 div a.more img {
+            position: absolute; right: 10px; top: 10px;
+            width: 20px;}
+         /* //article3 */
+
+         .footer {
+             overflow: hidden;
+            clear: both;
+            background: #edf2f8; 
+            padding: 30px;
+          }
+         .footer img {
+             float: left;
+            width: 50px; }
+        .footer nav{
+            float: left;
+            padding-left: 20px;
+        }
+        
+        .footer div {
+            padding-left: 0;
+            float:right;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header">
+            <h1><img src="img/logo.jpg" alt="로고"></h1>
+            <ul class="main">
+                <li><a href="#">서비스</a> 
+                    <ul class="sub-menu">
+                        <li>분야별 정책정보</li>
+                        <li>정책뉴스</li>
+                        <li>연구보고서</li>
+                        <li>간행물</li>
+                        <li>정책자료</li>
+                    </ul>
+                </li>
+                <li><a href="#">정책정보</a> 
+                    <ul class="sub-menu">
+                        <li>분야별 정책정보</li>
+                        <li>정책뉴스</li>
+                        <li>연구보고서</li>
+                        <li>간행물</li>
+                        <li>정책자료</li>
+                    </ul>
+                </li>
+                <li><a href="#">기관정보</a> 
+                    <ul class="sub-menu">
+                        <li>분야별 정책정보</li>
+                        <li>정책뉴스</li>
+                        <li>연구보고서</li>
+                        <li>간행물</li>
+                        <li>정책자료</li>
+                    </ul>
+                </li>
+                <li><a href="#">고객센터</a>
+                    <ul class="sub-menu">
+                        <li>분야별 정책정보</li>
+                        <li>정책뉴스</li>
+                        <li>연구보고서</li>
+                        <li>간행물</li>
+                        <li>정책자료</li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+        <nav class="section">
+            <article class="article1">
+                <figure><img src="img/banner00.jpg" alt=""></figure>
+            </article>
+            <article class="article2">
+                <ul>
+                    <li><a href="#" class="btn1">키워드 서비스 | </a><a href="#" class="btn2">자주 찾는 서비스</a></li>
+                </ul>
+                <ul class="tab1">
+                    <li>
+                        <img src="img/icon00.jpg" alt="">
+                        <ul>
+                            <li>주민등록표등본<br>(초본)교부</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="img/icon01.jpg" alt="">
+                        <ul>
+                            <li>토지(임야)대장<br>열람/등본 발급신청</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="img/icon02.jpg" alt="">
+                        <ul>
+                            <li>건출물대장 등/초본<br>발급(열람)신청</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="img/icon03.jpg" alt="">
+                        <ul>
+                            <li>지방세 납세증명</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="img/icon04.jpg" alt="">
+                        <ul>
+                            <li>지적도(임야도) 등본<br>발급 및 열람</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="tab2">
+                    <li>
+                        <img src="img/icon00.jpg" alt="">
+                        <ul>
+                            <li>주민등록표등본<br>(초본)교부</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="img/icon04.jpg" alt="">
+                        <ul>
+                            <li>토지(임야)대장<br>열람/등본 발급신청</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="img/icon03.jpg" alt="">
+                        <ul>
+                            <li>건출물대장 등/초본<br>발급(열람)신청</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="img/icon02.jpg" alt="">
+                        <ul>
+                            <li>지방세 납세증명</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="img/icon01.jpg" alt="">
+                        <ul>
+                            <li>지적도(임야도) 등본<br>발급 및 열람</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+            <article class="article3">
+                <div>
+                    <h3>공지사항</h3>
+                    <img src="img/icon05.jpg" class="img" alt="">
+                    <ul>
+                        <li>[어디서나 대학민원] 호서대학교 팩스wadawdad</li>
+                        <li>[전락북도 고창군]새올행정시스템 Dawdwadawd</li>
+                        <li>교육부 행정전자서명인증센터 시스템awdawfaf</li>
+                    </ul>
+                    <a href="#" class="more"><img src="img/more.jpg" alt=""></a>
+                </div>
+                <div>
+                    <h3>자료실</h3>
+                    <img src="img/icon06.jpg" class="img" alt="">
+                    <ul>
+                        <li>인터넷 민원발급 위한 프로그램(주민sgagasrhgareh)</li>
+                        <li>정부24 발급물 등록 프로그램</li>
+                        <li>전자문서 관련 설치 프로그램</li>
+                    </ul>
+                    <a href="#" class="more"><img src="img/more.jpg" alt=""></a>
+                </div>
+                <div>
+                    <h3>FAQ</h3>
+                    <img src="img/icon07.jpg" class="img" alt="">
+                    <ul>
+                        <li>gawrkjghraglhjhlrholreahgjkl</li>
+                        <li>gawrkjghraglhjhlrholreahgjk</li>
+                        <li>gawrkjghraglhjhlrholreahgj</li>
+                    </ul>
+                    <a href="#" class="more"><img src="img/more.jpg" alt=""></a>
+                </div>     
+            </article>
+        </nav>
+        <footer class="footer">
+            <h2>
+                <img src="img/footer-logo.jpg" alt="">
+            </h2>
+            <nav>
+                <ul>
+                    <li>0.17aew;fkjwaklhgwalgj</li>
+                    <li>aharwhsgsagaewgasegasegsae</li>
+                    <li>aewharhgsdfgsfesfsafsafawd</li>
+                </ul>
+            </nav>
+            <div>
+                <img src="img/f-logo00.jpg" alt="">
+                <img src="img/f-logo01.jpg" alt="">
+                <img src="img/f-logo02.jpg" alt="">
+            </div>
+        </footer>
+    </div>
+
+    <script src="../script/jquery.min_1.12.4.js"></script>
+    <script>
+        $(".sub-menu").hide();
+        $(".main a").click(function(){
+            $(this).next("ul").slideToggle(100);
+        });
+// 
+        $(".tab").hide();
+        $(".btn2").click(function(){
+            
+            $(".tab2").hide();
+            $(".tab1").show();
+        });
+        $(".tab1").hide();
+        $(".btn1").click(function(){
+            $(".tab1").hide();
+            $(".tab2").show();
+        });
+        
+    </script>
+</body>
+</html>
