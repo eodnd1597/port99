@@ -3,93 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parallax01</title>
+    <title>Parallax02</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 
     <style>
         * {margin: 0; padding: 0; box-sizing: border-box;}
         li {list-style: none;}
-        a {text-decoration: none; font-family: "Lato"; color: #fff;}
-
-        body {
-            background-color: #111;
-            color: #fff;
-            font-family: "Lato";
+        a {text-decoration: none; color:#fff; font-family: 'Lato';}
+        :root {
+            font-size: 16px;
         }
+        body {
+            --color-h1: #dc6e25;
+            --color-title: #fff;
+            --color-sub: #999;
+            --color-link: #000;
+            --color-bg: #111;
+            --font-family:'lato',sans-serif;
+            --aspect-ratio: 32/18;
+            --image-width-max: 550px;
 
+            background-color: var(--color-bg);
+            font-family: 'lato',serif;
+            color:var(--color-title);
+        }
         #wrap h1 {
-            font-size: 135px;
-            padding: 60px;
-            color: #dc6e25;
+            font-size: 7vw;
+            color: var(--color-h1);
+            padding: 3vw;
             text-transform: uppercase;
             font-weight: 700;
         }
         #wrap h1 em {
             display: block;
             font-weight: 100;
-            padding-left: 330px;
+            padding-left: 17vw;
         }
         .content {
-            /* width: 1920px; */
-            margin: 300px auto 400px;
+            margin: 33vh auto 35vh;
         }
         .content-item {
             position: relative;
-            width: 1000px;
-            margin: 200px 0 300px;
+            --image-width:calc(var(--image-width-max) * var(--aspect-ratio));
+            width: var(--image-width);
+            max-width: 90vw;
+            margin: 20vh 0 40vh;
+        }
+
+        .content-item-imgWrap {
+            position: relative;
+            --width: 100%;
+            width: var(--width);
+            padding-bottom: calc(var(--image-width-max) / (var(--aspect-ratio)));
+            overflow: hidden;
+            background: #ccc;
+        }
+        .content-item-img {
+            width: var(--width);
+            --overflow: 40px;
+            position: absolute; 
+            top: 0;
+            height: calc(100% + (2 * var(--overflow)));
+            background-size: cover;
+            background-position: 50% 0;
         }
         .content-item:nth-child(even) {
             margin-left: auto;
         }
         .content-item-num {
-            font-size: 350px;
+            font-size: 20vw;
             font-weight: 100;
             position: absolute;
-            right: -100px; top: -200px;
+            right: -8vw; top: -15vw;
             opacity: 0.04;
         }
-
-        .content-item-num:nth-child(even).content-item-num {
-            right: auto; left: -100px;
+        .content-item:nth-child(even) .content-item-num{
+            right:auto; left: -8vw;
         }
-
         .content-item-title {
             text-align: right;
-            font-size: 24px;
+            font-size: 1.5rem;
             font-weight: 300;
-            color : #999;
-            padding-bottom: 10px;
+            color : var(--color-sub);
+            padding-bottom: 0.8vw;
             text-transform: capitalize;
         }
-        .content-item-num:nth-child(even).content-item-title {
-            text-align-last: left;
+        .content-item:nth-child(even) .content-item-title {
+            text-align: left;
         }
-        
-        .content-item-imgWrap {
-            position: relative;
-            padding-bottom: 57%;
-            overflow: hidden;
-        }
-
-        .content-item-img {
-            height: 550px;
-            position: absolute; top: 0;
-            width: 100%;
-            background-size: cover;
-            background-position: 50% 0;
-        }
-
         .content-item-desc {
-            font-size: 80px;
+            font-size: 4vw;
             line-height: 1.2;
-            font-weight: 600;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: var(--color-title);
             text-align: right;
             word-break: keep-all;
-            margin-top: -100px;
+            margin-top: -4vw;
             position: relative;
-            z-index: 100;
+            z-index: 20;
         }
-        .content-item-num:nth-child(even).content-item-desc {
+        .content-item:nth-child(even) .content-item-desc {
             text-align: left;
         }
 

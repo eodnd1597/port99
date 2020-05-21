@@ -90,55 +90,274 @@
         <div class="row">
 
             <div class="col-md-9" role="main">
-               <!-- Intro1 -->
+               <!-- Intro0 -->
                <div class="bs-docs-section">
-                <h2 id="intro1" class="page-header">Animation</h2>
-                
-                </div>
+                <h2 id="intro0" class="page-header">GSAP</h2>
+                <p class="bs-callout bs-callout-info">
+                    웹 브라우저에서 애니메이션을 구현하기 위한 자바스크립트 라이브러리이다.
+                    기존 CSS Animation이나 jQuery Animation보다 탁월한 퍼포먼스를 발휘할 수 있도록 최적화된 애니메이션 전용 라이브러리이다.</p>                   
             </div>
+            <!-- //Intro0 -->
+
+            <style>
+                .circle {
+                    width: 60px; height: 60px; border-radius: 50%;
+                    text-align: center; line-height: 60px;
+                    font-size: 12px; color: #fff;
+                    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+                    margin-bottom: 10px;
+                    position: relative;             
+                }
+            </style>
+
+            <!-- Intro1 -->
+            <div class="bs-docs-section">
+                <h2 id="intro1" class="page-header">move(to)</h2>
+                <h4>animation&nbsp;&nbsp;&nbsp;<button class="btn btn1" >Start</button></h4>
+                <div class="well">
+                    <div class="box1">
+                        <div class="circle circle1">box</div>
+                        <div class="circle circle2">box</div>
+                        <div class="circle circle3">box</div>
+                        <div class="circle circle4">box</div>
+                        <div class="circle circle5">box</div>
+                        <div class="circle circle6">box</div>
+                        <div class="circle circle7">box</div>
+                        <div class="circle circle8">box</div>
+                        <div class="circle circle9">box</div>
+                    </div>                        
+                </div>                   
+            </div>
+<pre class="line-numbers language-css"><code>$(".btn1").click(function(){
+gsap.to(".box1 .circle1", 2, {left: "90%"});
+gsap.to(".box1 .circle2", 3, {left: "90%", borderRadius: "0%"});
+gsap.to(".box1 .circle3", 2, {left: "90%", rotationX: "2160deg"});
+gsap.to(".box1 .circle4", 3, {left: "90%", rotationY: "2160deg"});
+gsap.to(".box1 .circle5", 2, {left: "90%", rotation: "2160deg"});
+gsap.to(".box1 .circle6", 3, {left: "90%", backgroundImage: "linear-gradient(to top, #30cfd0 0%, #330867 100%)"});
+gsap.to(".box1 .circle7", 2, {left: "90%", scale: "2"});
+gsap.to(".box1 .circle8", 3, {left: "90%", skewX: "60deg"});
+gsap.to(".box1 .circle9", 3, {left: "90%", skewY: "60deg"});
+});
+</code></pre> 
             <!-- //Intro1 -->
-                
+
+            
+            <!-- Intro2 -->
+            <div class="bs-docs-section">
+                <h2 id="intro2" class="page-header">Move(from)</h2>
+                <h4>animation&nbsp;&nbsp;&nbsp;<button class="btn btn2" >Start</button></h4>
+                <div class="well">
+                    <div class="box2">
+                        <div class="circle circle1">box</div>
+                        <div class="circle circle2">box</div>
+                        <div class="circle circle3">box</div>
+                        <div class="circle circle4">box</div>
+                        <div class="circle circle5">box</div>
+                        <div class="circle circle6">box</div>
+                        <div class="circle circle7">box</div>
+                        <div class="circle circle8">box</div>
+                        <div class="circle circle9">box</div>
+                    </div>                        
+                </div>                   
             </div>
-            <!-- //col-md-9 -->
+<pre class="line-numbers language-css"><code>$(".btn2").click(function(){
+gsap.from(".box2 .circle1", 2, {left: "90%"});
+gsap.from(".box2 .circle2", 3, {left: "90%", borderRadius: "0%"});
+gsap.from(".box2 .circle3", 2, {left: "90%", rotationX: "2160deg"});
+gsap.from(".box2 .circle4", 3, {left: "90%", rotationY: "2160deg"});
+gsap.from(".box2 .circle5", 2, {left: "90%", rotation: "2160deg"});
+gsap.from(".box2 .circle6", 3, {left: "90%", backgroundImage: "linear-gradient(to top, #30cfd0 0%, #330867 100%)"});
+gsap.from(".box2 .circle7", 2, {left: "90%", scale: "2"});
+gsap.from(".box2 .circle8", 3, {left: "90%", skewX: "60deg"});
+gsap.from(".box2 .circle9", 3, {left: "90%", skewY: "60deg"});
+});
+</code></pre>
+            <!-- //Intro2 -->
 
 
-            <!-- //col-md-3 -->
-            <div class="col-md-3">
-                <div class="bs-sidebar hidden-print" role="complementary">
-                    <ul class="nav bs-sidenav">
-                        <li><a href="#intro1">Animation</a></li>
-                    </ul>
-                </div>
+            <!-- Intro3 -->
+            <div class="bs-docs-section">
+                <h2 id="intro3" class="page-header">Move(easing)</h2>
+                <h4>animation&nbsp;&nbsp;&nbsp;<button class="btn btn3" >Start</button></h4>
+                <div class="well">
+                    <div class="box3">
+                        <div class="circle circle1">box</div>
+                        <div class="circle circle2">box</div>
+                        <div class="circle circle3">box</div>
+                        <div class="circle circle4">box</div>
+                        <div class="circle circle5">box</div>
+                        <div class="circle circle6">box</div>
+                        <div class="circle circle7">box</div>
+                        <div class="circle circle8">box</div>
+                        <div class="circle circle9">box</div>
+                    </div>                        
+                </div>                   
             </div>
-            <!--//col-md-3 -->
+<pre class="line-numbers language-css"><code>$(".btn3").click(function(){
+gsap.to(".box3 .circle1", {duration:2, left: "90%", rotation: "300deg", ease:"power1.out"});
+gsap.to(".box3 .circle2", {duration:2, left: "90%", rotation: "310deg", ease:"power2.out"});
+gsap.to(".box3 .circle3", {duration:2, left: "90%", rotation: "320deg", ease:"power3.out"});
+gsap.to(".box3 .circle4", {duration:2, left: "90%", rotation: "330deg", ease:"power4.out"});
+gsap.to(".box3 .circle5", {duration:2, left: "90%", rotation: "340deg", ease:"back.out(1.7)"});
+gsap.to(".box3 .circle6", {duration:2, left: "90%", rotation: "350deg", ease:"bounce.out"});
+gsap.to(".box3 .circle7", {duration:2, left: "90%", rotation: "360deg", ease:"elastic.out(1, 0.3)"});
+gsap.to(".box3 .circle8", {duration:2, left: "90%", rotation: "370deg", ease:"slow(0.7, 0.7, flase)"});
+gsap.to(".box3 .circle9", {duration:2, left: "90%", rotation: "380deg", ease:"steps(12)"});
+});
+</code></pre>
+            <!-- //Intro3 -->
+            
+
+            <!-- Intro4 -->
+            <div class="bs-docs-section">
+                <h2 id="intro4" class="page-header">Move(repeat-반복)</h2>
+                <h4>animation&nbsp;&nbsp;&nbsp;<button class="btn btn4" >Start</button></h4>
+                <div class="well">
+                    <div class="box4">
+                        <div class="circle circle1">box</div>
+                        <div class="circle circle2">box</div>
+                        <div class="circle circle3">box</div>
+                        <div class="circle circle4">box</div>
+                        <div class="circle circle5">box</div>
+                    </div>                        
+                </div>                   
+            </div>
+<pre class="line-numbers language-css"><code>$(".btn4").click(function(){
+gsap.to(".box4 .circle1", {duration: 1, repeat:1, yoyo:true, left: "90%", rotation:"720", ease:"power4.out"})
+gsap.to(".box4 .circle2", {duration: 1, repeat:2, yoyo:true, left: "90%", rotation:"720", ease:"power4.out"})
+gsap.to(".box4 .circle3", {duration: 1, repeat:3, yoyo:true, left: "90%", rotation:"720", ease:"power4.out"})
+gsap.to(".box4 .circle4", {duration: 1, repeat:4, yoyo:true, left: "90%", rotation:"720", ease:"power4.out"})
+gsap.to(".box4 .circle5", {duration: 1, repeat:-1, yoyo:true, left: "90%", rotation:"720", ease:"power4.out"})
+});
+</code></pre> 
+            <!-- //Intro4 -->
+
+            <!-- Intro5 -->
+            <div class="bs-docs-section">
+                <h2 id="intro5" class="page-header">Timeline</h2>
+                <h4>animation&nbsp;&nbsp;&nbsp;<button class="btn btn5" >Start</button></h4>
+                <div class="well">
+                    <div class="box5">
+                        <div class="circle circle1">box</div>
+                    </div>                        
+                </div>                   
+            </div>
+<pre class="line-numbers language-css"><code>$(".btn5").click(function(){
+let tl = new TimelineMax();
+tl.to(".box5 .circle1",{duration: 1, left: "90%",scale:"1",ease:"power4.out"})
+.to(".box5 .circle1",{duration: 1, top: "90%",scale:"0.5",ease:"power4.out"})
+.to(".box5 .circle1",{duration: 1, left: "0%",scale:"2.5",ease:"power4.out"})
+.to(".box5 .circle1",{duration: 1, top: "0%",scale:"1",ease:"power4.out"})
+});
+</code></pre> 
+            <!-- //Intro5 -->
+            
+            
         </div>
-        <!-- //row -->
+        <!-- //col-md-9 -->
+
+
+        <!-- //col-md-3 -->
+        <div class="col-md-3">
+            <div class="bs-sidebar hidden-print" role="complementary">
+                <ul class="nav bs-sidenav">
+                    <li><a href="#intro0">GSAP</a></li>
+                    <li><a href="#intro1">Move(to)</a></li>
+                    <li><a href="#intro2">Move(from)</a></li>
+                    <li><a href="#intro3">Move(easing)</a></li>
+                    <li><a href="#intro4">Move(repeat-반복)</a></li>
+                    <li><a href="#intro5">Timeline</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--//col-md-3 -->
     </div>
-    <!-- //container -->
+    <!-- //row -->
+</div>
+<!-- //container -->
 
 
-    <!-- Footer -->
-    <footer class="bs-footer" role="contentinfo">
-        <div class="container">
-            <ul class="footer-links muted">
-                <li>Currently v2.0</li>
-                <li>&middot;</li>
-                <li><a href="https://webstoryboy.github.io/w9/html/">webstoryboy</a></li>
-                <li>&middot;</li>
-                <li><a href="http://cafe.naver.com/crossbrowsing" target="_blank">publisher cafe</a></li>
-                <li>&middot;</li>
-                <li><a href="http://cafe.daum.net/flairdesignlink" target="_blank">designer cafe</a></li>
-            </ul>
-        </div>
-    </footer>
-    <!-- //Footer -->
+<!-- Footer -->
+<footer class="bs-footer" role="contentinfo">
+    <div class="container">
+        <ul class="footer-links muted">
+            <li>Currently v2.0</li>
+            <li>&middot;</li>
+            <li><a href="https://webstoryboy.github.io/w9/html/">webstoryboy</a></li>
+            <li>&middot;</li>
+            <li><a href="http://cafe.naver.com/crossbrowsing" target="_blank">publisher cafe</a></li>
+            <li>&middot;</li>
+            <li><a href="http://cafe.daum.net/flairdesignlink" target="_blank">designer cafe</a></li>
+        </ul>
+    </div>
+</footer>
+<!-- //Footer -->
 
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="../../assets/js/jquery-1.9.1.min.js"></script>
-    <script src="../../assets/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/docs.min.js"></script>
-    <script src="../../assets/js/prism.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="../../assets/js/jquery-1.9.1.min.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/docs.min.js"></script>
+<script src="../../assets/js/prism.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script> 
+<script>
+    $(".btn1").click(function(){
+        gsap.to(".box1 .circle1", 2, {left: "90%"});
+        gsap.to(".box1 .circle2", 3, {left: "90%", borderRadius: "0%"});
+        gsap.to(".box1 .circle3", 2, {left: "90%", rotationX: "2160deg"});
+        gsap.to(".box1 .circle4", 3, {left: "90%", rotationY: "2160deg"});
+        gsap.to(".box1 .circle5", 2, {left: "90%", rotation: "2160deg"});
+        gsap.to(".box1 .circle6", 3, {left: "90%", backgroundImage: "linear-gradient(to top, #30cfd0 0%, #330867 100%)"});
+        gsap.to(".box1 .circle7", 2, {left: "90%", scale: "2"});
+        gsap.to(".box1 .circle8", 3, {left: "90%", skewX: "60deg"});
+        gsap.to(".box1 .circle9", 3, {left: "90%", skewY: "60deg"});
+    });
+    $(".btn2").click(function(){
+        gsap.from(".box2 .circle1", 2, {left: "90%"});
+        gsap.from(".box2 .circle2", 3, {left: "90%", borderRadius: "0%"});
+        gsap.from(".box2 .circle3", 2, {left: "90%", rotationX: "2160deg"});
+        gsap.from(".box2 .circle4", 3, {left: "90%", rotationY: "2160deg"});
+        gsap.from(".box2 .circle5", 2, {left: "90%", rotation: "2160deg"});
+        gsap.from(".box2 .circle6", 3, {left: "90%", backgroundImage: "linear-gradient(to top, #30cfd0 0%, #330867 100%)"});
+        gsap.from(".box2 .circle7", 2, {left: "90%", scale: "2"});
+        gsap.from(".box2 .circle8", 3, {left: "90%", skewX: "60deg"});
+        gsap.from(".box2 .circle9", 3, {left: "90%", skewY: "60deg"});
+    });
+
+    $(".btn3").click(function(){
+        gsap.to(".box3 .circle1", {duration:2, left: "90%", rotation: "300deg", ease:"power1.out"});
+        gsap.to(".box3 .circle2", {duration:2, left: "90%", rotation: "310deg", ease:"power2.out"});
+        gsap.to(".box3 .circle3", {duration:2, left: "90%", rotation: "320deg", ease:"power3.out"});
+        gsap.to(".box3 .circle4", {duration:2, left: "90%", rotation: "330deg", ease:"power4.out"});
+        gsap.to(".box3 .circle5", {duration:2, left: "90%", rotation: "340deg", ease:"back.out(1.7)"});
+        gsap.to(".box3 .circle6", {duration:2, left: "90%", rotation: "350deg", ease:"bounce.out"});
+        gsap.to(".box3 .circle7", {duration:2, left: "90%", rotation: "360deg", ease:"elastic.out(1, 0.3)"});
+        gsap.to(".box3 .circle8", {duration:2, left: "90%", rotation: "370deg", ease:"slow(0.7, 0.7, flase)"});
+        gsap.to(".box3 .circle9", {duration:2, left: "90%", rotation: "380deg", ease:"steps(12)"});
+    });
+
+    $(".btn4").click(function(){
+        gsap.to(".box4 .circle1", {duration: 1, repeat:1, yoyo:true, left: "90%", rotation:"720", ease:"power4.out"})
+        gsap.to(".box4 .circle2", {duration: 1, repeat:2, yoyo:true, left: "90%", rotation:"720", ease:"power4.out"})
+        gsap.to(".box4 .circle3", {duration: 1, repeat:3, yoyo:true, left: "90%", rotation:"720", ease:"power4.out"})
+        gsap.to(".box4 .circle4", {duration: 1, repeat:4, yoyo:true, left: "90%", rotation:"720", ease:"power4.out"})
+        gsap.to(".box4 .circle5", {duration: 1, repeat:-1, yoyo:true, left: "90%", rotation:"720", ease:"power4.out"})
+    });
+    
+    //타임라인 3번만 움직이기
+    
+    $(".box5").css("height","400px")
+    $(".btn5").click(function(){
+        let tl = new TimelineMax();
+        tl.to(".box5 .circle1",{duration: 1, left: "90%",scale:"1",ease:"power4.out"})
+        .to(".box5 .circle1",{duration: 1, top: "90%",scale:"0.5",ease:"power4.out"})
+        .to(".box5 .circle1",{duration: 1, left: "0%",scale:"2.5",ease:"power4.out"})
+        .to(".box5 .circle1",{duration: 1, top: "0%",scale:"1",ease:"power4.out"})
+    });
+</script>
+
 </body>
 
 </html>
