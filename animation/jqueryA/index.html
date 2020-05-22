@@ -506,9 +506,28 @@
         }
 
         // 속성. 애니메이션(2바퀴) --> 무한 움직이기 --> 10분 뒤에 사라지게
-        $(".bnt11").click(function(){
+        // 11번 숙제
+        let aa = $(".box").width();
+            let bb = $(".circle").width();
+
+            let cc =(aa)-(bb)
+
+            let dd = $(".box").height();
+            let ee = $(".circle").height();
+            
+
+            let ff =(dd)-(ee)
+        $(".btn11").click(function(){
+            function loop(){
             $(".circle11 > div")
-            .animate({})
+            .animate({left: cc},1000,"easeOutQuint")
+            .animate({left: 0},1000,"easeOutQuint",loop);
+        }
+        function out(){
+            $(".circle11 > div").hide()
+        }
+        loop();
+        setTimeout(out, 10000); 
         });
     </script>
 </body>

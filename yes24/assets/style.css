@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ccc;
+}
+
+/* header */
+.header .h-nav {
+  padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: none;
+}
+
+.header .h-nav .h-left li {
+  display: inline;
+}
+
+.header .h-nav .h-left li a {
+  padding: 10px 9px 3px;
+}
+
+.header .h-nav .h-right li {
+  display: inline;
+}
+
+.header .h-nav .h-right li a {
+  padding: 10px 9px 3px;
+}
+
+.header .m-nav {
+  padding: 25px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .m-nav .logo {
+  position: relative;
+}
+
+.header .m-nav .logo a::before {
+  content: '';
+  display: block;
+  width: 114px;
+  height: 19px;
+  background: url(../img/logo.png);
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+.header .nav-c li {
+  display: inline;
+}
+
+.header .nav-c li a {
+  width: 21px;
+  color: #fff;
+  font-size: 16px;
+  padding: 27px 25px 30px;
+}
+
+.header .nav-r .side-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .nav-r .side-nav li a {
+  margin-right: 25px;
+  background: url(../img/all-icon.png);
+  width: 21px;
+  height: 21px;
+}
+
+.header .nav-r .side-nav li a.search {
+  background-position: -360px -232px;
+}
+
+.header .nav-r .side-nav li a.account {
+  background-position: -411px -232px;
+}
+
+.header .nav-r .side-nav li a.menu {
+  background-position: -464px -232px;
+}
+
+#banner {
+  position: relative;
+  width: 100%;
+  height: 750px;
+  background: url(../img/banner-main1.jpg);
+}
+
+#banner .banner .b-box {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#banner .banner .b-box .play {
+  display: inline;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
+  padding: 0;
+  width: 70px;
+  height: 70px;
+  background: url(../img/all-icon.png) no-repeat -102px -286px;
+}
+
+#banner .banner .b-box h2 {
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 50px;
+  color: #fff;
+  letter-spacing: -2px;
+}
+
+#banner .banner .b-box .text {
+  color: #fff;
+}
+
+#banner .banner .b-box .text .t-rank {
+  font-size: 24px;
+}
+
+#banner .banner .b-box .text .t-kr {
+  font-size: 16px;
+  margin-right: 8px;
+}
+/*# sourceMappingURL=style.css.map */
