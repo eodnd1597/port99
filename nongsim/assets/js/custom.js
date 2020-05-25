@@ -24,7 +24,6 @@ var mySwiper2 = new Swiper ('.notice .swiper-container', {
 })
 var mySwiper3 = new Swiper ('.story .swiper-container', {
   loop: true,
-  slidesPerView: '6',
-  spaceBetween: '60',
+  slidesPerView: 'auto',
   centeredSlides: true
 })
