@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider01 - 페이드 효과 이미지 슬라이드</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+    @font-face { 
+            font-family: 'GmarketSansMedium'; 
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); 
+            font-weight: normal; 
+            font-style: normal; 
+        }
+
+    * {margin: 0; padding: 0; box-sizing: 0;}
+    a {text-decoration: none; color: #666;}
+    img {width: 100%; vertical-align: top;}
+
+    body {
+        background: url(img/img01.jpg)no-repeat center center;
+        background-size: cover;
+        font-family: 'Lato','GmarketSansMedium';
+        color: #fff;
+        height: 100vh;
+        }
+    body::before {
+        content: '';
+        position: absolute; left: 0; top: 0;
+        width: 100%; height: 100vh;
+        background: rgba(50,37,11,0.86);
+        z-index: -1;
+    }
+    .info {
+        position: absolute; left: 0; top: 0; z-index: 1000;
+        padding: 20px;
+        }
+
+    /* slide */
+    .slide-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;       
+    }
+    .slide-img {
+        position: relative;
+        width: 1000px; height: 600px;
+        box-shadow: 4px 4px 20px rgba(0,0,0,0.5);
+        overflow: hidden;
+        }
+
+    .slide-img .slides {
+        position: relative; left: 0; top: 0;
+        
+        }
+    
+</style>
+<body>
+    <div class="info">
+        <h1>Image Slider01</h1>
+        <p>페이드 효과 이미지 슬라이드</p>
+    </div>
+    
+
+    <div class="slide-wrap">
+        <div class="slide-img">
+            <div class="slides"><img src="img/img01.jpg" alt="이미지1"></div>
+            <div class="slides"><img src="img/img02.jpg" alt="이미지2"></div>
+            <div class="slides"><img src="img/img03.jpg" alt="이미지3"></div>
+            <div class="slides"><img src="img/img04.jpg" alt="이미지4"></div>
+            <div class="slides"><img src="img/img05.jpg" alt="이미지5"></div>
+        </div>
+    </div>
+    
+
+    <script src="js/jquery.min_1.12.4.js"></script>
+    <script>
+        let slideWarp = $(".slide-wrap");
+        let slideImg = $(".slide-img");
+        let slides = $(".slides");
+
+        let currentIndex = 0;               //현재 첫 번째로 보이는 이미지
+        let slideCount = slides.length;     //이미지 갯수
+
+
+        //첫번째 이미지 선택해서 사라지게 slides.eq(0).hide()
+        //두번째 이미지 선택해서 사라지게 slides.eq(1).hide()
+        //세번째 이미지 선택해서 사라지게 slides.eq(2).hide()
+        //네번째 이미지 선택해서 사라지게 slides.eq(3).hide()
+        //다섯번째 이미지 선택해서 사라지게 slides.eq(4).hide()
+
+        function showNext(){
+            let nextIndex = (currentIndex+1) % slideCount;
+            slides.eq(currentIndex).fadeOut(500);
+            slides.eq(nextIndex).fadeIn(500);
+            currentIndex = nextIndex;
+
+        }
+        setInterval(showNext, 3000)
+
+    </script>
+</body>
+</html>

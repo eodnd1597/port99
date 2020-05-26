@@ -273,7 +273,21 @@ tl.to(".box5 .circle1",{duration: 1, left: "90%",scale:"1",ease:"power4.out"})
                     </div>                        
                 </div>                   
             </div>
-<pre class="line-numbers language-css"><code>
+<pre class="line-numbers language-css"><code>const tw = gsap.to(".box6 .circle1", {duration: 10, left: "90%", borderRadius:"0%", rotation: "720deg"})
+tw.pause();
+
+$(".btn6").click(function(){
+    gsap.to(".box6 .circle1", {duration: 10, left: "90%", borderRadius:"0%", rotation: "720deg"})
+})
+$(".btn6-1").click(function(){ tw.play() })
+$(".btn6-2").click(function(){ tw.pause() })
+$(".btn6-3").click(function(){ tw.resume() })
+$(".btn6-4").click(function(){ tw.reverse() })
+$(".btn6-5").click(function(){ tw.seek(0.5) })
+$(".btn6-6").click(function(){ tw.timeScale(0.5) })
+$(".btn6-7").click(function(){ tw.timeScale(2) })
+$(".btn6-8").click(function(){ tw.kill() })
+$(".btn6-9").click(function(){ tw.restart() })
 </code></pre> 
             <!-- //Intro6 -->
 
@@ -297,7 +311,11 @@ tl.to(".box5 .circle1",{duration: 1, left: "90%",scale:"1",ease:"power4.out"})
                     </div>                        
                 </div>                   
             </div>
-<pre class="line-numbers language-css"><code>
+<pre class="line-numbers language-css"><code>$(".btn7-1").click(function(){
+$(".box7 .circle1").animate({ left: "90%"},1000, function(){
+    $(".box7 .circle1".animate({ left: "0%" },1000))
+    });
+});
 </code></pre> 
             <!-- //Intro7 -->
 
@@ -433,7 +451,7 @@ tl.to(".box5 .circle1",{duration: 1, left: "90%",scale:"1",ease:"power4.out"})
     });
 
     //6
-    const tw = gsap.to(".box6 .circle1", {duration: 1, left: "90%", borderRadius:"0%", rotation: "720deg"})
+    const tw = gsap.to(".box6 .circle1", {duration: 10, left: "90%", borderRadius:"0%", rotation: "720deg"})
         tw.pause();
 
         $(".btn6").click(function(){
