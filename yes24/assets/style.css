@@ -161,8 +161,22 @@
 }
 
 #banner .banner .b-box .b-item {
+  position: relative;
   width: 175px;
-  padding-right: 1%;
+}
+
+#banner .banner .b-box .b-item .front {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#banner .banner .b-box .b-item .back {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 #banner .banner .slick-dot {

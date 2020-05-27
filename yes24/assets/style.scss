@@ -129,8 +129,17 @@ body {
             display: flex;
             justify-content: center;
             .b-item {
+                position: relative;
                 width: 175px;
-                padding-right: 1%;
+                .front {
+                    position: absolute; left: 50%;
+                    transform: translateX(-50%); 
+                }
+                
+                .back {
+                    position: absolute; left: 50%;
+                    transform: translateX(-50%); 
+                }
             }
         }
         .slick-dot {
