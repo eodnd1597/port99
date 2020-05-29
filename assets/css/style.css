@@ -221,9 +221,10 @@
 #contents_tit p {
 	padding:35px 0; 
 	font-family: 'Gaegu', cursive; font-size: 40px;
+	background: #0c3483;
 }
 #contents_tit p a {
-	color:#2c94c4; 
+	color:#757490; 
 }
 
 

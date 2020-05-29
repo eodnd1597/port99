@@ -812,14 +812,18 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #notice .notice .info .info-text a span {
   font-size: 14px;
   font-weight: bold;
+}
+
+#notice .notice .info .info-text a.ic {
+  display: block;
 }
 
 #notice .notice .info .info-text a.ic::after {
@@ -830,6 +834,7 @@
 
 #notice .notice .info .info-text a.i1 {
   padding: 0 59px 0 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #notice .notice .info .info-text a.i1::after {
@@ -841,6 +846,7 @@
 
 #notice .notice .info .info-text a.i2 {
   padding: 0 58px 0 68px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #notice .notice .info .info-text a.i2::after {
@@ -852,6 +858,7 @@
 
 #notice .notice .info .info-text a.i3 {
   padding: 0 59px 0 62px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #notice .notice .info .info-text a.i3::after {
@@ -863,6 +870,7 @@
 
 #notice .notice .info .info-text a.i4 {
   padding: 0 54px 0 55px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #notice .notice .info .info-text a.i4::after {
@@ -874,6 +882,7 @@
 
 #notice .notice .info .info-text a.i5 {
   padding: 0 53px 0 50px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #notice .notice .info .info-text a.i5::after {
@@ -897,10 +906,88 @@
 #footer .footer {
   background: #5422b9;
   width: 100%;
+  height: 180px;
 }
 
 #footer .footer .foot-ban {
   margin: 0 auto;
   width: 1200px;
+}
+
+#footer .foot-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#footer .foot-text .foot-area {
+  margin-top: 60px;
+}
+
+#footer .foot-text .foot-area .foot-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 800px;
+}
+
+#footer .foot-text .foot-area .foot-left h2 {
+  width: 114px;
+  height: 20px;
+  background: url(../img/logo.png) no-repeat 0 -39px;
+  padding-right: 5%;
+}
+
+#footer .foot-text .foot-area .foot-left .address .f-cont {
+  margin-bottom: 30px;
+}
+
+#footer .foot-text .foot-area .foot-left .address .f-cont a {
+  padding: 0 11px;
+  border-left: 1px solid #ccc;
+}
+
+#footer .foot-text .foot-area .foot-left .address .f-cont a:first-child {
+  border: none;
+}
+
+.add-cont p {
+  padding-bottom: 8px;
+  color: #6b6b6b;
+}
+
+.yes {
+  padding: 0 0 2px 0;
+  margin-left: 10px;
+  border-bottom: 1px solid #a7a6a6;
+  color: #000;
+}
+
+.foot-call {
+  padding-left: 26px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 60px;
+}
+
+.foot-call .tit {
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: #2b2b2b;
+}
+
+.foot-call .num {
+  padding-bottom: 22px;
+  font-size: 20px;
+  color: #2b2b2b;
+  font-weight: bold;
+}
+
+.foot-call p {
+  padding: 1px;
+  font-size: 12px;
 }
 /*# sourceMappingURL=style.css.map */

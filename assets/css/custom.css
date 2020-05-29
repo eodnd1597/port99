@@ -52,7 +52,7 @@ body {background:#f1f4fb url(../img/body_bg.gif)}
 /* Header  */
 
 #header{
-	background:#a5d5fa center 57px;
+	background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
 	padding: 10px 0 10px 0px;
 }
 #header.sub {
@@ -72,9 +72,24 @@ body {background:#f1f4fb url(../img/body_bg.gif)}
 #header.sub .header_tit h2 {
 	display: none;
 }
-#header img {width: 190px; display: block; margin: 0 auto; padding-right: 50px;}
+#header img {
+	width: 190px; display: block; margin: 0 auto; padding-right: 50px;
+	animation: shake 0.75s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+@keyframes shake {
+	20% {
+	  transform: rotate(-10deg);
+	}
+	60% {
+	  transform: rotate(10deg);
+	}
+	80% {
+	  transform: rotate(0deg);
+	}
+  }
 
 #header h1{
+	-webkit-text-stroke: 1px #00c9ff;
 	color: #fff;
 	margin-bottom: 0px;
 	margin-top: 20px;
