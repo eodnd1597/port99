@@ -386,50 +386,11 @@
         </div>
     </div>
     <script src="js/jquery.min_1.12.4.js"></script>
-    <script src="js/slick.js"></script>
     <script src="js/swiper.min.js"></script>
     <script>
-    const sliderWrap = $("swiper-container");
-        const slideImg = $("swiper-wrapper");
-        const slides = $(".slides");
-        const slideBtn = $(".slide-btn");
-
-        let slideCount = slides.length;
-        let slideWidth = slides.outerWidth();
-        let slideTotalwidth = slideCount * slideWidth;
-        let currentIndex = 0;
-        let slideCopy = $(slides).clone();
-        slideImg.append(slideCopy);              
-     
-        function moveLeft(){
-            if(currentIndex == 0){
-                currentIndex = 5;
-                slideImg.css("margin-left", -currentIndex * slideWidth+"px");
-            }
-
-            currentIndex--;
-            slideImg.animate({"margin-left": -slideWidth * currentIndex+"px"},400);
-            console.log(currentIndex)
-        }
-     
-     
-        function moveRight(){
-            if(currentIndex == slideCount){
-                currentIndex = 0;
-                slideImg.css("margin-left", -currentIndex * slideWidth+"px");
-            }
-            currentIndex++;
-            slideImg.animate({"margin-left": -slideWidth * currentIndex+"px"},400)
-            console.log(currentIndex)
-        }
-        slideBtn.on("click","a",function(){
-            if( $(this).hasClass("prev") ){
-                moveLeft()
-            }else{
-                moveRight()
-            }
-         
-        });
+        var mySwiper = new Swiper ('#ddd .swiper-container', {
+            loop: true,
+        })
     </script>
 </body>
 </html>

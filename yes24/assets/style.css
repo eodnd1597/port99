@@ -104,6 +104,21 @@
   background: url(../img/banner-main1.jpg) no-repeat center center;
 }
 
+#banner:hover {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#banner:hover div.slick-box .slick-prev {
+  opacity: 1;
+  height: 90px;
+}
+
+#banner:hover div.slick-box .slick-next {
+  opacity: 1;
+  height: 90px;
+}
+
 #banner::before {
   content: '';
   position: absolute;
@@ -126,6 +141,32 @@
   background-image: -webkit-gradient(linear, right top, left top, from(black), to(rgba(0, 0, 0, 0)));
   background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0));
   z-index: 3;
+}
+
+#banner .banner .slick-box {
+  color: #fff;
+}
+
+#banner .banner .slick-box .slick-prev {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  width: 90px;
+  height: 0px;
+  opacity: 0;
+  background: url(../img/all-icon.png) no-repeat 0 0;
+  z-index: 3;
+}
+
+#banner .banner .slick-box .slick-next {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 90px;
+  height: 0px;
+  opacity: 0;
+  background: url(../img/all-icon.png) no-repeat -120px 0;
+  z-index: 5;
 }
 
 #banner .banner .mbanner {
