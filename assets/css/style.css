@@ -52,7 +52,7 @@
 }
 
 #contents {
-	background-color: #eef1f9;
+	background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
 }
 .white {
 	background-color: #fff;
@@ -221,7 +221,7 @@
 #contents_tit p {
 	padding:35px 0; 
 	font-family: 'Gaegu', cursive; font-size: 40px;
-	background: #0c3483;
+	background: #96fbc4;
 }
 #contents_tit p a {
 	color:#757490; 
