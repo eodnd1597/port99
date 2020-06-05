@@ -1,141 +1,273 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
-    <meta charSet="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="theme-color" content="#000" />
-    <meta name="viewport"
-        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-    <style></style>
-    <meta name="viewport" content="width=device-width" />
-    <meta charSet="utf-8" />
-    <meta name="keywords"
-        content="sketchbook,스케치북,branding,브랜딩,BI,BX,marketing,social,promotion,consulting,planning,design,디자인,UI,UX,web,app,안드로이드,ios,develoment,에이전시" />
-    <link rel="icon" sizes="192x192" href="/img/icon.png" />
-    <link rel="apple-touch-icon" href="/img/apple-icon.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png" />
-    <link rel="apple-touch-startup-image" href="/img/apple-icon-180x180.png" />
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link href="/css/import.css" rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-39730889-1"></script>
-    <title>sketchbook - 스케치북</title>
-    <meta name="description" content="스케치북은 당신의 존재를 드러낼 브랜딩, 마케팅, 디자인, 웹/앱 개발 에이전시입니다" />
-    <meta property="og:url" content="http://sketchbook.kr/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="sketchbook - 스케치북" />
-    <meta property="og:image" content="http://sketchbook.kr/img/share.jpg" />
-    <meta property="og:description" content="스케치북은 당신의 존재를 드러낼 브랜딩, 마케팅, 디자인, 웹/앱 개발 에이전시입니다" />
-    <link rel="canonical" href="http://sketchbook.kr/" />
-    <meta name="next-head-count" content="23" />
-    <link rel="preload" href="/_next/static/6XVQDCvjDHAs9dGfv_1fZ/pages/index.js" as="script" />
-    <link rel="preload" href="/_next/static/6XVQDCvjDHAs9dGfv_1fZ/pages/_app.js" as="script" />
-    <link rel="preload" href="/_next/static/runtime/webpack-9369c5c69dbf6d4912cb.js" as="script" />
-    <link rel="preload" href="/_next/static/chunks/framework.98c1b221acb34aa9927b.js" as="script" />
-    <link rel="preload" href="/_next/static/chunks/commons.a0a4d3e7899b79b36b20.js" as="script" />
-    <link rel="preload" href="/_next/static/runtime/main-38e4a4f94e5427de1f59.js" as="script" />
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>롯데월드</title>
+    <style>
+        * {margin: 0; padding: 0;box-sizing: border-box;}
+        .container {
+            margin: 0 auto;
+            width: 960px;
+        }
+        li {list-style: none;}
+        a {text-decoration: none; color: #000;}
+        img {width: 100%;}
 
+        /* //reset */
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+        .header .logo {
+            width: 100px;
+        }
+
+        /* //header */
+
+        .nav {
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .nav li {
+            position: relative;
+        }
+        .nav .tab-menu {
+            position: absolute; top: 40px;
+            z-index: 1;
+            }
+        .nav .tab-menu.show {display: block;}
+        .nav .tab-menu.hide {display: none;}
+
+        /* //nav */
+
+        #banner {
+            overflow: hidden;
+            width: 100%;
+        }
+        .banner {
+            position: relative;
+            width: 3840px;    
+            }
+        .ban-img {
+            width: 960px;
+            float: left;
+        }
+
+        /* //banner */
+
+        .notice {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2%;
+        }
+        .notice .left {
+            position: relative;
+            width: 48%;
+            border: 1px solid #ccc;
+            padding: 2%;
+            height: 210px;
+        }
+        .notice .left h2 {
+            margin-bottom: 2%;
+        }
+        .notice .left h2 span a {
+            color: #ccc;
+        }
+        .notice .left li {
+            padding-bottom: 3%;
+        }
+        .notice .left li span{
+            color: #666;
+            float: right;
+        }
+        .notice .left ul a {
+            position: absolute; right: 25px; top: 25px;
+        }
+        .notice .left .more {
+            width: 17px; height: 17px;
+        }
+        .notice .left .n2 {
+            display: none;
+        }
+        .notice .right {
+            width: 49%;
+        }
+
+        /* //notice */
+
+        #event h2 {margin-bottom: 1%;}
+        .event {
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 5%;
+            }
+        .event .box {
+            width: 24%;
+        }
+        .event .e-img {
+            margin-bottom: 3%;
+        }
+
+        /* //event */
+
+        .footer {
+            margin-top: 2%;
+            color: #555;
+        }
+        .footer .f-1 {
+            margin-bottom: 1%;
+        }
+        .footer .f-2 {
+            margin-bottom: 2%;
+        }
+        .footer .f-3 {
+            color: #ccc;
+            font-size: 13px;
+        }
+    </style>
+</head>
 <body>
-    <div id="__next">
-        <div id="wrap">
-            <header id="hd">
-                <h1><a href="/">sketchbook</a></h1>
-                <nav id="gnb">
-                    <ul>
-                        <li class=""><a href="/a"><strong>A</strong></a></li>
-                        <li class=""><a href="/book"><strong>B</strong>ook</a></li>
-                        <li class=""><a href="/connect"><strong>C</strong>onnect</a></li>
-                        <li class=""><a href="/d"><strong>D</strong></a></li>
+    <div id="wrap">
+        <div class="container">
+            <div id="header">
+                <div class="header">
+                    <h1><img src="test/testImg/logo.jpg" class="logo" alt="롯데월드"></h1>
+                    <ul class="nav">
+                        <li><a href="#">즐길거리</a>
+                            <ul class="tab-menu">
+                                <li>dwakghskguehsg</li>
+                                <li>dwakghskguehsg</li>
+                                <li>dwakghskguehsg</li>
+                            </ul>
+                        </li>
+                        <li><a href="#">요금/우대혜택</a>
+                            <ul class="tab-menu">
+                                <li>dwakghskguehsg</li>
+                                <li>dwakghskguehsg</li>
+                                <li>dwakghskguehsg</li>
+                            </ul>
+                        </li>
+                        <li><a href="#">참여프로그램</a>
+                            <ul class="tab-menu">
+                                <li>dwakghskguehsg</li>
+                                <li>dwakghskguehsg</li>
+                                <li>dwakghskguehsg</li>
+                            </ul>
+                        </li>
+                        <li><a href="#">이용가이드</a>
+                            <ul class="tab-menu">
+                                <li>dwakghskguehsg</li>
+                                <li>dwakghskguehsg</li>
+                                <li>dwakghskguehsg</li>
+                            </ul>
+                        </li>
+                        <li><a href="#">소통서비스</a>
+                            <ul class="tab-menu">
+                                <li>dwakghskguehsg</li>
+                                <li>dwakghskguehsg</li>
+                                <li>dwakghskguehsg</li>
+                            </ul>
+                        </li>
                     </ul>
-                </nav>
-            </header>
-            <div id="ct">
-                <div id="indexGnb">
-                    <div><b>=</b> <b><strong>A</strong></b> <b><strong>B</strong>ook</b>
-                        <b><strong>C</strong>onnected</b> <b><strong>D</strong>.</b></div>
-                </div>
-                <div id="index">
-                    <div id="index-0">
-                        <div><i></i><i></i><i></i></div><strong>client</strong><strong><small>with
-                            </small>sketchbook</strong>
-                    </div>
-                    <section id="index-1"><i class="chr-wrp"><svg class="chr-gi" data-name="gi"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420.36 431.65">
-                                <path class="chr-path"
-                                    d="M455,355c-4.5,0-14.5.5-16.5.5-2,1.5-11,15.5-17,29.5-52-22-94-62-125.5-110.5H208C169.5,332.5,113.5,371,47.5,395L40,383.5c48-22,89.5-63.5,117.5-109H101c-13.5,0-37,2.5-51,4.5l-9-25.5c16,3.5,44,6.5,60,6.5h41.5V104h-25c-12.5,0-37,2-50.5,4L58,83c16,2.5,43.5,5.5,59.5,5.5h25v-29c0-4-1.5-17-2-29.5l49,8c15.5,2.5,17,13,5.5,19l-10.5,5V88.5H301v-29c0-4-1.5-17-2-29.5l47,8c15.5,2.5,17,13.5,7,19l-10.5,5V88.5H371l21-26c3.5-4,6-4,11.5,0l28,22.5c11.5,10,7.5,19-4.5,19H342.5V260h40L405,232c4-4.5,5.5-6,13,0l29.5,25c10,8.5,6.5,17.5-5.5,17.5H320.5c40,36.5,83,55,138.5,66.5ZM121.5,455.5c-14,0-37.5,3-51.5,5l-8.5-27c16,4,44,7.5,60,7.5H225V373.5H204.5c-14.5,0-38,2.5-51.5,4.5l-9.5-26c16,3.5,43.5,7,61,7H225V326c0-2-.5-6-1-12,0-5.5-.5-12-.5-18l49,8c14.5,2.5,15,13.5,4.5,19.5L267,328v31h23l21.5-26.5c2-2.5,5.5-2.5,9.5,0L351,357c8,7.5,5.5,16.5-6,16.5H267V441H369l23-28.5c4-4,10.5-5,14.5.5l28,24c5.5,4.5,2.5,18.5-5.5,18.5ZM301,104H184.5v40H301Zm0,55H184.5v43.5H301Zm0,58H184.5v43H301Z"
-                                    transform="translate(-39.27 -29.41)"></path>
-                            </svg></i><i class="chr-wrp"><svg class="chr-bon" data-name="bon"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 415.28 446.1">
-                                <path class="chr-path"
-                                    d="M452,342.5c-6,0-14.5,1-18,1-2,.5-10.5,13.5-16.5,31.5C385,349,357,317.5,333,282c-24.5-34-44.5-72-60.5-111.5V342h28l20-25c3.5-4,9-4,13,0L361,343c5.5,6,1.5,13.5-5,13.5H272.5v104c0,3.5-1.5,6-7,8C260,471,250,472,242,472c-9.5,0-16-4-16-9.5l1.5-106H195c-13.5,0-37,3-51,5l-9.5-26C151,339,179,342,195,342h32.5V182a449.24,449.24,0,0,1-72,117c-30,35.5-65,66-105.5,94l-9-10a526.09,526.09,0,0,0,97.5-110.5c26-40.5,47-86,62.5-135.5H108c-14,0-38,3-50,5L47,115.5c16.5,4,44.5,7,61,7H227.5v-27c0-26-2-56.5-4-68.5L281,36c11.5,2,13.5,14.5,4,18.5L272.5,60v62.5h103l25-30c4-4.5,8.5-4.5,14.5,0L449.5,122c7.5,6,3,15-5.5,15H280.5C299,179,322,216,350,248a313.46,313.46,0,0,0,105,80Z"
-                                    transform="translate(-40.29 -26.4)"></path>
-                            </svg></i>
-                        <h2><strong>기본에서</strong> <strong>시작하다</strong></h2>
-                        <p>우리는 항상 고민하고 생각합니다.<br />고객이 무엇을 원하고, 왜 해야하며,<br />어떻게 해야하는 지를.<br />우리는 여기에서 시작합니다.</p>
-                    </section>
-                    <section id="index-2">
-                        <h2><strong>기본에서</strong> <strong>연결하다</strong></h2><i></i>
-                        <p>우리는 모든 것을 알 지 못합니다.<br />고객의 지식과 경험을 우리의 지식과 경험에 연결해야 합니다.<br />고객이 알고 있는 것을 긴밀한 소통과 협력으로
-                            알아내고<br />그 이상의 것을 제시합니다.</p>
-                    </section>
-                    <section id="index-3">
-                        <h2><strong>확장하다</strong></h2>
-                        <p>필요한 재료들이 유기적으로 결합되었습니다.<br />드디어 이 토양을 기초로 우리의 창의적 산물들이<br />꼬리에 꼬리를 물고 확장되기 시작합니다.</p>
-                    </section>
-                    <section id="index-4">
-                        <h2><strong>존재를</strong> <strong>드러내다</strong><small>reveal your existence</small></h2>
-                        <h3>beyond imagination</h3>
-                        <p>그 끝에 고객이 원하던 것이 있을까요.<br />아닙니다. 상상할 수 없었던 그 이상의 것이<br />그 존재를 드러낼 것입니다.</p>
-                        <div class="next"><a href="/a"><small>스스로를 드러내다</small> A<b
-                                    class="animated flash infinite">_</b></a></div>
-                    </section>
                 </div>
             </div>
-            <footer id="ft">
-                <div class="ft-sns"><a href="https://www.instagram.com/sketchbookcompany/" target="_blank"
-                        title="instagram"><i class="xi-instagram"></i><b class="sr-only">instagram</b></a> <a
-                        href="https://www.facebook.com/sketchbookcompany/" target="_blank" title="facebook"><i
-                            class="xi-facebook"></i><b class="sr-only">facebook</b></a></div>
-                <address>Copyright © sketchbook.</address>
+            <!-- //header -->
+            <section id="banner">
+                <article class="banner">
+                    <img src="test/testImg/banner01.jpg" class="ban-img" alt="미라클있수마수">
+                    <img src="test/testImg/banner01.jpg" class="ban-img" alt="미라클있수마수">
+                    <img src="test/testImg/banner01.jpg" class="ban-img" alt="미라클있수마수">
+                    <img src="test/testImg/banner01.jpg" class="ban-img" alt="미라클있수마수">
+                </article>
+            </section>
+            <!-- //banner -->
+            <section class="notice">
+                <article class="left">
+                    <h2><strong><a href="#">롯데월드 소식 |</a></strong><span><a href="#">&nbsp;뉴스·공지</span></a></h2>
+                    <ul class="active">
+                        <li>그럴싸진관 미라클<span>2018.11.19</span></li>
+                        <li>드림스테이지 '힘내 소중한 너'<span>2018.11.20</span></li>
+                        <li>'힘내 소중한 너'음원 발매<span>2018.11.13</span></li>
+                        <li>이용 요금 조정 안내<span>2018.11.12</span></li>
+                        <a href="#">더보기 <img src="test/testImg/more.jpg" class="more" alt="더보기"></a>
+                    </ul>
+                    <ul>
+                        <li>rehjralighjrelagjlrwae<span>2018.11.19</span></li>
+                        <li>드림스테이지 '힘내 소중한 너'<span>2018.11.20</span></li>
+                        <li>'drkhjsrekhmrlhr;l<span>2018.11.13</span></li>
+                        <li>이용 요금 조정 안내<span>2018.11.12</span></li>
+                        <a href="#">더보기 <img src="test/testImg/more.jpg" class="more" alt="더보기"></a>
+                    </ul>
+                </article>
+                <article class="right"><img src="test/testImg/notice1.jpg" alt="온종일 혜택"></article>
+            </section>
+            <!-- //notice -->
+            <section id="event">
+                <h2>특별한 경험</h2>
+                <article class="event">
+                    <article class="box">
+                        <img src="test/testImg/img1.jpg" class="e-img" alt="이미지1">
+                        <p>연간회원안내</p>
+                    </article>
+                    <article class="box">
+                        <img src="test/testImg/img2.jpg" class="e-img" alt="이미지2">
+                        <p>프리미엄투어</p>
+                    </article>
+                    <article class="box">
+                        <img src="test/testImg/img3.jpg" class="e-img" alt="이미지3">
+                        <p>공연참여 프로그램</p>
+                    </article>
+                    <article class="box">
+                        <img src="test/testImg/img4.jpg" class="e-img" alt="이미지4">
+                        <p>단체프로그램</p>
+                    </article>
+                </article>
+            </section>
+            <!-- //event -->
+            <footer class="footer">
+                <p class="f-1">서울특별시 송파구 올림픽로 240 호텔롯데 롯데월드 &nbsp;|&nbsp;대표자:박동기</p>
+                <p class="f-2">사업자등록번회:219-85-00014&nbsp;|&nbsp;통신판매업신고번호:송파 제5513호&nbsp;|&nbsp;전화:1661-2000</p>
+                <p class="f-3">COPYRIGHT 2018 LOTTEWORLD.ALL RIGHTS RESERVED.</p>
             </footer>
         </div>
-        <div id="loading"><i></i>
-            <div class="container">
-                <div class="next">Reading<b class="animated flash infinite">_</b></div>
-            </div>
-        </div>
     </div>
-    <script id="__NEXT_DATA__" type="application/json">
-        {
-            "props": {
-                "pageProps": {}
-            },
-            "page": "/",
-            "query": {},
-            "buildId": "6XVQDCvjDHAs9dGfv_1fZ",
-            "nextExport": true,
-            "autoExport": true,
-            "isFallback": false
-        }
-    </script>
-    <script nomodule="" src="/_next/static/runtime/polyfills-288dc298139c2c639458.js"></script>
-    <script async="" data-next-page="/" src="/_next/static/6XVQDCvjDHAs9dGfv_1fZ/pages/index.js"></script>
-    <script async="" data-next-page="/_app" src="/_next/static/6XVQDCvjDHAs9dGfv_1fZ/pages/_app.js"></script>
-    <script src="/_next/static/runtime/webpack-9369c5c69dbf6d4912cb.js" async=""></script>
-    <script src="/_next/static/chunks/framework.98c1b221acb34aa9927b.js" async=""></script>
-    <script src="/_next/static/chunks/commons.a0a4d3e7899b79b36b20.js" async=""></script>
-    <script src="/_next/static/runtime/main-38e4a4f94e5427de1f59.js" async=""></script>
-    <script src="/_next/static/6XVQDCvjDHAs9dGfv_1fZ/_buildManifest.js" async=""></script>
-    <script src="/_next/static/6XVQDCvjDHAs9dGfv_1fZ/_ssgManifest.js" async=""></script>
-    <script src="/js/common.js"></script>
-</body>
+    
+    <script src="slider/js/jquery.min_1.12.4.js"></script>
+    <script src="slider/js/jquery-ui.min.js"></script>
+    <script>
+        let slideImg = $(".banner")
 
+        $(".nav .tab-menu").hide()
+        $(".nav > li").mouseover(function(){
+            $(this).find(".tab-menu").stop().slideDown();
+        });
+        $(".nav > li").mouseout(function(){
+            $(this).find(".tab-menu").stop().slideUp();
+        });
+        
+        setInterval(function(){
+            slideImg.animate({ left : "-960px" },400, function(){
+                $(".ban-img:first-child").appendTo(slideImg)
+                slideImg.css("left","")
+            });
+        },3000);
+
+        let tabMenu = $(".left");
+        tabMenu.find("ul").hide();
+        tabMenu.find("ul.active").show();
+        
+        function show(){
+            let target = $(this);
+
+            target.next().show().parent("ul").addClass("active").siblings("ul").removeClass("active").find("li").hide()
+        }
+        tabMenu.find("h2 > a").click(show).focus(show);
+    </script>
+</body>
 </html>
