@@ -106,8 +106,267 @@
             z-index: 1000;
             user-select: none;
             pointer-events: none;
+            transition: background-color 2s, border-color .2s;
         }
+        .cursor.active {
+            background-color: rgba(255,165,0,0.4);
+            border-color: orange;
+        }
+
+        .infor4 {position: absolute; left: 0; bottom: 0; z-index: 1000; padding: 20px;}
+        .infor4 a {color: #fff; border: 1px solid #fff; border-radius: 30px; padding: 5px 30px}
+        .infor4 .modal {
+            background: rgba(0,0,0,0.8);
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            top: 100%;
+            left: 0;
+            text-align: left;
+            transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+        }
+        .infor4 .modal.show {
+            top: 0;
+        }
+        .infor4 .modal .close {
+            position: absolute; right: 10px; top: 20px;
+        }
+        /* PrismJS 1.20.0
+https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript&plugins=line-numbers */
+/**
+ * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/chriskempson/tomorrow-theme
+ * @author Rose Pritchard
+ */
+
+
+ .code-editor:before,
+ .code-editor:after,
+ .code-editor span.control:before,
+ .code-editor span.after:after {
+     box-sizing: border-box;
+     content: '';
+     position: absolute;
+     z-index: 1;
+     transition: all .5s ease-in-out;
+ }
+ 
+ .code-editor {
+    box-sizing: border-box;
+    width: 70vw; 
+    height: 80vh;
+    text-align: left;
+    border-radius: 0 0 5px 5px;
+    overflow-x: hidden;
+    transition: all .5s ease-in-out;
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+ }
+ 
+ .code-editor:before {
+     content: 'JavaScript Source';
+     font-family: 'Consolas';
+     color: #222;
+     padding-top: 6px; 
+     text-align: center;
+     top: 0px;
+     width: 70vw;
+     height: 30px;
+     background-color: #fafafa;
+     border-radius: 5px 5px 0 0;
+ }
+ 
+ .code-editor span.control:before {
+     content: '';
+     top: 9px;
+     z-index: 2;
+     padding: 6px;
+     border-radius: 20px;
+     -moz-border-radius: 20px;
+     -o-border-radius: 20px;
+     -webkit-border-radius: 20px;
+ }
+ 
+ .code-editor span.control:nth-child(1):before {
+     margin-left: 15px;
+     background-color: #df6963;
+     
+ }
+ 
+ .code-editor span.control:nth-child(2):before {
+     margin-left: 35px;
+     background-color: #f5e18a;
+     
+ }
+ 
+ .code-editor span.control:nth-child(3):before {
+     margin-left: 55px;
+     background-color: #97c38a;
+ }
+ 
+
+code[class*="language-"],
+pre[class*="language-"] {
+   color: #ccc;
+   background: none;
+   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+   font-size: 1em;
+   text-align: left;
+   white-space: pre;
+   word-spacing: normal;
+   word-break: normal;
+   word-wrap: normal;
+   line-height: 1.5;
+
+   -moz-tab-size: 4;
+   -o-tab-size: 4;
+   tab-size: 4;
+
+   -webkit-hyphens: none;
+   -moz-hyphens: none;
+   -ms-hyphens: none;
+   hyphens: none;
+
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+    padding: 1em;
+    margin-top: 2em;
+   overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+   background: #2d2d2d;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+   padding: .1em;
+   border-radius: .3em;
+   white-space: normal;
+}
+
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+   color: #999;
+}
+
+.token.punctuation {
+   color: #ccc;
+}
+
+.token.tag,
+.token.attr-name,
+.token.namespace,
+.token.deleted {
+   color: #e2777a;
+}
+
+.token.function-name {
+   color: #6196cc;
+}
+
+.token.boolean,
+.token.number,
+.token.function {
+   color: #f08d49;
+}
+
+.token.property,
+.token.class-name,
+.token.constant,
+.token.symbol {
+   color: #f8c555;
+}
+
+.token.selector,
+.token.important,
+.token.atrule,
+.token.keyword,
+.token.builtin {
+   color: #cc99cd;
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.variable {
+   color: #7ec699;
+}
+
+.token.operator,
+.token.entity,
+.token.url {
+   color: #67cdcc;
+}
+
+.token.important,
+.token.bold {
+   font-weight: bold;
+}
+.token.italic {
+   font-style: italic;
+}
+
+.token.entity {
+   cursor: help;
+}
+
+.token.inserted {
+   color: green;
+}
+
+pre[class*="language-"].line-numbers {
+   position: relative;
+   padding-left: 3.8em;
+   counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+   position: relative;
+   white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+   position: absolute;
+   pointer-events: none;
+   top: 0;
+   font-size: 100%;
+   left: -3.8em;
+   width: 3em; /* works for line-numbers below 1000 lines */
+   letter-spacing: -1px;
+   border-right: 1px solid #999;
+
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+
+}
+
+   .line-numbers-rows > span {
+      display: block;
+      counter-increment: linenumber;
+   }
+
+      .line-numbers-rows > span:before {
+         content: counter(linenumber);
+         color: #999;
+         display: block;
+         padding-right: 0.8em;
+         text-align: right;
+      }
+
     </style>
+    <link rel="stylesheet" href="../assets/css/prism.css">
 </head>
 <body>
     <div class="info">
@@ -120,11 +379,11 @@
     
     <div class="info2">
         <ul>
-            <li class="active"><a href="mouse01.hmtl">Mouse01</a></li>
-            <li><a href="mouse02.hmtl">Mouse02</a></li>
-            <li><a href="mouse03.hmtl">Mouse03</a></li>
-            <li><a href="mouse04.hmtl">Mouse04</a></li>
-            <li><a href="mouse05.hmtl">Mouse05</a></li>
+            <li class="active"><a href="mouse01.html">Mouse01</a></li>
+            <li><a href="mouse02.html">Mouse02</a></li>
+            <li><a href="mouse03.html">Mouse03</a></li>
+            <li><a href="mouse04.html">Mouse04</a></li>
+            <li><a href="mouse05.html">Mouse05</a></li>
         </ul>
     </div>
 
@@ -139,6 +398,77 @@
         <li>screenX : <span class="screenX">0</span></li>
         <li>screenY : <span class="screenY">0</span></li>
     </ul>
+    </div>
+
+    <div class="infor4">
+        <a href="#" class="view">소스보기</a>
+        <!-- modal -->
+        <div class="modal">
+            <div class="code-editor">   
+                <span class="control"></span>
+                <span class="control"></span>
+                <span class="control"></span>
+<pre class="line-numbers"><code class="language-js">$(window).mousemove(function(event){
+    $(".clientX").text(event.clientX);
+    $(".clientY").text(event.clientY);
+    $(".offsetX").text(event.offsetX);
+    $(".offsetY").text(event.offsetY);
+    $(".pageX").text(event.pageX);
+    $(".pageY").text(event.pageY);
+    $(".screenX").text(event.screenX);
+    $(".screenY").text(event.screenY);
+
+    $(".cursor").css({ left: event.clientX -25, top: event.clientY-25 });
+
+    $(".contents a").hover(function(){
+        $(".cursor").addClass("active");
+    }, function(){
+        $(".cursor").removeClass("active");
+    });
+
+    //javascript
+    window.addEventListener("mousemove", function(event){
+        document.querySelector(".clientX").innerHTML = event.clientX;
+        document.querySelector(".clientY").innerHTML = event.clientY;
+        document.querySelector(".offsetX").innerHTML = event.offsetX;
+        document.querySelector(".offsetY").innerHTML = event.offsetY;
+        document.querySelector(".pageX").innerHTML = event.pageX;
+        document.querySelector(".pageY").innerHTML = event.pageY;
+        document.querySelector(".screenX").innerHTML = event.screenX;
+        document.querySelector(".screenY").innerHTML = event.screenY;
+
+        document.querySelector(".cursor").style.left = event.clientX - 25 + "px";
+        document.querySelector(".cursor").style.top = event.clientY - 25 + "px";
+
+        let x = event.clientX - 25 + "px";
+        let y = event.clientY - 25 + "px";
+
+        document.querySelector(".cursor").style.cssText = "left:"+ x +"; top:" + y;
+
+        // document.querySelector(".contents a").addEventListener("mouseenter", function(){});
+        // document.querySelector(".contents a").addEventListener("mouseleave", function(){});
+
+        // document.querySelector(".contents a").addEventListener("mouseenter", () => {
+        //     document.querySelector(".cursor").classList.add("active");
+        // });
+        // document.querySelector(".contents a").addEventListener("mouseleave", () => {
+        //     document.querySelector(".cursor").classList.remove("active");
+        // });
+
+        document.querySelectorAll("a").forEach(elem => {
+            elem.addEventListener("mouseenter", () => {
+                document.querySelector(".cursor").classList.add("active");
+            });
+            elem.addEventListener("mouseleave", () => {
+                document.querySelector(".cursor").classList.remove("active");
+            });
+        });
+    });
+});
+</code></pre>
+            </div>
+            <a class="close">Close</a>
+        </div>
     </div>
 
     <!-- 
@@ -160,40 +490,75 @@
      <div class="contents">
         <p>To climb steep hills requires <a>slow</a> pace at first.</p>
         <p>험준한 산을 오르기 위해선 먼저 <a>천천히</a> 걸어야 한다.</p>
-    </div>
+     </div>
 
     <!-- script -->
     <script src="../parallax/js/jquery-1.12.4.min.js"></script>
     <script src="../parallax/js/jquery-ui.min.js"></script>
+    <script src="js/prism.js"></script>
     <script>
         
-         $(window).mousemove(function(event){
-             $(".clientX").text(event.clientX);
-             $(".clientY").text(event.clientY);
-             $(".offsetX").text(event.offsetX);
-             $(".offsetY").text(event.offsetY);
-             $(".pageX").text(event.pageX);
-             $(".pageY").text(event.pageY);
-             $(".screenX").text(event.screenX);
-             $(".screenY").text(event.screenY);
+        //  $(window).mousemove(function(event){
+        //      $(".clientX").text(event.clientX);
+        //      $(".clientY").text(event.clientY);
+        //      $(".offsetX").text(event.offsetX);
+        //      $(".offsetY").text(event.offsetY);
+        //      $(".pageX").text(event.pageX);
+        //      $(".pageY").text(event.pageY);
+        //      $(".screenX").text(event.screenX);
+        //      $(".screenY").text(event.screenY);
 
-             $(".cursor").css({ left: (event.clientX-25+"px"),top: event.clientY-25+"px" })
-             $(".contents a").hover(function(){
-                $(".cursor").css({borderColor:"orange"})
-             },function(){
-                $(".cursor").css({borderColor:"white"})
-             });
-            });
-        // window.addEventListener("mousemove",event => {
-        // document.querySelector(".clientX").innerHTML = event.clientX
-        // document.querySelector(".clientY").innerHTML = event.clientY
-        // document.querySelector(".offsetX").innerHTML = event.offsetX
-        // document.querySelector(".offsetY").innerHTML = event.offsetY
-        // document.querySelector(".pageX").innerHTML = event.pageX
-        // document.querySelector(".pageY").innerHTML = event.pageY
-        // document.querySelector(".screenX").innerHTML = event.screenX
-        // document.querySelector(".screenY").innerHTML = event.screenY
+        //      $(".cursor").css({ left: (event.clientX-25+"px"),top: event.clientY-25+"px" })
+        //      $(".contents a").hover(function(){
+        //         $(".cursor").css({borderColor:"orange"})
+        //      },function(){
+        //         $(".cursor").css({borderColor:"white"})
+        //      });
+        //     });
+
+
+
+
+        window.addEventListener("mousemove",event => {
+        document.querySelector(".clientX").innerHTML = event.clientX
+        document.querySelector(".clientY").innerHTML = event.clientY
+        document.querySelector(".offsetX").innerHTML = event.offsetX
+        document.querySelector(".offsetY").innerHTML = event.offsetY
+        document.querySelector(".pageX").innerHTML = event.pageX
+        document.querySelector(".pageY").innerHTML = event.pageY
+        document.querySelector(".screenX").innerHTML = event.screenX
+        document.querySelector(".screenY").innerHTML = event.screenY
+
+        
+        let x = event.clientX -25+"px";
+        let y = event.clientY -25+"px";
+
+        document.querySelector(".cursor").style.cssText = "left: "+x+"; top:"+y;
+        
+        // document.querySelector(".contents a").addEventListener("mouseenter", () => {
+        //     document.querySelector(".cursor").classList.add("active");
         // });
+        // document.querySelector(".contents a").addEventListener("mouseleave", () => {
+        //     document.querySelector(".cursor").classList.remove("active");
+        // });
+
+        document.querySelectorAll("a").forEach(elem => {
+        elem.addEventListener("mouseenter", () => {
+            document.querySelector(".cursor").classList.add("active");
+        });
+        elem.addEventListener("mouseleave", () => {
+            document.querySelector(".cursor").classList.remove("active");
+        });
+        })
+
+        });
+
+        $(".infor4 a").click(function(){
+            $(".infor4 .modal").addClass("show");
+        });
+        $(".infor4 .close").click(function(){
+            $(".infor4 .modal").removeClass("show");
+        });
     </script>
 </body>
 </html>

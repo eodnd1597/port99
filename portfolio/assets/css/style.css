@@ -1,0 +1,52 @@
+#wrap {font-family: 'Montserrat';}
+.wrap {}
+.wrap-change {}
+
+/* header */
+#header {
+    padding: 2.5vw 0 0 2vw;
+}
+#header h1 {
+    font-size: 2vw; font-weight: 600;
+    padding-bottom: 0.5vw;
+}
+#header h1 a {
+    color: #e6e6e6;
+    transition: all .3s ease;
+}
+#header h1 a:hover {
+    color: #000;
+}
+
+#header ul {padding: 0;}
+#header ul li {
+    color: #c2c2c2; font-weight: 700;
+    font-size: 1.5vw; padding-bottom: 0.5vw;
+}
+#header ul li a {
+    color: #c2c2c2;
+    transition: all .3s ease;
+}
+#header ul li a:hover {color: #000;}
+#header ul li a span {color: #000;}
+
+/* //header */
+
+/* 센터 부분 */
+
+.index-change {}
+.index-change .pf {
+    position: fixed;
+    top: 50px;
+    left: 16vw;
+    font-size: 2vw;
+    font-weight: 700;
+    display: none;
+    pointer-events: none;
+}
+.hj {
+    font-size: 368px;
+    font-family: 'Noto Serif SC', serif;
+    font-weight: 700;}
+
+/* //센터 부분 */

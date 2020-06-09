@@ -1,0 +1,8 @@
+body, h1{
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+#wrap {}
+a {text-decoration: none; color: #000;}
+li {list-style: none;}
+span {color: #c2c2c2;}
