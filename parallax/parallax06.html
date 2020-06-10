@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parallax05</title>
+    <title>Parallax06</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../mouse/css/style.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
@@ -20,7 +21,7 @@
         li {list-style: none;}
         a {text-decoration: none; color: #fff;}
         :root { 
-            font-size: 12px;
+            font-size: 16px;
         }
         body {
             --color-h1: #dc6e25;
@@ -280,27 +281,79 @@
             </section>
         </div>
     </section>
-    <script>
-        // $(window).scroll(function(){
-        //     let scrollTop = $(window).scrollTop();
-        //     $(".scrollTop").text(scrollTop);
 
-        // $(".content-item").each(function(){
-        //     let offset1 = (scrollTop - $(this).offset().top)* 0.1;
-        //     $(this).find(".content-item-desc").css({transform : "translateY("+offset2+"px)"});
-                
-        //     });
-        // });
-        window.addEventListener("scroll",function(){
-                let pageYOffset = (window.pageYOffset || document.documentElement.scrollTop) + screen.height/2;
-                document.querySelector(".pageYOffset").textContent = pageYOffset;
-                document.querySelectorAll(".content-item").forEach(elem => {
-                    // console.log(elem.childNodes[7])
-                    let target = elem.childNodes[7];              
-                    let offset = (pageYOffset - elem.offsetTop) * 0.2;
-                    target.style.transform = "translateY("+ offset +"px)"
-                });
+    <div class="infor4">
+        <a href="#" class="view">소스보기</a>
+        <!-- modal -->
+        <div class="modal">
+            <div class="code-editor">   
+                <span class="control"></span>
+                <span class="control"></span>
+                <span class="control"></span>
+<pre class="line-numbers"><code class="language-js">// $(window).scroll(function(){
+//     let scrollTop = $(window).scrollTop();
+//     $(".scrollTop").text(scrollTop);
+
+// $(".content-item").each(function(){
+//     let offset1 = (scrollTop - $(this).offset().top)* 0.1;
+//     $(this).find(".content-item-desc").css({transform : "translateY("+offset2+"px)"});
+        
+//     });
+// });
+window.addEventListener("scroll",function(){
+        let pageYOffset = (window.pageYOffset || document.documentElement.scrollTop) + screen.height/2;
+        document.querySelector(".pageYOffset").textContent = pageYOffset;
+        document.querySelectorAll(".content-item").forEach(elem => {
+            // console.log(elem.childNodes[7])
+            let target = elem.childNodes[7];              
+            let offset = (pageYOffset - elem.offsetTop) * 0.2;
+            target.style.transform = "translateY("+ offset +"px)"
+        });
+    });
+
+    $(".infor4 a").click(function(){
+        $(".infor4 .modal").addClass("show");
+    });
+    $(".infor4 .close").click(function(){
+        $(".infor4 .modal").removeClass("show");
+    });
+</code></pre>
+            </div>
+            <a class="close">Close</a>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="../mouse/js/prism.js"></script>
+    <script>
+    // $(window).scroll(function(){
+    //     let scrollTop = $(window).scrollTop();
+    //     $(".scrollTop").text(scrollTop);
+
+    // $(".content-item").each(function(){
+    //     let offset1 = (scrollTop - $(this).offset().top)* 0.1;
+    //     $(this).find(".content-item-desc").css({transform : "translateY("+offset2+"px)"});
+            
+    //     });
+    // });
+    window.addEventListener("scroll",function(){
+            let pageYOffset = (window.pageYOffset || document.documentElement.scrollTop) + screen.height/2;
+            document.querySelector(".pageYOffset").textContent = pageYOffset;
+            document.querySelectorAll(".content-item").forEach(elem => {
+                // console.log(elem.childNodes[7])
+                let target = elem.childNodes[7];              
+                let offset = (pageYOffset - elem.offsetTop) * 0.2;
+                target.style.transform = "translateY("+ offset +"px)"
             });
+        });
+
+        $(".infor4 a").click(function(){
+            $(".infor4 .modal").addClass("show");
+        });
+        $(".infor4 .close").click(function(){
+            $(".infor4 .modal").removeClass("show");
+        });
     </script>
 </body>
 </html>
