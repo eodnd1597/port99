@@ -1,4 +1,5 @@
 /* layout */
+* {box-sizing: border-box;}
 .line {
     position: fixed; left: 0; top: 0;
     width: 100%; height: 100vh;
@@ -60,7 +61,6 @@
 #section1 {
     width: 100%;
     height: 100vh;
-    background: rgba(0,0,0,0.2);
 }
 #section1 .t1 {
     overflow: hidden;
@@ -108,7 +108,6 @@
 #section2 {
     width: 100%;
     position: relative;
-    background: rgba(0,0,0,0.3);
     height: 100vh;
 }
 #section2 h2 {
@@ -116,8 +115,21 @@
     transform: translate(-50%, -13vw);
     font-size: 2.4vw;
 }
-#section2 .a-circle {
-    
+#section2 i {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 20vw;
+    border: 1px solid #222;
+}
+#section2 .txt {
+    text-align: center;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, 12vw);
+    font-size: 1vw; font-weight: 500;
+    color: #333;
 }
 #section2 .a-circle .circle {
     background: #fff;
@@ -143,6 +155,67 @@
     transform: translate(9vw, -50%);
 }
 
+/* section3 */
+#section3 {
+    position: relative;
+    width: 100%; height: 100vh;
+    overflow: hidden;
+}
+#section3 .circle {
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw; height: 90vw;
+    border : 1px solid rgba(0,0,0,0.2);
+    border-radius: 50%;
+}
+#section3 .circle .c-circle{
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    width: 65vw; height: 65vw;
+    border : 1px solid rgba(0,0,0,0.2);
+    border-radius: 50%;
+}
+
+#section3 .circle .c-circle h2{
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -16vw);
+    font-size: 2.4vw;
+    font-weight: 700;
+}
+#section3 .circle .c-circle .cc-circle{
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw; height: 40vw;
+    border : 1px solid rgba(0,0,0,0.2);
+    border-radius: 50%;
+}
+#section3 .circle .c-circle .cc-circle .ccc-circle {
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    width: 20vw; height: 20vw;
+    border : 1px solid #222;
+    border-radius: 50%;
+}
+#section3 .circle .c-circle .cc-circle p {
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+#section3 .circle .c-circle p {
+    text-align: center;
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, 12vw);
+    font-weight: 500;
+    font-size: .8vw;
+}
+
+/* section4 */
+#section4 {
+    width: 100%; height: 100vh;
+    background: rgba(0,0,0,0.3);
+}
+
 
 /* footer */
 #footer {
@@ -150,4 +223,13 @@
 }
 #footer ul {
     display: flex;
+}
+#footer li a {
+    margin-left: 10px;
+}
+#footer .img {
+    width: 2vw;
+}
+#footer address {
+    margin: 10px 0 0;
 }

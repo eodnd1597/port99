@@ -221,7 +221,6 @@
 #contents_tit p {
 	padding:35px 0; 
 	font-family: 'Gaegu', cursive; font-size: 40px;
-	background: #96fbc4;
 }
 #contents_tit p a {
 	color:#757490; 
@@ -274,29 +273,29 @@
 	list-style: none;
 }
 .gridly li a {
-	color: #157ed3;
+	color: #333;
 	display: block;
-    border: 3px solid #1973bc;
+    border: 3px solid #333;
     border-radius: 20px;
     margin-right: 20px;
     font-size: 22px;
     padding: 3px 15px;
 }
 .gridly li a:hover {
-    box-shadow: inset 0 0 0 40px #1973bc;
+    box-shadow: inset 0 0 0 40px rgba(0,0,0,0.1);
 }
 
 .gridly .webstandard a {
-	color: #157ed3;
+	color: #333;
 	display: block;
-    border: 3px solid #1973bc;
+    border: 3px solid #333;
     border-radius: 20px;
     margin-right: 20px;
     font-size: 22px;
     padding: 3px 15px;
 }
 .gridly .webstandard a:hover {
-    box-shadow: inset 0 0 0 40px #1973bc;
+    box-shadow: inset 0 0 0 40px rgba(0,0,0,0.1);
 } 
 .gridly .html5 a {
 	color: #8432c4;
@@ -397,7 +396,7 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: #f2a1d1;
+	background: rgba(0,0,0,0.1);
 	color: #FFFFFF;
 	font-size: 25px;
 	font-weight: 300;
