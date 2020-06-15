@@ -295,7 +295,7 @@
     display: flex;
 }
 #footer li a {
-    margin-left: 10px;
+    padding-right: 10px;
 }
 #footer .img {
     width: 2vw;
@@ -303,3 +303,13 @@
 #footer address {
     margin: 10px 0 0;
 }
+
+
+
+
+/* //main-page */
+
+
+
+/* about */
+
