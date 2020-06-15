@@ -1,5 +1,6 @@
 /* layout */
 * {box-sizing: border-box;}
+#wrap {width: 100vw;}
 .line {
     position: fixed; left: 0; top: 0;
     width: 100%; height: 100vh;
@@ -313,3 +314,86 @@
 
 /* about */
 
+/* header */
+#header-tit {
+
+}
+#header-tit .header-tit {
+    line-height: 2.5vw;
+    width: 66.6666%;
+    margin: 1em auto 3vw;
+    margin-top: 150px;
+}
+#header-tit .header-tit span {
+    font-weight: 700;
+    font-size: 3.5vw;
+}
+
+
+
+/* ct */
+#ct {
+position: relative;
+}
+
+#ct #a-content {
+
+}
+#ct #a-content .a-content {
+    width: 66.6666%;
+    margin-left: 16vw;
+    text-align: end;    
+}
+#ct #a-content .a-content h2 {
+    font-size: 4vw; font-weight: 800;
+    color: #E5E5E5;
+}
+#ct .cWrap {
+    width: 48vw;
+    margin: 0 auto;
+    margin-top: 5vw;
+    display: flex; justify-content: space-between;
+}
+#ct .cWrap::before {
+    content: '';
+    position: absolute; left: 33.2%;  bottom: -20%;
+    width: 33.4%; height: 3px;
+    background: #000;
+}
+#ct .cWrap .circle {
+    position: relative;
+    text-align: center;
+    width: 15vw; height: 15vw;
+    border: 1px solid #000;
+    border-radius: 50%;
+    background: #fff;
+}
+#ct .cWrap .circle::before {
+    content: '';
+    position: absolute; left: 14.9vw; top: 50%;
+    width: 2vw; height: 3px;
+    background: #000;
+}
+#ct .cWrap .circle:last-child::before {
+    display: none;
+}
+#ct .cWrap .circle::after {
+    content: '';
+    position: absolute; left: 50%; bottom: -35%;
+    width: 3px; height: 2vw;
+    background: #000;
+}
+#ct .cWrap .circle:nth-child(1)::after {
+    left: 48%;
+}
+#ct .cWrap .circle:nth-child(2)::after {
+    left: 49%; bottom: -61%; height: 4vw;
+}
+#ct .cWrap .circle h3 {
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em; font-weight: 700;
+}
+#ct .cWrap .circle h3 span {
+    font-weight: normal;
+}
