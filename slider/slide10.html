@@ -273,7 +273,7 @@
         .cursor-follower {
             position: absolute;
             width: 30px; height: 30px;
-            background: rgba(0,0,0,0.3);
+            border: 1px solid rgba(0,0,0,0.4);
             border-radius: 50%;
             z-index: 5000;
             user-select: none;
@@ -445,15 +445,16 @@
             $(this).css({ "left" : 100* i + "%", backgroundColor : slideBg[i]});
             dotIndex += "<a herf='#'>"+(i+1)+"</a>";           //이미지 갯수만큼 닷 버튼 생성
             
+            
         });
+
         slideDot.html(dotIndex);
 
         //이미지 움직이기
         function gotoSlide(num){
             slideImg.animate({ left: -100 * num + "%" }, duration, easing)
-
             currentIndex = num;
-
+            follower.css({backgroundColor : slideBg[num]})      //마우스 커서 색깔
             updateDot()
         }
         gotoSlide(currentIndex)
@@ -478,6 +479,14 @@
             }
         });
 
+        //자동플레이
+        function startTimer(){
+            timer = setInterval(function(){
+                let nextIndex = (currentIndex +1) % 5;
+                gotoSlide(nextIndex);
+            },5000);
+        };
+        startTimer();
         //닷 메뉴
         slideDot.on("click","a", function(){
             gotoSlide($(this).index());
@@ -487,13 +496,21 @@
         $("#nav .ham .bar").click(function(){
             $(this).toggleClass("on")
         });
-        
 
         //마우스 무브
         document.addEventListener("mousemove", e =>{
             gsap.to(cursor, 0.3, {left:e.pageX -5 , top:e.pageY -5})
             gsap.to(follower, 0.8, {left:e.pageX -15 , top:e.pageY -15})
         })
+
+        //마우스 hover
+        $("a").hover(function(){
+            cursor.addClass("active")
+            follower.addClass("active")
+        },function(){
+            cursor.removeClass("active")
+            follower.removeClass("active")
+        });
 
     </script>
 </body>
