@@ -527,7 +527,6 @@ pre[class*="language-"].line-numbers > code {
         $(window).mousemove(function(e){
             let position = (e.pageX /$(window).width()/2)*100;
             // console.log(position)
-
             spanSlow.css({"transform":"translate("+position+"px)"})
             spanFast.css({"transform":"translate("+position+"px)"})
         });

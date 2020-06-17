@@ -126,13 +126,12 @@
     .slide-img .slide.active .stext h2 span:nth-child(11) {transition-delay: 0.55s;}
 
     .slide-img .slide .simg {
-        position: absolute; left: 50%; top: 50%;
-        transform: translate(-50%, -50%);
+        position: absolute; left: 35%; top: 30%;
         width: 100%;
     }
     .slide-img .slide .simg img {
         max-width: 500px;
-        display: block; position: relative; margin: 0 auto; transform: scale(0.4);
+        display: block; position: relative; transform: scale(0.4);
         }
     .slide-img .slide.active .simg img {
         animation: scale 1s ease-in-out forwards;
@@ -414,14 +413,14 @@
             slideImg = $(".slide-img"),
             slide = $(".slide"),
             slideDot = $(".slide-dot"),
-            slideBtn = $(".slide-btn")
+            slideBtn = $(".slide-btn");
 
         let slideCount = slide.length,          //슬라이드 이미지 갯수
             currentIndex = 0,                   //현재 보이는 이미지
             dotIndex = "";                      //닷 버튼 HTML
             duration = 1000,                    //이미지 슬라이드 이동시간
-            easing = "easeOutExpo";             //이미지 움직임 효과
-            slideBg = ["#fcefe9","#e9effd","#fae3f5","#fbe368","#cccbea","#e9effd","#f4f2ec"]
+            easing = "easeOutExpo",            //이미지 움직임 효과
+            slideBg = ["#fcefe9","#e9effd","#fae3f5","#fbe368","#cccbea","#e9effd","#f4f2ec"];
         
         //글씨 분할
         slide.each(function(){
@@ -455,6 +454,7 @@
             slideImg.animate({ left: -100 * num + "%" }, duration, easing)
             currentIndex = num;
             follower.css({backgroundColor : slideBg[num]})      //마우스 커서 색깔
+            
             updateDot()
         }
         gotoSlide(currentIndex)
@@ -511,6 +511,21 @@
             cursor.removeClass("active")
             follower.removeClass("active")
         });
+
+        const sImg = $(".simg")
+
+        $(window).on("mousemove",mouseMove )
+
+        function mouseMove(e){
+            let postion = (e.pageX- ($(".slide").width()/2))*.1;
+
+
+            sImg.css({"transform":"translate("+postion+"px)"})
+      
+
+        }
+
+        
 
     </script>
 </body>
