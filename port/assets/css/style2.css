@@ -498,18 +498,22 @@ height: 120vh;
 #skill .skill {
     width: 66vw;height: 100vh;
     margin: 0 auto;
+    position: relative;
 }
-#html {}
-#html .html {} 
+#html {
+    margin-bottom: 100px;
+
+}
+#html .da {
+    position: absolute; right: 0; top: -50px;
+    font-size: 4.5vw; font-weight: 700;
+    line-height: 60px; color: #e5e5e5;
+    text-align: right;
+}
 #html .html h2 {
     position: relative;
     font-size: 4.5vw; font-weight: 700;
-}
-#html .html h3 {
-    font-size: 2vw; font-weight: 700;
-}
-#html .html h3 .design {
-    color: #e5e5e5;
+    margin-bottom: 100px;
 }
 #html .html h2::before {
     position: absolute; left: 50%; top: 50%;
@@ -517,4 +521,167 @@ height: 120vh;
     content: '';
     width: 5vw; height: .8vw;
     background-color: #000;
+}
+#html .html h3 {
+    font-size: 2vw; font-weight: 700;
+    margin-bottom: 30px;
+}
+#html .html h3 .design {
+    color: #e5e5e5;
+}
+#html .html .html-desc {
+    font-size: 1vw;
+    color: #212121;
+    margin-bottom: 80px;
+}
+#html .html .core {
+    border-left: 2px solid #222;
+    padding-left: 20px;
+}
+#html .html .core h4 {
+    font-size: 1.5vw; font-weight: 700;
+    padding-bottom: 30px;
+}
+#html .html .core h4 span {
+    color: #e5e5e5;
+}
+#html .html .core p {
+    font-size: 1vw; font-weight: 600;
+    color: #434343;
+}
+/* //html */
+
+
+
+.css {
+    margin-bottom: 100px;
+    position: absolute; right: 35px; top: 200px;
+}
+.css h2 {
+    font-size: 4.5vw; font-weight: 700;
+    position: relative;
+    margin-bottom: 100px;
+}
+.css h2::before {
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-310%, -650%);
+    content: '';
+    width: 5vw; height: 0.8vw;
+    background-color: #000;
+}
+.css h3 {
+    font-size: 2vw; font-weight: 700;
+    margin-bottom: 30px;
+}
+.css h3 .decorate {
+    color: #e5e5e5;
+}
+.css .css-desc {
+    font-size: 1vw;
+    color: #212121;
+    margin-bottom: 80px;
+}
+.css .core {
+    border-left: 2px solid #222;
+    padding-left: 20px;
+}
+.css .core h4 {
+    font-size: 1.5vw; font-weight: 700;
+    padding-bottom: 30px;
+}
+.css .core h4 span {
+    color: #e5e5e5;
+}
+.css .core p {
+    font-size: 1vw; font-weight: 600;
+    color: #434343;
+}
+
+/* //css */
+
+.javascript {} 
+.javascript h2 {
+    position: relative;
+    font-size: 4.5vw; font-weight: 700;
+    margin-bottom: 100px;
+}
+.javascript h2::before {
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-660% ,-650%);
+    content: '';
+    width: 5vw; height: .8vw;
+    background-color: #000;
+}
+.javascript h3 {
+    font-size: 2vw; font-weight: 700;
+    margin-bottom: 30px;
+}
+.javascript h3 .active {
+    color: #e5e5e5;
+}
+.javascript .javascript-desc {
+    font-size: 1vw;
+    color: #212121;
+    margin-bottom: 80px;
+}
+.javascript .core {
+    border-left: 2px solid #222;
+    padding-left: 20px;
+}
+.javascript .core h4 {
+    font-size: 1.5vw; font-weight: 700;
+    padding-bottom: 30px;
+}
+.javascript .core h4 span {
+    color: #e5e5e5;
+}
+.javascript .core p {
+    font-size: 1vw; font-weight: 600;
+    color: #434343;
+}
+
+/* //javascript */
+
+.jquery {
+    margin-bottom: 100px;
+    position: absolute; right: -25px; top: 1000px;
+}
+.jquery h2 {
+    font-size: 4.5vw; font-weight: 700;
+    position: relative;
+    margin-bottom: 100px;
+}
+.jquery h2::before {
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-345%, -650%);
+    content: '';
+    width: 5vw; height: 0.8vw;
+    background-color: #000;
+}
+.jquery h3 {
+    font-size: 2vw; font-weight: 700;
+    margin-bottom: 30px;
+}
+.jquery h3 .efficiency {
+    color: #e5e5e5;
+}
+.jquery .jquery-desc {
+    font-size: 1vw;
+    color: #212121;
+    margin-bottom: 80px;
+}
+.jquery .core {
+    border-left: 2px solid #222;
+    padding-left: 20px;
+}
+.jquery .core h4 {
+    font-size: 1.5vw; font-weight: 700;
+    padding-bottom: 30px;
+}
+.jquery .core h4 span {
+    color: #e5e5e5;
+}
+.jquery .core p {
+    font-size: 1vw; font-weight: 600;
+    color: #434343;
 }
