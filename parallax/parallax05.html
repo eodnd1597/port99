@@ -97,7 +97,6 @@
             width: var(--width);
             padding-bottom: calc(var(--width)  / (var(--aspect-ratio)));
             overflow: hidden;
-            background: #ccc;
         }
 
         .content-item-img {
@@ -346,7 +345,7 @@
         $(window).scroll(function(){
             let scrollTop = $(window).scrollTop();
 
-            $(".scrollTop").text(scrollTop);
+            $(".scrollTop").text(parseInt(scrollTop));
 
             //  for(let i=1; i<=9; i++){
             //      let offset = (scrollTop - $("#section"+i).offset().top)
