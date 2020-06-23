@@ -451,7 +451,60 @@ pre[class*="language-"].line-numbers > code {
                 <span class="control"></span>
                 <span class="control"></span>
                 <span class="control"></span>
-<pre class="line-numbers"><code class="language-js">
+<pre class="line-numbers"><code class="language-js">// 소스보기
+
+$(".view").click(function(){
+    $(".modal").addClass("show")
+});
+$(".close").click(function(){
+    $(".modal").removeClass("show")
+});
+
+//좌표보기
+$(".view2").click(function(){
+    $(".cursor strong").fadeToggle()
+});
+
+$(".move-image").mousemove(function(e){
+//     gsap.to(".cursor", 0.3, {left:e.pageX -10 , top:e.pageY -10}) // 커서 
+
+//     //좌표값 중앙을 0으로 초기화
+//     //x = 컨텐츠 박스의 width()/2 + 왼쪽의 여백값
+//     //y = 컨텐츠 박스의 height()/2 + 위쪽의 여백값
+//     //let x = $(".contents").width()/2;
+//     //let y = $(".contents").position().left;
+//     let x = e.clientX - ($(".move-image").width()/2 + $(".move-image").position().left);
+//     let y = e.clientY - ($(".move-image").height()/2 + $(".move-image").position().top);
+
+//     $(".img").attr({"style": "transform: translate("+x /20+"px,"+y/20+"px)"})
+
+//     //출력용
+    let aa = e.pageX
+    let bb = e.pageY
+    $(".mouseX").text(aa)
+    $(".mouseY").text(bb)   //이미지 안에 좌표
+
+    $(".clientX").text(Math.floor(x)+"px")
+    $(".clientY").text(Math.floor(y)+"px")
+    });
+
+
+/* //jQuery */
+
+const moveImg = document.querySelector(".move-image");
+
+moveImg.addEventListener("mousemove", function(e){
+    const rect = this.getBoundingClientRect();          // ex) width 값 height값 등등 가져옴
+    console.log(rect)
+    moveImg.style.setProperty("--x", e.clientX - ((rect.width/2) + rect.left));
+    moveImg.style.setProperty("--y", e.clientY - ((rect.height/2) + rect.left));
+
+    gsap.to(".cursor", 0.3, {left:e.pageX -10 , top:e.pageY -10})
+})
+moveImg.addEventListener("mouseleave", function(){
+    this.style.setProperty("--x", 0)
+    this.style.setProperty("--y", 0)
+});
 </code></pre>
             </div>
             <a class="close">Close</a>
