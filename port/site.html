@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style99.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
     <link rel="stylesheet" href="assets/css/reset.css">
 </head>
 <body>
@@ -25,10 +25,10 @@
         <div></div>
     </div>
 
-    <!-- header -->
+    
     <div id="wrap">
         <header id="header">
-            <h1><a href="index.html">Daewoong</a></h1>
+            <h1><a href="index2.html">Daewoong</a></h1>
             <ul>
                 <li><a href="about.html"><span>A</span>bout</a></li>
                 <li><a href="site.html"><span>Site</span></a></li>
@@ -37,19 +37,86 @@
                 <li><a href="#"><span>C</span>ontact</a></li>
             </ul>
         </header>
+    <!-- //header -->
+        <div class="container">
+            <div id="header-tit">
+                <h2 class="header-tit">
+                    <span>사이트를</span><br>
+                    <span>만들다</span>
+                </h2>
+            </div>
+            <div class="info">
+                <ul>
+                    <li><a class="active" href="#">All</a></li>
+                    <li><a href="#">Web</a></li>
+                    <li><a href="#">Mobile</a></li>
+                </ul>
+            </div>
 
+            <section id="s-seciton1">
+                <div class="s1-wrap s-wrap">
+                    <div class="s1-img s-img">
+                        <a href="#"><img src="assets/img/img02.jpg" alt="반응형 사이트"></a>
+                    </div>
+                    <h3 class="s-tit">WEBSTANDARD</h3>
+                    <p class="s1-desc s-desc">
+                        미디어쿼리를 사용한<br>
+                        반응형 웹 사이트</p>
+                </div>
+                <div class="s2-wrap s-wrap">
+                    <div class="s2-img s-img">
+                        <a href="#"><img src="assets/img/img01.jpg" alt="웹 표준형 사이트"></a>
+                    </div>
+                    <h3 class="s-tit">WEBRESPONSIVE</h3>
+                    <p class="s2-desc s-desc">
+                        웹표준을 준수한<br>
+                        웹 사이트</p>
+                </div>
+            </section>
 
-
-
-        <!-- footer  -->
-        <footer id="footer">
-            <ul>
-                <li><a href="#"><img class="img" src="assets/img/github.svg" alt="깃허브"></a></li>
-                <li><a href="#"><img class="img" src="assets/img/codepen.svg" alt="코드펜"></a></li>
-                <li><a href="#"><img class="img" src="assets/img/blog.svg" alt="블로그"></a></li>
-            </ul>
-            <address>Copyright &copy; Daewoong</address>
-        </footer>
+            <section id="s-seciton2">
+                <div class="s3-wrap s-wrap">
+                    <div class="s3-img s-img">
+                        <a href="#"><img src="assets/img/img04.jpg" alt="농심 사이트"></a>
+                    </div>
+                    <h3 class="s-tit">Yes 24 Movie</h3>
+                    <p class="s3-desc s-desc">
+                        실제 있는 Yes 24 사이트를<br>
+                        구현한 웹사이트</p>
+                </div>
+                <div class="s4-wrap s-wrap">
+                    <div class="s4-img s-img">
+                        <a href="#"><img src="assets/img/img03.jpg" alt="Yes 24 Movie 사이트"></a>
+                    </div>
+                    <h3 class="s-tit">Nongsim</h3>
+                    <p class="s4-desc s-desc">
+                        실제 있는 농심 사이트를<br>
+                        구현한 웹사이트</p>
+                </div>
+            </section>
+                
+    
+    
+            <!-- footer  -->
+            <footer id="footer">
+                <ul>
+                    <li><a href="#"><img class="img" src="assets/img/github.svg" alt="깃허브"></a></li>
+                    <li><a href="#"><img class="img" src="assets/img/codepen.svg" alt="코드펜"></a></li>
+                    <li><a href="#"><img class="img" src="assets/img/blog.svg" alt="블로그"></a></li>
+                </ul>
+                <address>Copyright &copy; Daewoong</address>
+            </footer>
+        </div>
     </div>
+
+    <!-- //wrap -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script>
+        $(".info > ul > li > a").click(function(){
+            $(".info >ul > li > a").removeClass("active")
+           $(this).addClass("active")
+        });
+    </script>
 </body>
-</html>
+</html> 
