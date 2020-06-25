@@ -1,5 +1,4 @@
 /* layout */
-#wrap {width: 100%;}
 .container {width: 1200px; margin: 0 auto;}
 img {width: 100%;}
 
@@ -120,7 +119,7 @@ img {width: 100%;}
 
 /* footer */
 #footer {
-    width: 1000px; margin: 0 auto;
+    width: 800px; margin: 0 auto;
     text-align: center;
 }
 #footer .top {
@@ -153,15 +152,15 @@ img {width: 100%;}
 }
 #footer .f-notice2 address {
     font-style: normal;
-    font-size: 30px;
+    font-size: 25px;
     color: #7F7F7F;
 }
 #footer .f-notice2 p {
-    font-size: 30px;
+    font-size: 25px;
     color: #7F7F7F;
 }
 
 /* media query */
-@media (max-width:1000px){
+@media (max-width:1080px){
     .container {width: 100%;}
 }

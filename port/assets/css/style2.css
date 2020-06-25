@@ -181,7 +181,7 @@
 #section3 .section3-wrap {
     position: absolute; left: 0; top: 0;
     width: 100%; height: 100%;
-    background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+    background: #fff;
 }
 #section3 .circle1 {
     position: fixed; left: 50%; top: 50%;
@@ -754,7 +754,7 @@ height: 120vh;
 .s1-img .focus {
     position: fixed; left: 0; top: 0;
     width: 0; height: 0;
-    transition: all 1s ease;
+    transition: all .5s ease;
     overflow: hidden;
 }
 .s1-img .focus .focus-circle {
@@ -806,10 +806,6 @@ height: 120vh;
     width: 70vw; height: 80vh;
     background: #000;
     overflow: hidden;
-    display: none;
-}
-.brackets.show {
-    display: block;
 }
 .brackets-header {
     position: relative;
@@ -872,6 +868,10 @@ height: 120vh;
 }
 .brackets-cont .page {
     width: 56vw; height: 75vh;
+    display: none;
+}
+.brackets-cont .page.show {
+    display: block;
 }
 .brackets-cont .page p {
     font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
@@ -879,11 +879,6 @@ height: 120vh;
     color: #fff;
     font-size: 1vw;
     font-weight: 300;
-}
-.brackets-icon {
-    position: absolute; right: 30px; bottom: 30px;
-    cursor: pointer;
-    width: 5vw; height: 5vw;
 }
 
 .close {cursor: pointer;}
@@ -906,24 +901,7 @@ height: 120vh;
 
 
 
-#c-red {
-    background: red; position: relative;
-    cursor: pointer;
-}
-#c-red:hover::before {
-    position: absolute; left: 50%; top: 50%;
-    transform: translate(-50%,-50%) rotate(45deg);
-    width: 10px; height: 1px;
-    background: #000;
-    content: '';
-}
-#c-red:hover::after {
-    position: absolute; left: 50%; top: 50%;
-    transform: translate(-50%,-50%) rotate(-45deg);
-    width: 10px; height: 1px;
-    background: #000;
-    content: '';
-}
+#c-red {background: red;}
 #c-yellow {background: yellow;}
 #c-green {background: green;}
 /* //brackets */
