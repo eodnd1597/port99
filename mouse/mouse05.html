@@ -585,7 +585,7 @@ moveImg.addEventListener("mouseleave", function(){
             const rect = this.getBoundingClientRect();          // ex) width 값 height값 등등 가져옴
             console.log(rect)
             moveImg.style.setProperty("--x", e.clientX - ((rect.width/2) + rect.left));
-            moveImg.style.setProperty("--y", e.clientY - ((rect.height/2) + rect.left));
+            moveImg.style.setProperty("--y", e.clientY - ((rect.height/2) + rect.top));
 
             gsap.to(".cursor", 0.3, {left:e.pageX -10 , top:e.pageY -10})
         })
