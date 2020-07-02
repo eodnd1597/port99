@@ -148,12 +148,29 @@
 .layer-site .cont .code-view {
     width: 70vw; height: 800px;
     background: #1D2028;
+    color:#fff;
+    position: relative;
 }
+.layer-site .cont .code-view > div {
+    position: absolute; left: 0; top: 0;
+    width: 100%; height: 100%;
+    display: none;
+}
+.layer-site .cont .code-view > div.active{
+    display: block;
+}
+
 .layer-site .cont .code-list {
     position: absolute; right: 10vw; top: 50%;
 }
 .layer-site .cont .code-list li a {
     color: #fff;
+}
+.layer-site .cont .code-list li.active {
+    background: #fff;
+}
+.layer-site .cont .code-list li.active a {
+    background: #000;
 }
 .layer-site .cont h3 {
     color: #fff;
@@ -168,6 +185,8 @@
     color: #fff;
 }
 
+
+/* animation */
 .layer-site {width: 0; height: 0;}
 .layer-site .cont .circle {bottom: -100%; opacity: 0;}
 .layer-site .cont h3 {opacity: 0;}
@@ -182,6 +201,7 @@
 .layer-site.show .cont .code-list li:nth-child(2) a {opacity: 1; transition: all 0.33s 1.6s ease;}
 .layer-site.show .cont .code-list li:nth-child(3) a {opacity: 1; transition: all 0.33s 1.7s ease;}
 .layer-site.show .cont .code-list li:nth-child(4) a {opacity: 1; transition: all 0.33s 1.8s ease;}
+.layer-site.show .cont .code-list li:nth-child(5) a {opacity: 1; transition: all 0.33s 1.8s ease;}
 
 
 

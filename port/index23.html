@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style23.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    
+    <div class="line">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- //line -->
+    
+    <header id="header">
+        <h1>daewoong</h1>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Site</a></li>
+            <li><a href="#">Animation</a></li>
+            <li><a href="#">Script</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <!-- //header -->
+    
+    <section id="contents">
+        <section id="section1">
+            <div class="container">
+                <div class="site-sec1">
+                    <h2><strong>웹 사이트를</strong> 만들다.</h2>
+                    <ul class="list">
+                        <li>webstandard</li>
+                        <li>Responsive</li>
+                        <li>Parallax</li>
+                        <li>Mobile</li>
+                    </ul>
+                    <div class="site-wrap">
+                        <div class="site s1">
+                            <figure>
+                                <img src="assets/img/img01.jpg" alt="">
+                            </figure>
+                            <span>Coding / Webstandard / 100%</span>
+                            <h3><a href="#">웹 표준을 준수한 사이트</a></h3>
+                        </div>
+                        <div class="site">
+                            <figure>
+                                <img src="assets/img/image42.png" alt="">
+                            </figure>
+                            <span>Coding / Webstandard / 100%</span>
+                            <h3>웹 표준을 준수한 사이트</h3>
+                        </div>
+                        <div class="site">
+                            <figure>
+                                <img src="assets/img/image42.png" alt="">
+                            </figure>
+                            <span>Coding / Webstandard / 100%</span>
+                            <h3>웹 표준을 준수한 사이트</h3>
+                        </div>
+                        <div class="site">
+                            <figure>
+                                <img src="assets/img/image42.png" alt="">
+                            </figure>
+                            <span>Coding / Webstandard / 100%</span>
+                            <h3>웹 표준을 준수한 사이트</h3>
+                        </div>
+                        <div class="site">
+                            <figure>
+                                <img src="assets/img/image42.png" alt="">
+                            </figure>
+                            <span>Coding / Webstandard / 100%</span>
+                            <h3>웹 표준을 준수한 사이트</h3>
+                        </div>
+                        <div class="site">
+                            <figure>
+                                <img src="assets/img/image42.png" alt="">
+                            </figure>
+                            <span>Coding / Webstandard / 100%</span>
+                            <h3>웹 표준을 준수한 사이트</h3>
+                        </div>
+                    </div>
+                    <!-- //site-wrap -->
+                </div>
+            </div>
+            
+        </section>
+    </section>
+    <!-- //contents -->
+    
+    <footer id="footer">
+        <ul>
+            <li>깃헙</li>
+            <li>코드펜</li>
+            <li>블러그</li>
+        </ul>
+        <address>Copyright &copy; daewoong</address>
+    </footer>
+    
+    
+    
+    <div class="layer-wrap">
+        <!-- site1 -->
+        <div class="layer-site layer1 show">
+            <div class="cont">
+                <h3>webstandard1</h3>
+                <div class="circle"></div>
+                
+                <div class="code-view">
+                    <div class="active">
+                        <div class="last-btn"></div>
+                        <div class="last-cont"></div>
+                    </div>
+                    <div>22222</div>
+                    <div>33333</div>
+                    <div>44444</div>
+                    <div>55555</div>
+                </div>
+                <ul class="code-list">
+                    <li class="active"><a href="#">list1</a></li>
+                    <li><a href="#">list2</a></li>
+                    <li><a href="#">list3</a></li>
+                    <li><a href="#">list4</a></li>
+                    <li><a href="#">list5</a></li>
+                </ul>
+                <a href="#" class="close">닫기</a>
+            </div>
+        </div>
+        <!-- //site1 -->
+
+        <!-- site2 -->
+        <div class="layer-site layer2">
+            <div class="cont">
+                <h3>webstandard2</h3>
+
+                <a href="#" class="close">닫기</a>
+            </div>
+        </div>
+        <!-- //site2 -->
+
+        <!-- site3 -->
+        <div class="layer-site layer3">
+            <div class="cont">
+                <h3>webstandard3</h3>
+
+                <a href="#" class="close">닫기</a>
+            </div>
+        </div>
+        <!-- //site3 -->
+
+        <!-- site4 -->
+        <div class="layer-site layer4">
+            <div class="cont">
+                <h3>webstandard4</h3>
+
+                <a href="#" class="close">닫기</a>
+            </div>
+        </div>
+        <!-- //site4 -->
+    </div>
+    
+    
+    
+    <!-- script -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script>
+        
+        /* 레이어 팝업 */
+        $(".site-wrap > div").click(function(e){
+            e.preventDefault();
+            let target = $(this);
+            let index = target.index();
+            $(".layer-wrap > div").removeClass("show");
+            $(".layer-wrap > div").eq(index).addClass("show");
+        });
+        
+        $(".layer-wrap .close").click(function(e){
+            e.preventDefault();
+            $(".layer-site").removeClass("show");
+        });
+        
+        /* 레이어 팝업(탭메뉴) */
+        $(".code-list > li").click(function(e){
+            e.preventDefault();
+            let target = $(this);
+            let index = target.index();
+
+            $(".code-list > li").removeClass("active");
+            $(".code-list > li").eq(index).addClass("active");
+            
+            
+            $(".code-view > div").removeClass("active");
+            $(".code-view > div").eq(index).addClass("active");
+        });
+        
+        /* 레이어 팝업 박스안에(탭메뉴) */
+        
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
