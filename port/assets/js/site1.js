@@ -23,7 +23,10 @@ $(".list").click(function(){
     let index = target.index();
     $(".btn").removeClass("active");
     $(".btn").eq(index).addClass("active");
-    $(".btn-cont").removeClass("show")
+    $(".btn-cont").removeClass("show");
+    $(".list").removeClass("active");
+    $(".list").eq(index).addClass("active");
+    $(".last-btn").removeClass("active")
 });
 
 $(".last-btn").click(function(){
@@ -35,3 +38,4 @@ $(".last-btn").click(function(){
     $(".last-btn").eq(index).addClass("active");
 });
 
+//레이어 팝업 탭메뉴

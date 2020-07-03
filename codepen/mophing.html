@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mophing Animation</title>
+    <style>
+        body {
+            height: 100vh;
+            background: #000;
+            overflow: hidden;
+            }
+        .radius {
+            position: absolute; left: 50%; top: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px; height: 300px;
+            background-color: #bca5e3;
+            border-radius: 70% 80% 90% 70% / 70% 80% 90% 80%;
+            box-shadow:
+            inset 10px 0 40px #a174db,
+            inset -10px 0 20px #40245e,
+            inset -40px 10px 110px #1b1648;
+            animation: move 3s infinite alternate ease-in-out;
+        }
+        @keyframes move {
+            0% {border-radius: 70% 80% 90% 70% / 70% 80% 90% 80%;  transform: translate(-50%, -50%) rotate(0deg)}
+            14% {border-radius: 50% 80% 90% 70% / 50% 80% 90% 80%; }
+            28% {border-radius: 90% 80% 50% 70% / 90% 80% 50% 80%; }
+            42% {border-radius: 90% 50% 80% 70% / 90% 50% 80% 80%; }
+            56% {border-radius: 90% 80% 80% 50% / 90% 80% 80% 50%; transform: translate(-50%, -50%) rotate(180deg)}
+            70% {border-radius: 50% 50% 80% 90% / 50% 75% 77% 90%; }
+            84% {border-radius: 35% 90% 75% 75% / 50% 30% 50% 75%; }
+            100% {border-radius: 80% 80% 30% 30% / 80% 80% 30% 30%; transform: translate(-50%, -50%) rotate(0deg)}
+        }
+    </style>
+</head>
+<body>
+    <div class="radius"></div>
+</body>
+</html>
