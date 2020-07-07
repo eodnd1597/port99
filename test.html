@@ -1,273 +1,35 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>롯데월드</title>
-    <style>
-        * {margin: 0; padding: 0;box-sizing: border-box;}
-        .container {
-            margin: 0 auto;
-            width: 960px;
-        }
-        li {list-style: none;}
-        a {text-decoration: none; color: #000;}
-        img {width: 100%;}
-
-        /* //reset */
-        .header {
-            display: flex;
-            justify-content: space-between;
-        }
-        .header .logo {
-            width: 100px;
-        }
-
-        /* //header */
-
-        .nav {
-            width: 60%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-weight: bold;
-            font-size: 14px;
-        }
-        .nav li {
-            position: relative;
-        }
-        .nav .tab-menu {
-            position: absolute; top: 40px;
-            z-index: 1;
-            }
-        .nav .tab-menu.show {display: block;}
-        .nav .tab-menu.hide {display: none;}
-
-        /* //nav */
-
-        #banner {
-            overflow: hidden;
-            width: 100%;
-        }
-        .banner {
-            position: relative;
-            width: 3840px;    
-            }
-        .ban-img {
-            width: 960px;
-            float: left;
-        }
-
-        /* //banner */
-
-        .notice {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 2%;
-        }
-        .notice .left {
-            position: relative;
-            width: 48%;
-            border: 1px solid #ccc;
-            padding: 2%;
-            height: 210px;
-        }
-        .notice .left h2 {
-            margin-bottom: 2%;
-        }
-        .notice .left h2 span a {
-            color: #ccc;
-        }
-        .notice .left li {
-            padding-bottom: 3%;
-        }
-        .notice .left li span{
-            color: #666;
-            float: right;
-        }
-        .notice .left ul a {
-            position: absolute; right: 25px; top: 25px;
-        }
-        .notice .left .more {
-            width: 17px; height: 17px;
-        }
-        .notice .left .n2 {
-            display: none;
-        }
-        .notice .right {
-            width: 49%;
-        }
-
-        /* //notice */
-
-        #event h2 {margin-bottom: 1%;}
-        .event {
-            border-bottom: 1px solid #ccc;
-            display: flex;
-            justify-content: space-between;
-            padding-bottom: 5%;
-            }
-        .event .box {
-            width: 24%;
-        }
-        .event .e-img {
-            margin-bottom: 3%;
-        }
-
-        /* //event */
-
-        .footer {
-            margin-top: 2%;
-            color: #555;
-        }
-        .footer .f-1 {
-            margin-bottom: 1%;
-        }
-        .footer .f-2 {
-            margin-bottom: 2%;
-        }
-        .footer .f-3 {
-            color: #ccc;
-            font-size: 13px;
-        }
-    </style>
-</head>
-<body>
-    <div id="wrap">
-        <div class="container">
-            <div id="header">
-                <div class="header">
-                    <h1><img src="test/testImg/logo.jpg" class="logo" alt="롯데월드"></h1>
-                    <ul class="nav">
-                        <li><a href="#">즐길거리</a>
-                            <ul class="tab-menu">
-                                <li>dwakghskguehsg</li>
-                                <li>dwakghskguehsg</li>
-                                <li>dwakghskguehsg</li>
-                            </ul>
-                        </li>
-                        <li><a href="#">요금/우대혜택</a>
-                            <ul class="tab-menu">
-                                <li>dwakghskguehsg</li>
-                                <li>dwakghskguehsg</li>
-                                <li>dwakghskguehsg</li>
-                            </ul>
-                        </li>
-                        <li><a href="#">참여프로그램</a>
-                            <ul class="tab-menu">
-                                <li>dwakghskguehsg</li>
-                                <li>dwakghskguehsg</li>
-                                <li>dwakghskguehsg</li>
-                            </ul>
-                        </li>
-                        <li><a href="#">이용가이드</a>
-                            <ul class="tab-menu">
-                                <li>dwakghskguehsg</li>
-                                <li>dwakghskguehsg</li>
-                                <li>dwakghskguehsg</li>
-                            </ul>
-                        </li>
-                        <li><a href="#">소통서비스</a>
-                            <ul class="tab-menu">
-                                <li>dwakghskguehsg</li>
-                                <li>dwakghskguehsg</li>
-                                <li>dwakghskguehsg</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- //header -->
-            <section id="banner">
-                <article class="banner">
-                    <img src="test/testImg/banner01.jpg" class="ban-img" alt="미라클있수마수">
-                    <img src="test/testImg/banner01.jpg" class="ban-img" alt="미라클있수마수">
-                    <img src="test/testImg/banner01.jpg" class="ban-img" alt="미라클있수마수">
-                    <img src="test/testImg/banner01.jpg" class="ban-img" alt="미라클있수마수">
-                </article>
-            </section>
-            <!-- //banner -->
-            <section class="notice">
-                <article class="left">
-                    <h2><strong><a href="#">롯데월드 소식 |</a></strong><span><a href="#">&nbsp;뉴스·공지</span></a></h2>
-                    <ul class="active">
-                        <li>그럴싸진관 미라클<span>2018.11.19</span></li>
-                        <li>드림스테이지 '힘내 소중한 너'<span>2018.11.20</span></li>
-                        <li>'힘내 소중한 너'음원 발매<span>2018.11.13</span></li>
-                        <li>이용 요금 조정 안내<span>2018.11.12</span></li>
-                        <a href="#">더보기 <img src="test/testImg/more.jpg" class="more" alt="더보기"></a>
-                    </ul>
-                    <ul>
-                        <li>rehjralighjrelagjlrwae<span>2018.11.19</span></li>
-                        <li>드림스테이지 '힘내 소중한 너'<span>2018.11.20</span></li>
-                        <li>'drkhjsrekhmrlhr;l<span>2018.11.13</span></li>
-                        <li>이용 요금 조정 안내<span>2018.11.12</span></li>
-                        <a href="#">더보기 <img src="test/testImg/more.jpg" class="more" alt="더보기"></a>
-                    </ul>
-                </article>
-                <article class="right"><img src="test/testImg/notice1.jpg" alt="온종일 혜택"></article>
-            </section>
-            <!-- //notice -->
-            <section id="event">
-                <h2>특별한 경험</h2>
-                <article class="event">
-                    <article class="box">
-                        <img src="test/testImg/img1.jpg" class="e-img" alt="이미지1">
-                        <p>연간회원안내</p>
-                    </article>
-                    <article class="box">
-                        <img src="test/testImg/img2.jpg" class="e-img" alt="이미지2">
-                        <p>프리미엄투어</p>
-                    </article>
-                    <article class="box">
-                        <img src="test/testImg/img3.jpg" class="e-img" alt="이미지3">
-                        <p>공연참여 프로그램</p>
-                    </article>
-                    <article class="box">
-                        <img src="test/testImg/img4.jpg" class="e-img" alt="이미지4">
-                        <p>단체프로그램</p>
-                    </article>
-                </article>
-            </section>
-            <!-- //event -->
-            <footer class="footer">
-                <p class="f-1">서울특별시 송파구 올림픽로 240 호텔롯데 롯데월드 &nbsp;|&nbsp;대표자:박동기</p>
-                <p class="f-2">사업자등록번회:219-85-00014&nbsp;|&nbsp;통신판매업신고번호:송파 제5513호&nbsp;|&nbsp;전화:1661-2000</p>
-                <p class="f-3">COPYRIGHT 2018 LOTTEWORLD.ALL RIGHTS RESERVED.</p>
-            </footer>
-        </div>
-    </div>
-    
-    <script src="slider/js/jquery.min_1.12.4.js"></script>
-    <script src="slider/js/jquery-ui.min.js"></script>
-    <script>
-        let slideImg = $(".banner")
-
-        $(".nav .tab-menu").hide()
-        $(".nav > li").mouseover(function(){
-            $(this).find(".tab-menu").stop().slideDown();
-        });
-        $(".nav > li").mouseout(function(){
-            $(this).find(".tab-menu").stop().slideUp();
-        });
-        
-        setInterval(function(){
-            slideImg.animate({ left : "-960px" },400, function(){
-                $(".ban-img:first-child").appendTo(slideImg)
-                slideImg.css("left","")
-            });
-        },3000);
-
-        let tabMenu = $(".left");
-        tabMenu.find("ul").hide();
-        tabMenu.find("ul.active").show();
-        
-        function show(){
-            let target = $(this);
-
-            target.next().show().parent("ul").addClass("active").siblings("ul").removeClass("active").find("li").hide()
-        }
-        tabMenu.find("h2 > a").click(show).focus(show);
-    </script>
-</body>
-</html>
+&lt;div id="login-wrap"&gt;
+    &lt;h4 class="ir_so"&gt;로그인 정보&lt;/h4&gt;
+    &lt;form action="post" id="login-form" name="login-form"&gt;
+        &lt;fieldset&gt;
+            &lt;legend class="ir_so"&gt;로그인 및 관련 설정&lt;/legend&gt;
+            &lt;div class="login-header"&gt;
+                &lt;h5 class="ir_so"&gt;로그인 보안&lt;/h5&gt;
+                &lt;div class="lh-check"&gt;
+                    &lt;input id="infor-check" type="checkbox" class="input-check"&gt;
+                    &lt;label for="infor-check"&gt;로그인 상태 유지&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div class="lh-ip"&gt;
+                    IP보안 &lt;strong&gt;ON&lt;/strong&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="login-content"&gt;
+                &lt;h5 class="ir_so"&gt;로그인 영역&lt;/h5&gt;
+                &lt;div class="lc-text"&gt;
+                    &lt;label for="uid" class="ir_so"&gt;아이디&lt;/label&gt;
+                    &lt;input type="text" id="uid" name="uid" class="input-text" maxlength="20"&gt;
+                    &lt;label for="upw" class="ir_so"&gt;비밀번호&lt;/label&gt;
+                    &lt;input type="password" id="upw" name="upw" class="input-text" maxlength="20"&gt;
+                    &lt;button class="lc-btn" type="submit"&gt;로그인&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="login-footer"&gt;
+                &lt;h5 class="ir_so"&gt;로그인 문제 해결&lt;/h5&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;회원가입&lt;/strong&gt;&lt;/a&gt; /&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;아이디&lt;/a&gt;&middot; &lt;a href="#"&gt;비밀번호&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/fieldset&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
