@@ -226,18 +226,17 @@
     height: 100%;
     -webkit-transform-style: flat;
     transform-style: flat;
-    -webkit-transition: -webkit-transform .3s ease-out;
-    -o-transition: -o-transform .3s ease-out;
-    transition: transform .3s ease-out;
+    transition: transform .2s ease-out;
 }
 .codepenBtn a .front {
     color: #313131;
-    border: 2px solid #313131;
+    border: 3px solid #313131;
     background-color: transparent;
     -webkit-transform: rotateX(0deg) translateZ(25px);
     -ms-transform: rotateX(0deg) translateZ(25px);
     -o-transform: rotateX(0deg) translateZ(25px);
     transform: rotateX(0deg) translateZ(25px);
+    font-weight: bold;
 }
 .codepenBtn a .back {
     width: 100%; height: 100%;
@@ -248,6 +247,7 @@
     -ms-transform: rotateX(90deg) translateZ(25px);
     -o-transform: rotateX(90deg) translateZ(25px);
     transform: rotateX(90deg) translateZ(25px);
+    font-weight: bold;
 }
 
 .codepenBtn a:hover .front {

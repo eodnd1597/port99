@@ -10,8 +10,8 @@ $("#section-wrap > #section").click(function(){
     let target = $(this);
     let index = target.index();
     // alert(index)
-    $(".site-wrap > .layer-site ").removeClass("show")
-    $(".site-wrap > .layer-site ").eq(index).addClass("show");
+    $(".site-wrap").find(".layer-site").removeClass("show")
+    $(".site-wrap").find(".layer-site").eq(index).addClass("show");
 });
 
 $(".close").click(function(){
@@ -40,11 +40,10 @@ $(".last-btn").click(function(){
     let index = target.index();
     
     //console.log($(".a").eq(index1 -1).find(".btn-cont").eq(index));
-    $(".btn-cont").removeClass("show");
+    $(".a").find(".btn-cont").removeClass("show");
     $(".a").eq(index1 -1).find(".btn-cont").eq(index).addClass("show");
     
-    // $(".btn-cont").removeClass("show");
-    // $(".btn-cont").eq(index).addClass("show");
+    
    
     //html,css,js 변경
     

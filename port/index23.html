@@ -112,28 +112,33 @@
     
     <div class="layer-wrap">
         <!-- site1 -->
-        <div class="layer-site layer1 show">
+        <div class="layer-site layer1">
             <div class="cont">
                 <h3>webstandard1</h3>
                 <div class="circle"></div>
                 
                 <div class="code-view">
-                    <div class="active">
-                        <div class="last-btn"></div>
-                        <div class="last-cont"></div>
+                    <div class="cont-title">
+                        <div class="dot" aria-disabled="true"><span></span><span></span><span></span></div>
+                        <div class="menu">
+                            <ul data-nav="1">
+                                <li class="active"><a href="#">webstandard1.html</a></li>
+                                <li><a href="#">webstandard2.html</a></li>
+                                <li><a href="#">web3.html</a></li>
+                                <li><a href="#">web4.html</a></li>
+                                <li><a href="#">web5.html</a></li>
+                            </ul>
+                        </div>
+                        <div class="theme">Theme</div> 
                     </div>
-                    <div>22222</div>
-                    <div>33333</div>
-                    <div>44444</div>
-                    <div>55555</div>
+                    <div class="code-cont">
+                        <div>webstandard1</div>
+                        <div>webstandard2</div>
+                        <div>webstandard3</div>
+                        <div>webstandard4</div>
+                        <div>webstandard5</div>
+                    </div>
                 </div>
-                <ul class="code-list">
-                    <li class="active"><a href="#">list1</a></li>
-                    <li><a href="#">list2</a></li>
-                    <li><a href="#">list3</a></li>
-                    <li><a href="#">list4</a></li>
-                    <li><a href="#">list5</a></li>
-                </ul>
                 <a href="#" class="close">닫기</a>
             </div>
         </div>
@@ -143,7 +148,30 @@
         <div class="layer-site layer2">
             <div class="cont">
                 <h3>webstandard2</h3>
-
+                <div class="circle"></div>
+                
+                <div class="code-view">
+                    <div class="cont-title">
+                        <div class="dot" aria-disabled="true"><span></span><span></span><span></span></div>
+                        <div class="menu">
+                            <ul data-nav="2">
+                                <li class="active"><a href="#">webstandard1.html</a></li>
+                                <li><a href="#">webstandard2.html</a></li>
+                                <li><a href="#">web3.html</a></li>
+                                <li><a href="#">web4.html</a></li>
+                                <li><a href="#">web5.html</a></li>
+                            </ul>
+                        </div>
+                        <div class="theme">Theme</div> 
+                    </div>
+                    <div class="code-cont">
+                        <div>webstandard1</div>
+                        <div>webstandard2</div>
+                        <div>webstandard3</div>
+                        <div>webstandard4</div>
+                        <div>webstandard5</div>
+                    </div>
+                </div>
                 <a href="#" class="close">닫기</a>
             </div>
         </div>
@@ -153,17 +181,63 @@
         <div class="layer-site layer3">
             <div class="cont">
                 <h3>webstandard3</h3>
-
+                <div class="circle"></div>
+                
+                <div class="code-view">
+                    <div class="cont-title">
+                        <div class="dot" aria-disabled="true"><span></span><span></span><span></span></div>
+                        <div class="menu">
+                            <ul data-nav="3">
+                                <li class="active"><a href="#">webstandard1.html</a></li>
+                                <li><a href="#">webstandard2.html</a></li>
+                                <li><a href="#">web3.html</a></li>
+                                <li><a href="#">web4.html</a></li>
+                                <li><a href="#">web5.html</a></li>
+                            </ul>
+                        </div>
+                        <div class="theme">Theme</div> 
+                    </div>
+                    <div class="code-cont">
+                        <div>webstandard1</div>
+                        <div>webstandard2</div>
+                        <div>webstandard3</div>
+                        <div>webstandard4</div>
+                        <div>webstandard5</div>
+                    </div>
+                </div>
                 <a href="#" class="close">닫기</a>
             </div>
         </div>
         <!-- //site3 -->
-
+        
         <!-- site4 -->
         <div class="layer-site layer4">
             <div class="cont">
                 <h3>webstandard4</h3>
-
+                <div class="circle"></div>
+                
+                <div class="code-view">
+                    <div class="cont-title">
+                        <div class="dot" aria-disabled="true"><span></span><span></span><span></span></div>
+                        <div class="menu">
+                            <ul data-nav="4">
+                                <li class="active"><a href="#">webstandard1.html</a></li>
+                                <li><a href="#">webstandard2.html</a></li>
+                                <li><a href="#">web3.html</a></li>
+                                <li><a href="#">web4.html</a></li>
+                                <li><a href="#">web5.html</a></li>
+                            </ul>
+                        </div>
+                        <div class="theme">Theme</div> 
+                    </div>
+                    <div class="code-cont">
+                        <div>webstandard1</div>
+                        <div>webstandard2</div>
+                        <div>webstandard3</div>
+                        <div>webstandard4</div>
+                        <div>webstandard5</div>
+                    </div>
+                </div>
                 <a href="#" class="close">닫기</a>
             </div>
         </div>
@@ -190,21 +264,57 @@
             $(".layer-site").removeClass("show");
         });
         
-        /* 레이어 팝업(탭메뉴) */
-        $(".code-list > li").click(function(e){
+        /* 레이어 팝업 */
+        $(".cont-title .menu ul li").click(function(e){
             e.preventDefault();
             let target = $(this);
             let index = target.index();
+            
+            let num = target.parent().attr("data-nav");
+            //alert(num)
 
-            $(".code-list > li").removeClass("active");
-            $(".code-list > li").eq(index).addClass("active");
+            $(".layer"+num+" .cont-title .menu ul li").removeClass("active");
+            $(".layer"+num+" .cont-title .menu ul li").eq(index).addClass("active");
             
-            
-            $(".code-view > div").removeClass("active");
-            $(".code-view > div").eq(index).addClass("active");
+            $(".layer"+num+" .code-cont > div").removeClass("active");
+            $(".layer"+num+" .code-cont > div").eq(index).addClass("active");
         });
         
-        /* 레이어 팝업 박스안에(탭메뉴) */
+//        $(".layer2 .cont-title .menu ul li").click(function(e){
+//            e.preventDefault();
+//            let target = $(this);
+//            let index = target.index();
+//
+//            $(".layer2 .cont-title .menu ul li").removeClass("active");
+//            $(".layer2 .cont-title .menu ul li").eq(index).addClass("active");
+//            
+//            $(".layer2 .code-cont > div").removeClass("active");
+//            $(".layer2 .code-cont > div").eq(index).addClass("active");
+//        });
+//        
+//        $(".layer3 .cont-title .menu ul li").click(function(e){
+//            e.preventDefault();
+//            let target = $(this);
+//            let index = target.index();
+//
+//            $(".layer3 .cont-title .menu ul li").removeClass("active");
+//            $(".layer3 .cont-title .menu ul li").eq(index).addClass("active");
+//            
+//            $(".layer3 .code-cont > div").removeClass("active");
+//            $(".layer3 .code-cont > div").eq(index).addClass("active");
+//        });
+//        
+//        $(".layer4 .cont-title .menu ul li").click(function(e){
+//            e.preventDefault();
+//            let target = $(this);
+//            let index = target.index();
+//
+//            $(".layer4 .cont-title .menu ul li").removeClass("active");
+//            $(".layer4 .cont-title .menu ul li").eq(index).addClass("active");
+//            
+//            $(".layer4 .code-cont > div").removeClass("active");
+//            $(".layer4 .code-cont > div").eq(index).addClass("active");
+//        });
         
     </script>
 </body>
