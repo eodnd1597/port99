@@ -29,7 +29,6 @@ pre[class*="language-"] {
 	hyphens: none;
 
 }
-
 /* Code blocks */
 pre[class*="language-"] {
 	padding: 2em;
@@ -162,4 +161,215 @@ pre[class*="language-"].line-numbers > code {
 			padding-right: 0.8em;
 			text-align: right;
 		}
+		.token.attr-name {
+			color: #addb67;
+		}
 
+		.token.punctuation {
+			color: #7FDBCA;
+		}
+
+/* //night-owl */
+
+
+
+/* scrollbar */
+.code-view .code-cont > div::-webkit-scrollbar {
+	width: auto;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 5px;
+}
+.code-view.night-owl .code-cont > div::-webkit-scrollbar-thumb {
+	background: #fff;
+	border-radius: 10px;
+}
+.code-view.over-night-owl .code-cont > div::-webkit-scrollbar-thumb {
+	background: #fff;
+	border-radius: 10px;
+}
+.code-view.white .code-cont > div::-webkit-scrollbar-thumb {
+	background: #000;
+	border-radius: 10px;
+}
+/* //scrollbar */
+
+
+
+
+
+
+/* over-night-owl */
+
+
+.code-view.over-night-owl code[class*="language-"],
+.code-view.over-night-owl pre[class*="language-"] {
+	color: #ccc;
+
+}
+
+/* Code blocks */
+.code-view.over-night-owl :not(pre) > code[class*="language-"],
+.code-view.over-night-owl pre[class*="language-"] {
+	background: #011627;
+}
+
+.code-view.over-night-owl .token.comment,
+.code-view.over-night-owl .token.block-comment,
+.code-view.over-night-owl .token.prolog,
+.code-view.over-night-owl .token.doctype,
+.code-view.over-night-owl .token.cdata {
+	color: #999;
+}
+
+.code-view.over-night-owl .token.punctuation {
+	color: #ccc;
+}
+
+.code-view.over-night-owl .token.tag,
+.code-view.over-night-owl .token.attr-name,
+.code-view.over-night-owl .token.namespace,
+.code-view.over-night-owl .token.deleted {
+	color: #FBA7C4;
+}
+
+.code-view.over-night-owl .token.function-name {
+	color: #6196cc;
+}
+
+.code-view.over-night-owl .token.boolean,
+.code-view.over-night-owl .token.number,
+.code-view.over-night-owl .token.function {
+	color: #f08d49;
+}
+
+.code-view.over-night-owl .token.property,
+.code-view.over-night-owl .token.class-name,
+.code-view.over-night-owl .token.constant,
+.code-view.over-night-owl .token.symbol {
+	color: #80C8BF;
+}
+
+.code-view.over-night-owl .token.selector,
+.code-view.over-night-owl .token.important,
+.code-view.over-night-owl .token.atrule,
+.code-view.over-night-owl .token.keyword,
+.code-view.over-night-owl .token.builtin {
+	color: #ADDB67;
+}
+
+.code-view.over-night-owl .token.string,
+.code-view.over-night-owl .token.char,
+.code-view.over-night-owl .token.attr-value,
+.code-view.over-night-owl .token.regex,
+.code-view.over-night-owl .token.variable {
+	color: #ECC48D;
+}
+
+.code-view.over-night-owl .token.operator,
+.code-view.over-night-owl .token.entity,
+.code-view.over-night-owl .token.url {
+	color: #67cdcc;
+}
+
+
+.code-view.over-night-owl .token.inserted {
+	color: green;
+}
+.code-view.over-night-owl .token.attr-name {
+	color: #addb67;
+}
+.code-view.over-night-owl .token.punctuation {
+	color: #C792EA;
+}
+
+/* //over-night-owl */
+
+
+
+
+
+
+
+/* white */
+
+
+.code-view.white code[class*="language-"],
+.code-view.white pre[class*="language-"] {
+	color: #000;
+
+}
+
+.code-view.white :not(pre) > code[class*="language-"],
+.code-view.white pre[class*="language-"] {
+	background: #fff;
+}
+
+.code-view.white .token.comment,
+.code-view.white .token.block-comment,
+.code-view.white .token.prolog,
+.code-view.white .token.doctype,
+.code-view.white .token.cdata {
+	color: #999;
+}
+
+.code-view.white .token.punctuation {
+	color: #ccc;
+}
+
+.code-view.white .token.tag,
+.code-view.white .token.attr-name,
+.code-view.white .token.namespace,
+.code-view.white .token.deleted {
+	color: #8A0F09;
+}
+
+.code-view.white .token.function-name {
+	color: #6196cc;
+}
+
+.code-view.white .token.boolean,
+.code-view.white .token.number,
+.code-view.white .token.function {
+	color: #f08d49;
+}
+
+.code-view.white .token.property,
+.code-view.white .token.class-name,
+.code-view.white .token.constant,
+.code-view.white .token.symbol {
+	color: #FF0C23;
+}
+
+.code-view.white .token.selector,
+.code-view.white .token.important,
+.code-view.white .token.atrule,
+.code-view.white .token.keyword,
+.code-view.white .token.builtin {
+	color: #8A0F09;
+}
+
+.code-view.white .token.string,
+.code-view.white .token.char,
+.code-view.white .token.attr-value,
+.code-view.white .token.regex,
+.code-view.white .token.variable {
+	color: #0000FF;
+}
+
+.code-view.white .token.operator,
+.code-view.white .token.entity,
+.code-view.white .token.url {
+	color: #67cdcc;
+}
+
+
+.code-view.white .token.inserted {
+	color: green;
+}
+.code-view.white .token.attr-name {
+	color: #FF0C23;
+}
+.code-view.white .token.punctuation {
+	color: #000;
+}
+/* //white */

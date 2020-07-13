@@ -12,10 +12,12 @@ $("#section-wrap > #section").click(function(){
     // alert(index)
     $(".site-wrap").find(".layer-site").removeClass("show")
     $(".site-wrap").find(".layer-site").eq(index).addClass("show");
+    $("body").css("overflow-y", "hidden");
 });
 
 $(".close").click(function(){
     $(".layer-site").removeClass("show");
+    $("body").css("overflow-y", "visible");
 });
 //레이어 팝업
 
@@ -33,18 +35,32 @@ $(".cont-title .menu ul li").click(function(e){
     $(".layer-site"+num+" .code-cont > div").eq(index).addClass("active");
 });
 
-$(".theme").hover(function(){
-    $(".theme-set").addClass("show");
-}, function(){
-    $(".theme-set").removeClass("show");
-})
+//$(".theme").hover(function(){
+//    $(".theme-set").addClass("show");
+//}, function(){
+//    $(".theme-set").removeClass("show");
+//});
 
-$(".theme-set").click(function(e){
-    e.preventDefault();
-    $(".code-view").appendTo();
+$(".theme > i").click(function(){
+    $(".theme-set").toggleClass("show");
 });
 
+$(".theme-set:nth-child(1)").click(function(){
+    $(".code-view").removeClass("over-night-owl");
+    $(".code-view").removeClass("white");
+    $(".code-view").addClass("night-owl");
+});
+$(".theme-set:nth-child(2)").click(function(){
+    $(".code-view").removeClass("night-owl");
+    $(".code-view").removeClass("white");
+    $(".code-view").addClass("over-night-owl");
+});
 
+$(".theme-set:nth-child(3)").click(function(){
+    $(".code-view").removeClass("night-owl");
+    $(".code-view").removeClass("over-night-owl");
+    $(".code-view").addClass("white");
+});
 
 
 //레이어 팝업 탭메뉴
