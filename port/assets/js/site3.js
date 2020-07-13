@@ -42,7 +42,7 @@ $(".cont-title .menu ul li").click(function(e){
 //});
 
 $(".theme > i").click(function(){
-    $(".theme-set").toggleClass("show");
+    $(".theme-set").slideToggle(200);
 });
 
 $(".theme-set:nth-child(1)").click(function(){
