@@ -173,29 +173,6 @@ pre[class*="language-"].line-numbers > code {
 
 
 
-/* scrollbar */
-.code-view .code-cont > div::-webkit-scrollbar {
-	width: auto;
-	background: #fff;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 5px;
-}
-.code-view.night-owl .code-cont > div::-webkit-scrollbar-thumb {
-	background: #fff;
-	border-radius: 10px;
-}
-.code-view.over-night-owl .code-cont > div::-webkit-scrollbar-thumb {
-	background: #fff;
-	border-radius: 10px;
-}
-.code-view.white .code-cont > div::-webkit-scrollbar-thumb {
-	background: #000;
-	border-radius: 10px;
-}
-/* //scrollbar */
-
-
-
 
 
 
@@ -211,7 +188,7 @@ pre[class*="language-"].line-numbers > code {
 /* Code blocks */
 .code-view.over-night-owl :not(pre) > code[class*="language-"],
 .code-view.over-night-owl pre[class*="language-"] {
-	background: #011627;
+	background: #282c34;
 }
 
 .code-view.over-night-owl .token.comment,
@@ -374,3 +351,36 @@ pre[class*="language-"].line-numbers > code {
 	color: #000;
 }
 /* //white */
+
+
+
+/* scrollbar */
+.code-view .code-cont > div::-webkit-scrollbar {
+	width: auto;
+	background: #fff;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 5px;
+}
+.code-view.night-owl .code-cont > div::-webkit-scrollbar {
+	background: #000;
+	-webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0.3);
+	border-radius: 5px;
+}
+.code-view.over-night-owl .code-cont > div::-webkit-scrollbar {
+	background: #000;
+	-webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0.3);
+	border-radius: 5px;
+}
+.code-view.night-owl .code-cont > div::-webkit-scrollbar-thumb {
+	background: #fff;
+	border-radius: 10px;
+}
+.code-view.over-night-owl .code-cont > div::-webkit-scrollbar-thumb {
+	background: #fff;
+	border-radius: 10px;
+}
+.code-view.white .code-cont > div::-webkit-scrollbar-thumb {
+	background: #000;
+	border-radius: 10px;
+}
+/* //scrollbar */

@@ -409,7 +409,6 @@ pre[class*="language-"].line-numbers > code {
             <li><a href="mouse06.html">Mouse06</a></li>
             <li><a href="mouse07.html">Mouse07</a></li>
             <li class="active"><a href="mouse08.html">Mouse08</a></li>
-            <li><a href="mouse09.html">Mouse09</a></li>
         </ul>
     </div>
 
@@ -428,7 +427,32 @@ pre[class*="language-"].line-numbers > code {
                 <span class="control"></span>
                 <span class="control"></span>
                 <span class="control"></span>
-<pre class="line-numbers"><code class="language-js">
+<pre class="line-numbers"><code class="language-js">// const spanSlow = document.querySelectorAll(".spanSlow");
+// const spanFast = document.querySelectorAll(".spanFast");
+const spanSlow = $(".spanSlow");
+const spanFast = $(".spanFast");
+
+// window.addEventListener("mousemove", mouseMove);
+
+
+// function mouseMove(e){
+//     let position = (e.pageX / (window.innerWidth /2))*100;
+
+//     spanSlow.forEach((span) => {
+//         span.style.transform = `translate(${position}px)`;
+//     });
+//     spanFast.forEach((span) => {
+//         span.style.transform = `translate(${-position}px)`;
+//     });
+    
+// }
+
+$(window).mousemove(function(e){
+    let position = (e.pageX /$(window).width()/2)*100;
+    // console.log(position)
+    spanSlow.css({"transform":"translate("+position+"px)"})
+    spanFast.css({"transform":"translate("+position+"px)"})
+});
 </code></pre>
             </div>
             <a class="close" style="cursor: pointer;">Close</a>
@@ -529,6 +553,13 @@ pre[class*="language-"].line-numbers > code {
             // console.log(position)
             spanSlow.css({"transform":"translate("+position+"px)"})
             spanFast.css({"transform":"translate("+position+"px)"})
+        });
+
+        document.querySelector(".infor4 .view").addEventListener("click",function(){
+            document.querySelector(".modal").classList.add("show");
+        });
+        document.querySelector(".infor4 .close").addEventListener("click",function(){
+            document.querySelector(".modal").classList.remove("show");
         });
     </script>
 </body>

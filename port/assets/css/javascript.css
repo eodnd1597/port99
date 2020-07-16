@@ -1,6 +1,7 @@
 /* layout */
 @charset "utf-8";
 * {box-sizing: border-box;}
+#wrap {margin-bottom: 15vw;}
 .container {
     margin: 0 16.6666%;
 }
@@ -87,12 +88,12 @@
     flex-direction: column;
 }
 #section {
-    width: 65%;
-    margin-bottom: 10vw;
+    width: 100%;
+    margin-bottom: 20vw;
     position: relative;
 }
-#section:nth-child(odd) {
-    margin-left: auto;
+#section .iframe-box {
+    width: 100%; height: 600px;
 }
 #section h3 {
     margin-top: 1vw;
@@ -103,13 +104,6 @@
 #section p {
     font-size: 1.5vw; font-weight: 700;
     font-family: 'Noto Sans KR', sans-serif;
-}
-#section figure {
-    transition: all 0.5s ease;
-    cursor: pointer;
-}
-#section figure:hover {
-    transform: scale(1.025);
 }
 .next-site {
     margin-left: 40vw;

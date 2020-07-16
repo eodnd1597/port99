@@ -14,7 +14,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/prism.css">
-    <link rel="stylesheet" href="assets/css/style6.css">
+    <link rel="stylesheet" href="assets/css/javascript.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     
@@ -36,15 +36,16 @@
             <h1><a href="index2.html">Daewoong</a></h1>
             <ul>
                 <li><a href="about.html"><span>A</span>bout</a></li>
-                <li><a href="site2.html"><span>Site</span></a></li>
+                <li><a href="site4.html"><span>S</span>ite</a></li>
                 <li><a href="animation.html"><span>A</span>nimation</a></li>
-                <li><a href="javascript.html"><span>J</span>avaScript</a></li>
+                <li><a href="javascript.html"><span>JavaScript</span></a></li>
                 <li><a href="#"><span>C</span>ontact</a></li>
             </ul>
         </header>
         <!-- //header -->
+
         <div class="container">
-            <h2 class="site-tit">웹사이트를<br> 만들다</h2>
+            <h2 class="site-tit">움직임에 효율을<br>더하다</h2>
             <ul class="site-menu">
                 <li><a class="active" href="#">all</a></li>
                 <li><a href="#">website</a></li>
@@ -52,11 +53,11 @@
             </ul>
             <div id="section-wrap">
                 <section id="section">
-                    <figure>
-                        <img class="s-img1 s-img" src="assets/img/small-img1.jpg" alt="이미지">
-                    </figure>
-                    <h3>webstandard</h3>
-                    <p>웹 표준을 준수한 사이트</p>
+                    <div class="iframe-box">
+                        <iframe style="width: 100%; height: 100%;" src="../parallax/parallax03.html" frameborder="0"></iframe>
+                    </div>
+                    <h3>parallax</h3>
+                    <p>jQuery와 JavaScript를 이용한 parallax scrolling 효과입니다.</p>
                     <a href="#" class="codepenBtn">
                         <span class="text">Text</span>
                         <span class="front">View Code</span>
@@ -64,11 +65,11 @@
                     </a>
                 </section>
                 <section id="section">
-                    <figure>
-                        <img class="s-img2 s-img" src="assets/img/small-img2.jpg" alt="이미지">
-                    </figure>
-                    <h3>responsive</h3>
-                    <p>미디어 쿼리를 사용한<br>반응형 사이트</p>
+                    <div class="iframe-box">
+                        <iframe style="width: 100%; height: 100%;" src="../mouse/mouse01.html" frameborder="0"></iframe>
+                    </div>
+                    <h3>mouse effect</h3>
+                    <p>Gsap를 이용하여 마우스를 움직일 때 나타나는 효과입니다.</p>
                     <a href="#" class="codepenBtn">
                         <span class="text">Text</span>
                         <span class="front">View Code</span>
@@ -76,11 +77,11 @@
                     </a>
                 </section>
                 <section id="section">
-                    <figure>
-                        <img class="s-img3 s-img" src="assets/img/small-img3.jpg" alt="이미지">
-                    </figure>
-                    <h3>nongsim</h3>
-                    <p>실제 있는 농심을<br>구현한 사이트</p>
+                    <div class="iframe-box">
+                        <iframe style="width: 100%; height: 100%;" src="../slider/slide01.html" frameborder="0"></iframe>
+                    </div>
+                    <h3>image-slide</h3>
+                    <p>jQuery와 JavaScript를 이용하여 이미지 슬라이드를 표현했습니다.</p>
                     <a href="#" class="codepenBtn">
                         <span class="text">Text</span>
                         <span class="front">View Code</span>
@@ -88,35 +89,11 @@
                     </a>
                 </section>
                 <section id="section">
-                    <figure>
-                        <img class="s-img4 s-img" src="assets/img/small-img4.jpg" alt="이미지">
-                    </figure>
-                    <h3>webstandard</h3>
-                    <p>실제 있는 YES 24 MOVIE를<br>구현한 사이트</p>
-                    <a href="#" class="codepenBtn">
-                        <span class="text">Text</span>
-                        <span class="front">View Code</span>
-                        <span class="back">Click</span>
-                    </a>
-                </section>
-                <section id="section">
-                    <figure>
-                        <img class="s-img5 s-img" src="assets/img/small-img1.jpg" alt="이미지">
-                    </figure>
-                    <h3>webstandard</h3>
-                    <p>웹 표준을 준수한 사이트</p>
-                    <a href="#" class="codepenBtn">
-                        <span class="text">Text</span>
-                        <span class="front">View Code</span>
-                        <span class="back">Click</span>
-                    </a>
-                </section>
-                <section id="section">
-                    <figure>
-                        <img class="s-img6 s-img" src="assets/img/small-img1.jpg" alt="이미지">
-                    </figure>
-                    <h3>webstandard</h3>
-                    <p>웹 표준을 준수한 사이트</p>
+                    <div style="height: 1000px;" class="iframe-box">
+                        <iframe style="width: 100%; height: 100%;" src="../game/index.html" frameborder="0"></iframe>
+                    </div>
+                    <h3>card game</h3>
+                    <p>jQuery와 JavaScript를 이용하여 재미있는 Card Game 을 만들었습니다.</p>
                     <a href="#" class="codepenBtn">
                         <span class="text">Text</span>
                         <span class="front">View Code</span>
@@ -124,7 +101,7 @@
                     </a>
                 </section>
             </div>
-            <a class="next-site" href="animation.html">Animation<span>_</span></a>
+            <a class="next-site" href="animation.html">Contact<span>_</span></a>
         </div>
         <!-- footer  -->
         <footer id="footer">
@@ -138,6 +115,8 @@
     </div>
 
 
+
+    <!-- site-wrap -->
     <div class="site-wrap">
         <!-- layer-site1  -->
         <div class="layer-site layer-site1">
@@ -150,7 +129,7 @@
                         <div class="dot" aria-disabled="true"><span></span><span></span><span></span></div>
                         <div class="menu">
                             <ul data-nav="1">
-                                <li class="active"><a href="#">웹 접근성이란?</a></li>
+                                <li class="active"><a href="#">parallax란?</a></li>
                                 <li><a href="#">웹 표준이란?</a></li>
                                 <li><a href="#">Login/Out</a></li>
                                 <li><a href="#">이미지 스프라이트</a></li>
@@ -169,8 +148,9 @@
                     </div>
                     <div class="code-cont">
                         <div class="active">
-<pre class="line-numbers"><code class="language-html">&lt;!--웹 접근성(Web Accessibility) 이란 
-장애인, 고령자 등이 웹 사이트에서 제공하는 정보에 비장애인과 동등하게 접근하고 이해할 수 있도록 보장하는 것입니다.--&gt;</code></pre>
+<pre class="line-numbers"><code class="language-html">&lt;!--parallax는 시차라는 뜻으로 천문학에서 사용하는 용어입니다. 
+즉 멀리 있는 물체는 천천히 움직이고, 가까이 있는 물체는 빨리 움직이는 현상을 의미합니다. 
+이 현상을 이용하면 입체감, 실체감을 높여서 보다 인상적인 디자인을 할 수 있습니다. --&gt;</code></pre>
                         </div>
                         <div>
 <pre class="line-numbers"><code class="language-html">&lt;!-- '웹에서 표준적으로 사용되는 기술이나 규칙'
@@ -834,75 +814,8 @@ var mySwiper3 = new Swiper ('.story .swiper-container', {
             <div class="close"></div>
         </div>
         <!-- //layer-site4  -->
-
-        <!-- layer-site5  -->
-        <div class="layer-site layer-site5">
-            <div class="cont">
-                <div class="tit tit5">apple music mobile</div>
-                <div class="circle"></div>
-                <!-- code-view1  -->
-                <div class="code-view">
-                    <div class="cont-title">
-                        <div class="dot" aria-disabled="true"><span></span><span></span><span></span></div>
-                        <div class="menu">
-                            <ul data-nav="5">
-                                <li class="active"><a href="#">webstandard1.html</a></li>
-                                <li><a href="#">webstandard2.html</a></li>
-                                <li><a href="#">web3.html</a></li>
-                                <li><a href="#">web4.html</a></li>
-                                <li><a href="#">web5.html</a></li>
-                            </ul>
-                        </div>
-                        <div class="theme">Theme</div> 
-                    </div>
-                    <div class="code-cont">
-                        <div class="active">웹 접근성이란?</div>
-                        <div>웹 표준이란?</div>
-                        <div>Login/Out</div>
-                        <div>이미지 스프라이트</div>
-                        <div>IR 효과</div>
-                    </div>
-                </div>
-                <!-- //code-view1  -->
-            </div>    
-            <div class="close"></div>
-        </div>
-        <!-- //layer-site5  -->
-
-        <!-- layer-site6  -->
-        <div class="layer-site layer-site6">
-            <div class="cont">
-                <div class="tit tit6">melon music mobile</div>
-                <div class="circle"></div>
-                <!-- code-view1  -->
-                <div class="code-view">
-                    <div class="cont-title">
-                        <div class="dot" aria-disabled="true"><span></span><span></span><span></span></div>
-                        <div class="menu">
-                            <ul data-nav="6">
-                                <li class="active"><a href="#">webstandard1.html</a></li>
-                                <li><a href="#">webstandard2.html</a></li>
-                                <li><a href="#">web3.html</a></li>
-                                <li><a href="#">web4.html</a></li>
-                                <li><a href="#">web5.html</a></li>
-                            </ul>
-                        </div>
-                        <div class="theme">Theme</div> 
-                    </div>
-                    <div class="code-cont">
-                        <div class="active">웹 접근성이란?</div>
-                        <div>웹 표준이란?</div>
-                        <div>Login/Out</div>
-                        <div>이미지 스프라이트</div>
-                        <div>IR 효과</div>
-                    </div>
-                </div>
-                <!-- //code-view1  -->
-            </div>    
-            <div class="close"></div>
-        </div>
-        <!-- //layer-site6  -->
     </div>
+
 
 
     <!-- //wrap -->
