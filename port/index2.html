@@ -49,12 +49,12 @@
                 data-0="opacity: 1; transform: translate(-100%, -93%)"
                 data-400="opacity: .5; transform: translate(-75%, -71.5%)"
                 data-800="opacity: 0; transform: translate(-50%, -50%)"
-                ><img src="assets/img/1.svg" alt=""></div>
+                ><img src="assets/img/1.svg" alt="열"></div>
                 <div class="t2"
                 data-0="opacity: 1; transform: translate(0%, 0%)"
                 data-400="opacity: .5; transform: translate(-25%, -25%)"
                 data-800="opacity: 0; transform: translate(-50%, -50%)"
-                ><img src="assets/img/2.svg" alt=""></div>
+                ><img src="assets/img/2.svg" alt="정"></div>
                 <h2>
                     <strong
                     data-0="opacity: 1;"
@@ -71,8 +71,8 @@
                 data-0="opacity: 1;"
                 data-1000="opacity: .5;"
                 data-1800="opacity: 0;"
-                >모든 사람들은 코딩하는 법을 배워야 한다.<br>
-                    코딩은  생각하는 법을 가르쳐 준다.</p>
+                ><span>모든 사람들은 코딩하는 법을 배워야 한다.<br>
+                코딩은  생각하는 법을 가르쳐 준다.</span></p>
             </section>
             <!-- //section1 -->
 
@@ -277,14 +277,14 @@
         </div>
     </div>
     <div id="scroll">
-        <a><span></span><span></span><span></span>Scroll</a>
+        <a><span></span><span></span><span></span></a>
     </div>
     <!-- footer  -->
         <footer id="footer">
             <ul>
-                <li><a href="#"><img class="img" src="assets/img/github.svg" alt="깃허브"></a></li>
-                <li><a href="#"><img class="img" src="assets/img/codepen.svg" alt="코드펜"></a></li>
-                <li><a href="#"><img class="img" src="assets/img/blog.svg" alt="블로그"></a></li>
+                <li><a href="https://github.com/eodnd1597/port99"><img class="img" src="assets/img/github.svg" alt="깃허브"></a></li>
+                <li><a href="https://codepen.io/dashboard/"><img class="img" src="assets/img/codepen.svg" alt="코드펜"></a></li>
+                <li><a href="https://eodnd1597.tistory.com/"><img class="img" src="assets/img/blog.svg" alt="블로그"></a></li>
             </ul>
             <address>Copyright &copy; Daewoong</address>
         </footer>
@@ -294,15 +294,10 @@
     <script src="assets/js/jquery-1.12.4.min.js"></script>
     <script src="assets/js/jquery-ui.min.js"></script>
     <script src="assets/js/skrollr.min.js"></script>
-    <script>
-        let section3 = $("#section3"),
-            circle1 = $(".circle1"),
-            circle2 = $(".circle2"),
-            circle3 = $(".circle3"),
-            circle4 = $(".circle4");
+    <script src="assets/js/gsap.min.js"></script>
+    <script> 
 
-
-
+        //scrollr
         var s = skrollr.init({
 		edgeStrategy: 'set',
 		easing: "ease"
@@ -313,19 +308,22 @@
             let pageYOffset = window.pageYOffset || document.documentElement.scrollTop
             document.querySelector(".scrollTop").textContent = pageYOffset;
         });
-
-        //마우스 효과
-        //document.querySelector(".circle1").addEventListener("mousemove", function(e){
-        //    const {x, y} = e;
-        //    const rect = circle1.getBoundingClientRect();
-        //    console.log(rect)
-        //    const mouseX = (x - rect.left - rect.width/2);
-        //    const mouseY = (y - rect.top - rect.height/2);
-        //    let aa = this.style.transform = `translate:(${mouseX}px),(${mouseY}px)`
-        //    this.style.transform = `translate:(${mouseX}px),(${mouseY}px)`
-        //    //console.log(aa)
-        //});
-
+        
+        
+        setTimeout(function(){
+            gsap.to(".line > div", {height: "100vh", borderColor: "#e9e9e9", duration: 1, stagger: 0.1});
+            gsap.to("#section1 .t1 img", { marginLeft: "-2vw", opacity:1, duration: 1, delay: 1, ease: "power4.out"});
+            gsap.to("#section1 .t2 img", { marginLeft: "-2vw", opacity:1, duration: 1, delay: 1.5, ease: "power4.out"});
+            gsap.fromTo("#header h1", {opacity:0, x:-100},{x:0, opacity:1, duration: 1, delay: 2, ease: "power4.out"});
+            gsap.fromTo("#header ul li", {opacity:0, x:-100},{x:0, opacity:1, duration: 1, delay: 2, ease: "power4.out", stagger: 0.1});
+            gsap.fromTo("#footer li a",{opacity:0}, {opacity:1, duration:1, delay:2.5, stagger:0.3});
+            gsap.fromTo("#footer address",{opacity:0, y:200}, {y:0, opacity:1, duration:1, delay:2.5,});
+            gsap.fromTo("#section1 > h2", {opacity:0, y:"-210%"},{y:"-170%", opacity:1, duration:2, delay:3});
+            gsap.fromTo("#section1 p", {y:"360%"},{y:"180%",opacity:1, duration:1.7, delay:3.5});
+            gsap.fromTo("#section1 p span", {opacity:0},{opacity:1, duration:1.7, delay:3.5});
+            gsap.fromTo(".scrollTop", {opacity:0},{opacity:1, duration:1, delay:3.5});
+            gsap.fromTo("#scroll", {opacity:0},{opacity:1, duration:1, delay:3.8});
+        }, 1000);
 
     </script>
 </body>

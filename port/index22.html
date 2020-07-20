@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    
+</head>
+<body>
+    
+    <div class="line">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- //line -->
+    
+    <header id="header">
+        <h1>daewoong</h1>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Site</a></li>
+            <li><a href="#">Animation</a></li>
+            <li><a href="#">Script</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <!-- //header -->
+    
+    <section id="contents">
+        <section id="section1">
+            <div class="sec1">
+                <div class="index1">
+                    <div class="t1"><img src="assets/img/1.svg" alt=""></div>
+                    <div class="t2"><img src="assets/img/2.svg" alt=""></div>
+                </div>
+                <div class="index2">
+
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- //contents -->
+    
+    <footer id="footer">
+        <ul>
+            <li>깃헙</li>
+            <li>코드펜</li>
+            <li>블러그</li>
+        </ul>
+        <address>Copyright &copy; daewoong</address>
+    </footer>
+    
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script>
+        $("#footer").hide();
+        
+        setTimeout(function(){
+            gsap.to(".line > div", {height: "100vh", borderColor: "#e9e9e9", duration: 0.7, stagger: 0.1});
+            gsap.to("#section1 .t1 img", { marginLeft: "-2vw", opacity:1, duration: 1, delay: 1, ease: "power4.out"});
+            gsap.to("#section1 .t2 img", { marginLeft: "-2.2vw", opacity:1, duration: 1, delay: 1.5, ease: "power4.out"});
+            gsap.fromTo("#header h1", {opacity:0, x:-100},{x:0, opacity:1, duration: 1, delay: 2, ease: "power4.out"});
+            gsap.fromTo("#header ul li", {opacity:0, x:-100},{x:0, opacity:1, duration: 1, delay: 2, ease: "power4.out", stagger: 0.1});
+            
+        },2000);
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

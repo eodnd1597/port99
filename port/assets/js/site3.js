@@ -6,7 +6,8 @@ $(".site-menu > li > a").click(function(){
 
 
 
-$("#section-wrap > #section").click(function(){
+$("#section-wrap > #section").click(function(e){
+    e.preventDefault();
     let target = $(this);
     let index = target.index();
     // alert(index)

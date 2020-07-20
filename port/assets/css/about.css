@@ -202,9 +202,68 @@
 
 
 /* last-section */
-.last-section {margin-top: 100px; width: 100%; height: 100vh; overflow: hidden;}
-.last-section .left-section {float: left; width: 50%; height: 100%; background: #000;}
-.last-section .right-section {float: left; width: 50%; height: 100%; background: #ccc;}
+.last-section {margin-top: 100px; width: 100%; height: 100vh;}
+.last-section .left-section {float: left; width: 50%; height: 100%;}
+.last-section .right-section {float: left; width: 50%; height: 100%;}
+.last-section .sectionBox {
+    margin-bottom: 100px;
+}
+.last-section .right-section .right-tit {
+    font-size: 94px; font-weight: bold;
+    line-height: 80px;
+    margin-bottom: 90px;
+    color: #e5e5e5;
+    text-align: right;
+}
+.last-section .section-tit {
+    position: relative;
+    font-size: 80px; font-weight: bold;
+}
+.last-section .section-tit::before {
+    content: '';
+    position: absolute; top: -1vw;
+    width: 84px; height: 10px;
+    background: #000;
+}
+.last-section .section-info {
+    margin: 100px 0 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+.last-section .section-info span {
+    margin-left: 20px;
+    color: #e5e5e5;
+}
+.last-section .section-desc {
+    font-size: 19px;
+    margin-bottom: 35px;
+}
+.last-section .core {
+    border-left: 2px solid #222;
+    padding-left: 20px;
+}
+.last-section .core h4 {
+    font-size: 1.5vw; font-weight: 700;
+    padding-bottom: 30px;
+}
+.last-section .core h4 span {
+    color: #e5e5e5;
+    margin-left: 20px;
+}
+.last-section .core p {
+    font-size: 1vw; font-weight: 600;
+    color: #434343;
+}
+.next-site {
+    font-size: 3vw; font-weight: 600;
+}
+.next-site span {
+    animation: flash 0.9s infinite;
+}
+@keyframes flash {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 /* //last-section */
 
 

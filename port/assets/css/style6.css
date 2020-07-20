@@ -1,6 +1,7 @@
 /* layout */
 @charset "utf-8";
 * {box-sizing: border-box;}
+#wrap {margin-bottom: 15vw;}
 .container {
     margin: 0 16.6666%;
 }

@@ -4,15 +4,19 @@
 
 .line {
     position: fixed; left: 0; top: 0;
-    width: 100%; height: 100vh;
+    width: 100%;
     display: flex;
     z-index: -11;
 }
 
+
 .line > div {
     flex-basis: 16.6666%;
-    border-right: 1px solid #e9e9e9;
-    
+    height: 0vh;
+    border-right: 1px solid #000;
+}
+.line > div:last-child {
+    border-right: 1px solid transparent;
 }
 .scrollTop {
     position: fixed; right: 10px; top: 10px;
@@ -20,6 +24,7 @@
     background: rgba(0,0,0,.5);
     text-align: center;
     color: #fff; line-height: 40px;
+    opacity: 0;
 }
 
 
@@ -32,6 +37,7 @@
 #header h1 {
     font-size: 2vw; font-weight: 700;
     padding-bottom: 0.5vw;
+    opacity: 0;
 }
 #header h1 a {
     color: #e6e6e6;
@@ -45,6 +51,7 @@
 #header ul li {
     font-weight: bold;
     font-size: 1.7vw; padding-bottom: 20;
+    opacity: 0;
 }
 #header ul li a{
     color: #c2c2c2;
@@ -80,7 +87,8 @@
 }
 #section1 .t1 img {
     width: 110%;
-    margin-left: -2vw;
+    margin-left: -20vw;
+    opacity: 0;
 }
 #section1 .t2 {
     overflow: hidden;
@@ -90,29 +98,32 @@
 }
 #section1 .t2 img {
     width: 110%;
-    margin-left: -2.2vw;
-    
+    margin-left: -22vw;
+    opacity: 0;
 }
 #section1 h2 {
     position: fixed; left: 50%; top: 50%;
-    transform: translate(130% ,-170%);
+    transform: translate(130% ,-340%);
     font-size: 2.4vw; font-weight: 700;
     writing-mode: vertical-rl;
     text-orientation: upright;
+    opacity: 0;
 }
 #section1 h2 strong {
     display: block;
-    
 }
 #section1 h2 strong:last-child {
     transform: translate(20%,38%);
 }
 #section1 p {
     position: fixed; left: 50%; top: 50%;
-    transform: translate(-120%, 180%);
+    transform: translate(-120%, 360%);
     font-family: 'Montserrat';
     font-size: 1vw;
     font-weight: 600;
+}
+#section1 p span {
+    opacity: 0;
 }
 
 /* section2 */
@@ -295,6 +306,9 @@
     animation: flash 0.9s infinite;
 }
 
+#scroll {
+    opacity: 0;
+}
 #scroll a span {
     position: fixed;
     bottom: 10%; right: 5%;
@@ -310,17 +324,14 @@
     box-sizing: border-box;
   }
   #scroll a span:nth-of-type(1) {
-    -webkit-animation-delay: 0s;
     animation-delay: 0s;
   }
   #scroll a span:nth-of-type(2) {
     bottom: 12%;
-    -webkit-animation-delay: .15s;
     animation-delay: .15s;
   }
   #scroll a span:nth-of-type(3) {
     bottom: 14%;
-    -webkit-animation-delay: .3s;
     animation-delay: .3s;
   }
   @keyframes scroll {
@@ -351,12 +362,14 @@
 }
 #footer li a {
     padding-right: 10px;
+    opacity: 0;
 }
 #footer .img {
     width: 2vw;
 }
 #footer address {
     margin: 10px 0 0;
+    opacity: 0;
 }
 
 
