@@ -9,14 +9,26 @@
 
     <!-- 폰트 -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style2.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/prism.css">
+    <link rel="stylesheet" href="assets/css/style6.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    
 </head>
 <body>
+    <!-- loading -->
+    <div class="loading-wrap">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-text">loading</div>
+        </div>
+    </div>
+
+
     <!-- line -->
     <div class="line">
         <div></div>
@@ -33,152 +45,880 @@
             <h1><a href="index2.html">Daewoong</a></h1>
             <ul>
                 <li><a href="about.html"><span>A</span>bout</a></li>
-                <li><a href="site.html"><span>Site</span></a></li>
-                <li><a href="#"><span>A</span>nimation</a></li>
-                <li><a href="#"><span>J</span>avaScript</a></li>
+                <li><a href="site2.html"><span>Site</span></a></li>
+                <li><a href="animation.html"><span>A</span>nimation</a></li>
+                <li><a href="javascript.html"><span>J</span>avaScript</a></li>
                 <li><a href="#"><span>C</span>ontact</a></li>
             </ul>
         </header>
-    <!-- //header -->
+        <!-- //header -->
         <div class="container">
-            <div id="header-tit">
-                <h2 class="header-tit">
-                    <span>사이트를</span><br>
-                    <span>만들다</span>
-                </h2>
+            <h2 class="site-tit"><span>웹</span><span>사</span><span>이</span><span>트</span><span>를</span><br><span>만</span><span>들</span><span>다</span></h2>
+            <ul class="site-menu">
+                <li><a class="active" href="#">all</a></li>
+                <li><a href="#">website</a></li>
+                <li><a href="#">mobile</a></li>
+            </ul>
+            <div id="section-wrap">
+                <section id="section">
+                    <figure>
+                        <img class="s-img1 s-img" src="assets/img/small-img1.jpg" alt="이미지">
+                    </figure>
+                    <h3>webstandard</h3>
+                    <p>웹 표준을 준수한 사이트</p>
+                    <a href="#" class="codepenBtn">
+                        <span class="text">Text</span>
+                        <span class="front">View Code</span>
+                        <span class="back">Click</span>
+                    </a>
+                </section>
+                <section id="section">
+                    <figure>
+                        <img class="s-img2 s-img" src="assets/img/small-img2.jpg" alt="이미지">
+                    </figure>
+                    <h3>responsive</h3>
+                    <p>미디어 쿼리를 사용한<br>반응형 사이트</p>
+                    <a href="#" class="codepenBtn">
+                        <span class="text">Text</span>
+                        <span class="front">View Code</span>
+                        <span class="back">Click</span>
+                    </a>
+                </section>
+                <section id="section">
+                    <figure>
+                        <img class="s-img3 s-img" src="assets/img/small-img3.jpg" alt="이미지">
+                    </figure>
+                    <h3>nongsim</h3>
+                    <p>실제 있는 농심을<br>구현한 사이트</p>
+                    <a href="#" class="codepenBtn">
+                        <span class="text">Text</span>
+                        <span class="front">View Code</span>
+                        <span class="back">Click</span>
+                    </a>
+                </section>
+                <section id="section">
+                    <figure>
+                        <img class="s-img4 s-img" src="assets/img/small-img4.jpg" alt="이미지">
+                    </figure>
+                    <h3>webstandard</h3>
+                    <p>실제 있는 YES 24 MOVIE를<br>구현한 사이트</p>
+                    <a href="#" class="codepenBtn">
+                        <span class="text">Text</span>
+                        <span class="front">View Code</span>
+                        <span class="back">Click</span>
+                    </a>
+                </section>
+                <section id="section">
+                    <figure>
+                        <img class="s-img5 s-img" src="assets/img/small-img1.jpg" alt="이미지">
+                    </figure>
+                    <h3>webstandard</h3>
+                    <p>웹 표준을 준수한 사이트</p>
+                    <a href="#" class="codepenBtn">
+                        <span class="text">Text</span>
+                        <span class="front">View Code</span>
+                        <span class="back">Click</span>
+                    </a>
+                </section>
+                <section id="section">
+                    <figure>
+                        <img class="s-img6 s-img" src="assets/img/small-img1.jpg" alt="이미지">
+                    </figure>
+                    <h3>webstandard</h3>
+                    <p>웹 표준을 준수한 사이트</p>
+                    <a href="#" class="codepenBtn">
+                        <span class="text">Text</span>
+                        <span class="front">View Code</span>
+                        <span class="back">Click</span>
+                    </a>
+                </section>
             </div>
-            <div class="info">
-                <ul>
-                    <li><a class="active" href="#">All</a></li>
-                    <li><a href="#">Web</a></li>
-                    <li><a href="#">Mobile</a></li>
-                </ul>
-            </div>
-
-            <section id="s-seciton1">
-                <div class="s1-wrap s-wrap">
-                    <div class="s1-img s-img">
-                        <a href="#"><img src="assets/img/img02.jpg" alt="반응형 사이트"></a>
-                    </div>
-                    <h3 class="s-tit">WEBSTANDARD</h3>
-                    <p class="s1-desc s-desc">
-                        미디어쿼리를 사용한<br>
-                        반응형 웹 사이트</p>
-                </div>
-                <div class="s2-wrap s-wrap">
-                    <div class="s2-img s-img">
-                        <a href="#"><img src="assets/img/img01.jpg" alt="웹 표준형 사이트"></a>
-                    </div>
-                    <h3 class="s-tit">WEBRESPONSIVE</h3>
-                    <p class="s2-desc s-desc">
-                        웹표준을 준수한<br>
-                        웹 사이트</p>
-                </div>
-            </section>
-
-            <section id="s-seciton2">
-                <div class="s3-wrap s-wrap">
-                    <div class="s3-img s-img">
-                        <a href="#"><img src="assets/img/img04.jpg" alt="농심 사이트"></a>
-                    </div>
-                    <h3 class="s-tit">Yes 24 Movie</h3>
-                    <p class="s3-desc s-desc">
-                        실제 있는 Yes 24 사이트를<br>
-                        구현한 웹사이트</p>
-                </div>
-                <div class="s4-wrap s-wrap">
-                    <div class="s4-img s-img">
-                        <a href="#"><img src="assets/img/img03.jpg" alt="Yes 24 Movie 사이트"></a>
-                    </div>
-                    <h3 class="s-tit">Nongsim</h3>
-                    <p class="s4-desc s-desc">
-                        실제 있는 농심 사이트를<br>
-                        구현한 웹사이트</p>
-                </div>
-            </section>
-            <!-- //section -->
-
-            <div class="focus">
-                <div class="focus-circle"></div>
-                <div class="brackets">
-                    <div class="brackets-header">
-                        <div class="c-wrap">
-                            <div id="c-red" class="brackets-circle"></div>
-                            <div id="c-yellow" class="brackets-circle"></div>
-                            <div id="c-green" class="brackets-circle"></div>
-                        </div>
-                        <h2 class="brackets-tit"><span id="c-gray"></span>Daewoong Portfolio&#45; 2020</h2>
-                    </div>
-                    <div class="brackets-nav">
-                        <h2>WEBSTANDARD</h2>
-                        <ul>
-                            <li class="active"><a href="">Login CODE</a></li>
-                            <li><a href="">IR 효과</a></li>
-                            <li><a href="">LightGalley</a></li>
-                            <li><a href="">이미지 스프라이트</a></li>
-                        </ul>
-                    </div>
-                    <div class="brackets-cont">
-<pre class="line-numbers"><code class="language-css">
-</code></pre>
-                    </div>
-                </div>
-                <div class="close"></div>
-            </div>    
-            <!-- //brackets -->
-    
-            <!-- footer  -->
-            <footer id="footer">
-                <ul>
-                    <li><a href="#"><img class="img" src="assets/img/github.svg" alt="깃허브"></a></li>
-                    <li><a href="#"><img class="img" src="assets/img/codepen.svg" alt="코드펜"></a></li>
-                    <li><a href="#"><img class="img" src="assets/img/blog.svg" alt="블로그"></a></li>
-                </ul>
-                <address>Copyright &copy; Daewoong</address>
-            </footer>
+            <a class="next-site" href="animation.html">Animation<span>_</span></a>
         </div>
+        <!-- footer  -->
+        <footer id="footer">
+            <ul>
+                <li><a href="#"><img class="img" src="assets/img/github.svg" alt="깃허브"></a></li>
+                <li><a href="#"><img class="img" src="assets/img/codepen.svg" alt="코드펜"></a></li>
+                <li><a href="#"><img class="img" src="assets/img/blog.svg" alt="블로그"></a></li>
+            </ul>
+            <address>Copyright &copy; Daewoong</address>
+        </footer>
     </div>
+
+
+    <div class="site-wrap">
+        <!-- layer-site1  -->
+        <div class="layer-site layer-site1">
+            <div class="cont">
+                <div class="tit tit1">webstandard</div>
+                <div class="circle"></div>
+                <!-- code-view1  -->
+                <div class="code-view">
+                    <div class="cont-title">
+                        <div class="dot" aria-disabled="true"><span></span><span></span><span></span></div>
+                        <div class="menu">
+                            <ul data-nav="1">
+                                <li class="active"><a href="#">웹 접근성이란?</a></li>
+                                <li><a href="#">웹 표준이란?</a></li>
+                                <li><a href="#">Login/Out</a></li>
+                                <li><a href="#">이미지 스프라이트</a></li>
+                                <li><a href="#">IR 효과</a></li>
+                            </ul>
+                        </div>
+                        <div class="theme">Theme
+                            <i class="fas fa-caret-down"></i>
+                        </span>
+                            <div class="set-wrap">
+                                <div class="theme-set"><a href="#">Night-Owl</a></div>
+                                <div class="theme-set"><a href="#">Over-Night</a></div>
+                                <div class="theme-set"><a href="#">White</a></div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="code-cont">
+                        <div class="active">
+<pre class="line-numbers"><code class="language-html">&lt;!--웹 접근성(Web Accessibility) 이란 
+장애인, 고령자 등이 웹 사이트에서 제공하는 정보에 비장애인과 동등하게 접근하고 이해할 수 있도록 보장하는 것입니다.--&gt;</code></pre>
+                        </div>
+                        <div>
+<pre class="line-numbers"><code class="language-html">&lt;!-- '웹에서 표준적으로 사용되는 기술이나 규칙'
+- 표준화 단체인 W3C가 권고한 표준안에 따라 웹사이트를 작성할 때 이용하는 HTML, CSS, JavaScript 등에 대한 규정이 담겨 있다.
+- 어떤 운영체제나 브라우저를 사용하더라도 웹페이지가 동일하게 보이고 정상 작동해야함을 의미.
+- 표준 스펙을 잘 지키는 것 뿐만 아니라 구조적 마크업(XHTML)과 표현 및 레이아웃(CSS) 및 사용자 행위 제어(DOMScripting)를 
+잘 분리하는 고급 홈페이지 구축 방식.
+- CSS 와 HTML(XHTML)로 웹 문서를 작성하는 것의 명확한 용어는 권고(recommend)라고 하며 버전과 상관없이 HTML, XHTML은 
+그 자체로 표준이라고 한다.--&gt;</code></pre>
+                        </div>
+                        <div>
+<pre class="line-numbers"><code class="language-html">&lt;div id="login-wrap"&gt;
+&lt;h4 class="ir_so"&gt;로그인 정보&lt;/h4&gt;
+    &lt;form action="post" id="login-form" name="login-form"&gt;
+        &lt;fieldset&gt;
+            &lt;legend class="ir_so"&gt;로그인 및 관련 설정&lt;/legend&gt;
+            &lt;div class="login-header"&gt;
+                &lt;h5 class="ir_so"&gt;로그인 보안&lt;/h5&gt;
+                &lt;div class="lh-check"&gt;
+                    &lt;input id="infor-check" type="checkbox" class="input-check"&gt;
+                    &lt;label for="infor-check"&gt;로그인 상태 유지&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div class="lh-ip"&gt;
+                    IP보안 &lt;strong&gt;ON&lt;/strong&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="login-content"&gt;
+                &lt;h5 class="ir_so"&gt;로그인 영역&lt;/h5&gt;
+                &lt;div class="lc-text"&gt;
+                    &lt;label for="uid" class="ir_so"&gt;아이디&lt;/label&gt;
+                    &lt;input type="text" id="uid" name="uid" class="input-text" maxlength="20"&gt;
+                    &lt;label for="upw" class="ir_so"&gt;비밀번호&lt;/label&gt;
+                    &lt;input type="password" id="upw" name="upw" class="input-text" maxlength="20"&gt;
+                    &lt;button class="lc-btn" type="submit"&gt;로그인&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="login-footer"&gt;
+                &lt;h5 class="ir_so"&gt;로그인 문제 해결&lt;/h5&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;회원가입&lt;/strong&gt;&lt;/a&gt; /&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;아이디&lt;/a&gt;&middot; &lt;a href="#"&gt;비밀번호&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/fieldset&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+
+</code></pre>
+                        </div>
+                        <div>
+<pre class="line-numbers"><code class="language-html">&lt;!--이미지 스프라이트(image sprite)란 여러 개의 이미지를 하나의 이미지로 합쳐서 관리하는 이미지를 의미합니다.
+
+웹 페이지에 이미지가 사용될 경우 해당 이미지를 다운받기 위해 웹 브라우저는 서버에 이미지를 요청하게 됩니다.
+하지만 사용된 이미지가 많을 경우 웹 브라우저는 서버에 해당 이미지의 수만큼 요청해야만 하므로 
+웹 페이지의 로딩 시간이 오래 걸리게 됩니다.
+
+이미지 스프라이트(image sprite)를 사용하면 이미지를 다운받기 위한 서버 요청을 단 몇 번으로 줄일 수 있습니다.
+모바일 환경과 같이 한정된 자원을 사용하는 플랫폼(platform)에서는 웹 페이지의 로딩 시간을 단축해주는 효과가 있습니다.
+또한, 많은 이미지 파일을 관리하는 대신 몇 개의 스프라이트 이미지(sprite image) 파일만을 관리하면 되므로 매우 간편합니다.--&gt;
+</code></pre>
+                        </div>
+                        <div>
+<pre class="line-numbers"><code class="language-html">&lt;!--IR 기법은 이미지 대체텍스트 제공을 위한 CSS 기법으로 다양한 CSS 기법을 사용하여 
+이미지 대체텍스트를 제공할 수가 있으며, 여러 가지 기법 중에서 Phark Method와WA IR 기법을 주로 사용하여 
+대체텍스트를 제공해주고 있다.--&gt;
+</code></pre>
+<pre class="line-numbers"><code class="language-css">/* 의미있는 이미지의 대체 텍스트를 제공하는 경우 */
+.ir_pm {display: block; overflow: hidden; font-size: 0; line-height: 0; text-indent: -9999px;} 
+/*의미있는 이미지의 텍스트를 이미지가 없어도 대체 텍스트를 보여주고자 할 때 */
+.ir_wa {display: block; overflow: hidden; position: relative; z-index: -1; width: 100%; height: 100%;} 
+/*대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제할 때 */
+.ir_so {overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
+</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- //code-view1  -->
+            </div>
+                <div class="close"></div>
+        </div>    
+        <!-- //layer-site1  -->
+
+
+        <!-- layer-site2  -->
+        <div class="layer-site layer-site2">
+            <div class="cont">
+                <div class="tit tit2">responsive</div>
+                <div class="circle"></div>
+                <!-- code-view1  -->
+                <div class="code-view">
+                    <div class="cont-title">
+                        <div class="dot" aria-disabled="true"><span></span><span></span><span></span></div>
+                        <div class="menu">
+                            <ul data-nav="2">
+                                <li class="active"><a href="#">max-width:1220px</a></li>
+                                <li><a href="#">max-width:1024px</a></li>
+                                <li><a href="#">max-width:960px</a></li>
+                                <li><a href="#">max-width:768px</a></li>
+                                <li><a href="#">max-width:600px</a></li>
+                                <li><a href="#">max-width:320px</a></li>
+                            </ul>
+                        </div>
+                        <div class="theme">Theme
+                            <i class="fas fa-caret-down"></i>
+                            <div class="set-wrap">
+                                <div class="theme-set"><a href="#">Night-Owl</a></div>
+                                <div class="theme-set"><a href="#">Over-Night</a></div>
+                                <div class="theme-set"><a href="#">White</a></div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="code-cont">
+                        <div class="active">
+<pre class="line-numbers"><code class="language-css">@media (max-width: 1220px){
+    .container {width: 100%; }
+    .row {padding: 0 15px; }
+    #contents .container {border: 0;}
+
+    .lightbox {grid-template-columns: repeat(4, 1fr);}
+    .lightbox a:nth-child(5n) {display: none;}
+}</code></pre>
+                        </div>
+                        <div>
+<pre class="line-numbers"><code class="language-css">@media (max-width: 1024px){
+    .lightbox {grid-template-columns: repeat(3, 1fr);}
+    .lightbox a:nth-child(10) {display: block;}
+}
+</code></pre>
+                        </div>
+                        <div>
+<pre class="line-numbers"><code class="language-css">@media (max-width: 960px){
+    .nav >div {float: none; width: 100%; }
+    .nav >div li {width: 33.3333%; }
+    .nav >div:last-of-type {width: 100%;}
+    .nav >div:last-of-type li {width: 33.3333%; }
+    .nav > div ul {margin-bottom: 10px; }
+
+    #cont-right {position: static; width: 100%; border-top: 1px solid #dbdbdb; overflow: hidden;} 
+    #cont-right .column {float: left; width: 33.3333%; box-sizing: border-box;}
+    #cont-right .column.col7 {border-right: 1px solid #dbdbdb; border-bottom: 0;}   
+    #cont-right .column.col8 {border-right: 1px solid #dbdbdb; border-bottom: 0;}   
+    #cont-center {margin-right: 0; border-right: 0;}
+}
+</code></pre>
+                        </div>
+                        <div>
+<pre class="line-numbers"><code class="language-css">@media (max-width: 768px){
+    #cont-left {float: none; width: 100%;}   
+    #cont-center {border-left: 0; } 
+}
+</code></pre>
+                        </div>
+                        <div>
+<pre class="line-numbers"><code class="language-css">@media(max-width: 600px){
+    .header {height: auto;}
+    .header .header-tit{display: none;}
+    .header .header-icon{display: none;}
+
+    .title .btn {display: none;}
+    
+    .nav > div li { width: 50%;}
+    .nav > div:last-of-type li { width: 50%;} 
+    .column.col1 .col-tit {display: none;}
+    .column.col1 .col-desc { display: none;}
+    .column.col1 {padding: 0; border-bottom: 0;}
+    .column.col1 .menu li a i {display: none;}
+    .column.col1 .menu ul {overflow: hidden;}
+    .column.col1 .menu li {
+        float: left; width: 33.333%; text-align: center; border-right: 1px solid #dbdbdb;
+        box-sizing: border-box }
+    .column.col1 .menu li a {color:  #fff ; text-shadow: 0 0 5px rgba(0,0,0,0.7)}
+    .column.col1 .menu li a:hover{box-shadow: none; background: rgba(36,130,174,0.7)}
+    .column.col1 .menu li:nth-child(3n) {border-right: 0;}
+    .column.col2 {background: #fff;}
+
+    .lightbox {grid-template-columns: repeat(2, 1fr);}
+    .lightbox a:nth-child(9) {display: none;}
+
+    #cont-right .column {width: 50%; }
+    #cont-right .column.col8 {border-right: 0; }
+    #cont-right .column.col9 {display: none; }
+}
+</code></pre>
+                        </div>
+                        <div>
+<pre class="line-numbers"><code class="language-css">@media(max-width: 320px){
+    .lightbox {grid-template-columns: repeat(1, 1fr);}
+    #cont-right .column {width: 100%; }
+    #cont-right .column.col7 {border-right: 0; border-bottom: 1px solid #dbdbdb; }
+}
+</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- //code-view1  -->
+            </div>
+                <div class="close"></div>
+        </div>
+        <!-- //layer-site2  -->
+
+        <!-- layer-site3  -->
+        <div class="layer-site layer-site3">
+            <div class="cont">
+                <div class="tit tit3">nongsim</div>
+                <div class="circle"></div>
+                <!-- code-view1  -->
+                <div class="code-view">
+                    <div class="cont-title">
+                        <div class="dot" aria-disabled="true"><span></span><span></span><span></span></div>
+                        <div class="menu">
+                            <ul data-nav="3">
+                                <li class="active"><a href="#">swiper.js</a></li>
+                                <li><a href="#">index.html</a></li>
+                                <li><a href="#">style.css</a></li>
+                                <li><a href="#">custom.js</a></li>
+                                <li><a href="#">none</a></li>
+                            </ul>
+                        </div>
+                        <div class="theme">Theme
+                            <i class="fas fa-caret-down"></i>
+                        </span>
+                            <div class="set-wrap">
+                                <div class="theme-set"><a href="#">Night-Owl</a></div>
+                                <div class="theme-set"><a href="#">Over-Night</a></div>
+                                <div class="theme-set"><a href="#">White</a></div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="code-cont">
+                        <div class="active">
+<pre class="line-numbers"><code class="language-html">&lt;!--Swiper는 하드웨어 가속 전환 및 놀라운 기본 동작을 갖춘 가장 현대적인 
+무료 모바일 터치 슬라이더입니다. 모바일 웹 사이트, 모바일 웹앱 및 모바일 네이티브 / 하이브리드 앱에서 사용하도록 고안되었습니다.--&gt;
+</code></pre>
+                        </div>
+                        <div>
+<pre class="line-numbers"><code class="language-html">&lt;section id="story"&gt;
+    &lt;h2&gt;N.LIVE로 즐기는 농심 이야기&lt;/h2&gt;
+    &lt;div class="story"&gt;
+        &lt;div class="swiper-container"&gt;
+            &lt;div class="swiper-wrapper"&gt;
+                &lt;div class="swiper-slide"&gt;
+                    &lt;div class="simg"&gt;&lt;/div&gt;
+                    &lt;div class="stxt"&gt;
+                        &lt;h3&gt;#instagram&lt;/h3&gt;
+                        &lt;p&gt;#새우깡_창조 손이가요 손이가요 손이가요&lt;/p&gt;
+                        &lt;time&gt;2020.05.07&lt;/time&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="swiper-slide"&gt;
+                    &lt;div class="simg"&gt;&lt;/div&gt;
+                    &lt;div class="stxt"&gt;
+                        &lt;h3&gt;#instagram&lt;/h3&gt;
+                        &lt;p&gt;#새우깡_창조 손이가요 손이가요 손이가요&lt;/p&gt;
+                        &lt;time&gt;2020.05.07&lt;/time&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="swiper-slide"&gt;
+                    &lt;div class="simg"&gt;&lt;/div&gt;
+                    &lt;div class="stxt"&gt;
+                        &lt;h3&gt;#instagram&lt;/h3&gt;
+                        &lt;p&gt;#새우깡_창조 손이가요 손이가요 손이가요&lt;/p&gt;
+                        &lt;time&gt;2020.05.07&lt;/time&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="swiper-slide"&gt;
+                    &lt;div class="simg"&gt;&lt;/div&gt;
+                    &lt;div class="stxt"&gt;
+                        &lt;h3&gt;#instagram&lt;/h3&gt;
+                        &lt;p&gt;#새우깡_창조 손이가요 손이가요 손이가요&lt;/p&gt;
+                        &lt;time&gt;2020.05.07&lt;/time&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="swiper-slide"&gt;
+                    &lt;div class="simg"&gt;&lt;/div&gt;
+                    &lt;div class="stxt"&gt;
+                        &lt;h3&gt;#instagram&lt;/h3&gt;
+                        &lt;p&gt;#새우깡_창조 손이가요 손이가요 손이가요&lt;/p&gt;
+                        &lt;time&gt;2020.05.07&lt;/time&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="swiper-slide"&gt;
+                    &lt;div class="simg"&gt;&lt;/div&gt;
+                    &lt;div class="stxt"&gt;
+                        &lt;h3&gt;#instagram&lt;/h3&gt;
+                        &lt;p&gt;#새우깡_창조 손이가요 손이가요 손이가요&lt;/p&gt;
+                        &lt;time&gt;2020.05.07&lt;/time&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="swiper-slide"&gt;
+                    &lt;div class="simg"&gt;&lt;/div&gt;
+                    &lt;div class="stxt"&gt;
+                        &lt;h3&gt;#instagram&lt;/h3&gt;
+                        &lt;p&gt;#새우깡_창조 손이가요 손이가요 손이가요&lt;/p&gt;
+                        &lt;time&gt;2020.05.07&lt;/time&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="swiper-slide"&gt;
+                    &lt;div class="simg"&gt;&lt;/div&gt;
+                    &lt;div class="stxt"&gt;
+                        &lt;h3&gt;#instagram&lt;/h3&gt;
+                        &lt;p&gt;#새우깡_창조 손이가요 손이가요 손이가요&lt;/p&gt;
+                        &lt;time&gt;2020.05.07&lt;/time&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="swiper-slide"&gt;
+                    &lt;div class="simg"&gt;&lt;/div&gt;
+                    &lt;div class="stxt"&gt;
+                        &lt;h3&gt;#instagram&lt;/h3&gt;
+                        &lt;p&gt;#새우깡_창조 손이가요 손이가요 손이가요&lt;/p&gt;
+                        &lt;time&gt;2020.05.07&lt;/time&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="swiper-slide"&gt;
+                    &lt;div class="simg"&gt;&lt;/div&gt;
+                    &lt;div class="stxt"&gt;
+                        &lt;h3&gt;#instagram&lt;/h3&gt;
+                        &lt;p&gt;#새우깡_창조 손이가요 손이가요 손이가요&lt;/p&gt;
+                        &lt;time&gt;2020.05.07&lt;/time&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="story-frame"&gt;&lt;/div&gt;
+        &lt;a href="#" class="story-btn"&gt;농심 소식&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                        </div>
+                        <div>
+<pre class="line-numbers"><code class="language-css">#story {
+    background: #F6F6F6;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+  
+#story h2 {
+    font-size: 60px;
+    line-height: 1.3;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+}
+  
+.story {
+    position: relative;
+    padding-top: 130px;
+}
+  
+.story .story-frame {
+    width: 300px;
+    height: 600px;
+    border: 10px solid #000;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    z-index: 1;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    border-radius: 40px;
+    -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
+}
+  
+.story .swiper-slide {
+    width: 340px;
+}
+  
+.story .swiper-slide .simg {
+    width: 263px;
+    height: 263px;
+    margin: 0 auto;
+}
+  
+.story .swiper-slide .stxt {
+    padding: 40px;
+}
+  
+.story .swiper-slide .stxt h3 {
+    font-size: 18px;
+    color: #000;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+    display: inline;
+    margin-bottom: 5px;
+}
+  
+.story .swiper-slide .stxt p {
+    font-size: 20px;
+    line-height: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 100;
+}
+  
+.story .swiper-slide .stxt time {
+    color: #888;
+    font-weight: 100;
+}
+  
+.story .swiper-slide:nth-child(1) .simg {
+    background: url(../img/tbanner1.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(2) .simg {
+    background: url(../img/tbanner2.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(3) .simg {
+    background: url(../img/tbanner3.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(4) .simg {
+    background: url(../img/tbanner4.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(5) .simg {
+    background: url(../img/tbanner5.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(6) .simg {
+    background: url(../img/tbanner6.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(7) .simg {
+    background: url(../img/tbanner7.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(8) .simg {
+    background: url(../img/tbanner8.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(9) .simg {
+    background: url(../img/tbanner9.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(10) .simg {
+    background: url(../img/tbanner10.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(11) .simg {
+    background: url(../img/tbanner11.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(12) .simg {
+    background: url(../img/tbanner12.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(13) .simg {
+    background: url(../img/tbanner13.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(14) .simg {
+    background: url(../img/tbanner14.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(15) .simg {
+    background: url(../img/tbanner15.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(16) .simg {
+    background: url(../img/tbanner16.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(17) .simg {
+    background: url(../img/tbanner17.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(18) .simg {
+    background: url(../img/tbanner18.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(19) .simg {
+    background: url(../img/tbanner19.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(20) .simg {
+    background: url(../img/tbanner20.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(21) .simg {
+    background: url(../img/tbanner21.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(22) .simg {
+    background: url(../img/tbanner22.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(23) .simg {
+    background: url(../img/tbanner23.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(24) .simg {
+    background: url(../img/tbanner24.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(25) .simg {
+    background: url(../img/tbanner25.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(26) .simg {
+    background: url(../img/tbanner26.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(27) .simg {
+    background: url(../img/tbanner27.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(28) .simg {
+    background: url(../img/tbanner28.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(29) .simg {
+    background: url(../img/tbanner29.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story .swiper-slide:nth-child(30) .simg {
+    background: url(../img/tbanner30.jpg) no-repeat center center;
+    background-size: cover;
+}
+  
+.story-btn {
+    margin-left: 44%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ca0202;
+    border-radius: 30px;
+    border: 1px solid #ca0202;
+    padding: 10px 80px;
+    margin-top: 120px;
+    display: inline-block;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+  
+.story-btn:hover {
+    background: #ca0202;
+    color: #fff;
+}
+  
+#story h2 {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+  
+#story.show h2 {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+</code></pre>
+                        </div>
+                        <div>
+<pre class="line-numbers"><code class="language-javascript">var mySwiper = new Swiper ('#banner .swiper-container', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: 'true',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+      delay: 5000,
+    }
+})
+
+var mySwiper2 = new Swiper ('.notice .swiper-container', {
+  loop: true,
+  slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+    spaceBetween: 60,
+    slidesPerView: 'auto',
+    centeredSlides: true
+})
+var mySwiper3 = new Swiper ('.story .swiper-container', {
+  loop: true,
+  slidesPerView: 'auto',
+  centeredSlides: true
+})
+</code></pre>
+                        </div>
+                        <div>
+<pre class="line-numbers"><code class="language-html">&lt;!--관련된 코드가 없습니다.--&gt;
+</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- //code-view1  -->
+            </div>    
+            <div class="close"></div>
+        </div>
+        <!-- //layer-site3  -->
+
+        <!-- layer-site4  -->
+        <div class="layer-site layer-site4">
+            <div class="cont">
+                <div class="tit tit4">yes24 moive</div>
+                <div class="circle"></div>
+                <!-- code-view1  -->
+                <div class="code-view">
+                    <div class="cont-title">
+                        <div class="dot" aria-disabled="true"><span></span><span></span><span></span></div>
+                        <div class="menu">
+                            <ul data-nav="4">
+                                <li class="active"><a href="#">webstandard1.html</a></li>
+                                <li><a href="#">webstandard2.html</a></li>
+                                <li><a href="#">web3.html</a></li>
+                                <li><a href="#">web4.html</a></li>
+                                <li><a href="#">web5.html</a></li>
+                            </ul>
+                        </div>
+                        <div class="theme">Theme</div> 
+                    </div>
+                    <div class="code-cont">
+                        <div class="active">웹 접근성이란?</div>
+                        <div>웹 표준이란?</div>
+                        <div>Login/Out</div>
+                        <div>이미지 스프라이트</div>
+                        <div>IR 효과</div>
+                    </div>
+                </div>
+                <!-- //code-view1  -->
+            </div>    
+            <div class="close"></div>
+        </div>
+        <!-- //layer-site4  -->
+
+        <!-- layer-site5  -->
+        <div class="layer-site layer-site5">
+            <div class="cont">
+                <div class="tit tit5">apple music mobile</div>
+                <div class="circle"></div>
+                <!-- code-view1  -->
+                <div class="code-view">
+                    <div class="cont-title">
+                        <div class="dot" aria-disabled="true"><span></span><span></span><span></span></div>
+                        <div class="menu">
+                            <ul data-nav="5">
+                                <li class="active"><a href="#">webstandard1.html</a></li>
+                                <li><a href="#">webstandard2.html</a></li>
+                                <li><a href="#">web3.html</a></li>
+                                <li><a href="#">web4.html</a></li>
+                                <li><a href="#">web5.html</a></li>
+                            </ul>
+                        </div>
+                        <div class="theme">Theme</div> 
+                    </div>
+                    <div class="code-cont">
+                        <div class="active">웹 접근성이란?</div>
+                        <div>웹 표준이란?</div>
+                        <div>Login/Out</div>
+                        <div>이미지 스프라이트</div>
+                        <div>IR 효과</div>
+                    </div>
+                </div>
+                <!-- //code-view1  -->
+            </div>    
+            <div class="close"></div>
+        </div>
+        <!-- //layer-site5  -->
+
+        <!-- layer-site6  -->
+        <div class="layer-site layer-site6">
+            <div class="cont">
+                <div class="tit tit6">melon music mobile</div>
+                <div class="circle"></div>
+                <!-- code-view1  -->
+                <div class="code-view">
+                    <div class="cont-title">
+                        <div class="dot" aria-disabled="true"><span></span><span></span><span></span></div>
+                        <div class="menu">
+                            <ul data-nav="6">
+                                <li class="active"><a href="#">webstandard1.html</a></li>
+                                <li><a href="#">webstandard2.html</a></li>
+                                <li><a href="#">web3.html</a></li>
+                                <li><a href="#">web4.html</a></li>
+                                <li><a href="#">web5.html</a></li>
+                            </ul>
+                        </div>
+                        <div class="theme">Theme</div> 
+                    </div>
+                    <div class="code-cont">
+                        <div class="active">웹 접근성이란?</div>
+                        <div>웹 표준이란?</div>
+                        <div>Login/Out</div>
+                        <div>이미지 스프라이트</div>
+                        <div>IR 효과</div>
+                    </div>
+                </div>
+                <!-- //code-view1  -->
+            </div>    
+            <div class="close"></div>
+        </div>
+        <!-- //layer-site6  -->
+    </div>
+
 
     <!-- //wrap -->
     <script src="assets/js/jquery-1.12.4.min.js"></script>
     <script src="assets/js/jquery-ui.min.js"></script>
     <script src="assets/js/prism.js"></script>
-    <script>
-        let aa = true;
-        let bNav = $(".brackets-nav > ul > li ");        //brackets
-        let bCont = $(".brackets-cont > pre");
-        let bCircle = $(".focus-circle");
-
-        $(".info > ul > li > a").click(function(){
-            $(".info >ul > li > a").removeClass("active")
-           $(this).addClass("active")
-        });
-        //메인 네비 탭메뉴
-        $(".s1-img").click(function(e){
-            if(aa){
-                $(".focus").addClass("show"); aa= false;
-                bCircle.addClass("show");
-                e.preventDefault();
-                
-            }
-        });
-        $(".close").click(function(){
-            bCircle.removeClass("show")
-            $(".focus").removeClass("show"); setTimeout(function(){
-                
-                aa = true;
-            },1000);
-        });
-        //이미지1 코드뷰
-        bNav.click(function(e,i){
-            let index = $(this).index();
-            e.preventDefault();
-            bNav.removeClass("active");
-            $(this).addClass("active");
-            bCont.removeClass("show")
-            bCont.eq(index).addClass("show")
-        });
-        
-    </script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/site3.js"></script>
 </body>
 </html> 

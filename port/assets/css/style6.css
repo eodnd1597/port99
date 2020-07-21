@@ -6,6 +6,75 @@
     margin: 0 16.6666%;
 }
 
+
+/* loading */
+
+/** BEGIN CSS **/
+@keyframes rotate-loading {
+    0%  {transform: rotate(0deg);}
+    100% {transform: rotate(360deg)}
+}
+
+@keyframes rotate-loading {
+    0%  {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes loading-text-opacity {
+    0%  {opacity: 0}
+    20% {opacity: 0}
+    50% {opacity: 1}
+    100%{opacity: 0}
+}
+.loading-wrap {
+    position: fixed; left: 0; top: 0; width: 100%; height: 100vh;
+    background: #fff; z-index: 1000;
+}
+.loading {
+    height: 100px;
+    position: relative;
+    width: 100px;
+    border-radius: 100%;
+}
+
+
+.loading-container { 
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loading {
+    border: 2px solid transparent;
+    border-color: transparent #000 transparent #000;
+    animation: rotate-loading 1.5s linear 0s infinite normal;
+    transform-origin: 50% 50%;
+}
+
+.loading-container:hover .loading {
+    border-color: transparent #E45635 transparent #E45635;
+}
+.loading-container:hover .loading,
+.loading-container .loading {
+    transition: all 0.5s ease-in-out;
+}
+
+#loading-text {
+    animation: loading-text-opacity 2s linear 0s infinite normal;
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 45px;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 0;
+    width: 100px;
+}
+/* //loading */
+
+
+
 .line {
     position: fixed; left: 0; top: 0;
     width: 100%; height: 100vh;
@@ -56,7 +125,10 @@
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 3vw; font-weight: 700;
     margin-top: 10vw;
-    line-height: 3vw;
+    line-height: 3.5vw;
+}
+.site-tit span {
+    opacity: 0; filter: blur(5px);
 }
 .site-menu li {
     display: inline-block;

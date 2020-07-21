@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABOUT ME</title>
-    <!-- meta -->
-
+    <title>About ME</title>
 
     <!-- 폰트 -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+
 </head>
 <body>
-    <!-- line -->
+    <div class="loading-wrap">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-text">loading</div>
+        </div>
+    </div>
+
     <div class="line">
         <div></div>
         <div></div>
@@ -24,174 +29,188 @@
         <div></div>
         <div></div>
     </div>
+    <!-- //line -->
 
     <!-- header -->
+    <header id="header">
+        <h1><a href="index.html">Daewoong</a></h1>
+        <ul>
+            <li><a href="about.html"><span>About</span></a></li>
+            <li><a href="site.html"><span>S</span>ite</a></li>
+            <li><a href="animation.html"><span>A</span>nimation</a></li>
+            <li><a href="javascript.html"><span>J</span>avaScript</a></li>
+            <li><a href="#"><span>C</span>ontact</a></li>
+        </ul>
+    </header>
+    <!-- //header  -->
+
     <div id="wrap">
-        <header id="header">
-            <h1><a href="index2.html">Daewoong</a></h1>
-            <ul>
-                <li><a href="about.html"><span>About</span></a></li>
-                <li><a href="site4.html"><span>S</span>ite</a></li>
-                <li><a href="animation.html"><span>A</span>nimation</a></li>
-                <li><a href="#"><span>J</span>avaScript</a></li>
-                <li><a href="#"><span>C</span>ontact</a></li>
-            </ul>
-        </header>
-        <!-- //header -->
-        <div id="header-tit">
-            <h2 class="header-tit">
-                <span>나를</span><br>
-                <span>보여주다</span>
-            </h2>
-        </div>
-        <!-- //header-tit -->
-        <section id="ct">
-            <div id="a-content">
-                <div class="a-content">
-                    <div class="header-stit">
-                        <h2>Personality</h2>
-                    </div>
-                </div>
+        <div class="container">
+            <div class="about-tit">
+                <p class="left-tit"><span>나</span><span>를</span><br>
+                <span>보</span><span>여</span><span>주</span><span>다</span></p>
+                <p class="right-tit">ABOUT ME</p>
             </div>
-            <article id="cWrap">
-                <article class="cWrap">
-                    <article class="circle">
-                        <h3>책임<br><span>사명/성실</span></h3>
-                    </article>
-                    <article class="circle">
-                        <h3>열정<br><span>창의/제작</span></h3>
-                        <div><span></span></div>
-                    </article>
-                    <article class="circle">
-                        <h3>외향<br><span>소통/협업</span></h3>
-                    </article>
-                </article>
-            </article>
-            <article id="a-circle">
-                <div class="a-circle1">
-                    <div class="ab-circle">
-                        <div class="a-desc">
-                            <p>FRONT<br>DEVELOPE</p>
+            <!-- //타이틀 -->
+            <section class="circle-wrap">
+                <div class="circle-container">
+                    <div class="circle">
+                        <div class="circle-tit">
+                            <h4>책임</h4>
+                            <p>사명/성실</p>
+                        </div>
+                    </div>
+                    <div class="circle">
+                        <div class="circle-tit">
+                            <h4>열정</h4>
+                            <p>창의/제작</p>
+                        </div>
+                    </div>
+                    <div class="circle">
+                        <div class="circle-tit">
+                            <h4>외향</h4>
+                            <p>소통/협업</p>
                         </div>
                     </div>
                 </div>
-                <div class="a-circle2">
-                    <div class="ab-circle">
-                        <div class="a-desc">
-                            <p>React.js</p>
-                        </div>
+            </section>
+            <!-- //circle-wrap -->
+
+            <section class="down-circle-wrap">
+                <div class="circle-wrap">
+                    <div class="circle circle1">
+                        <p class="circleTit" id="firstCircle">FRONT<br>DEVELOPER</p>
+                    </div>
+                    <div class="circle circle2">
+                        <p class="circleTit">React.js</p>
+                    </div>
+                    <div class="circle circle3">
+                        <p class="circleTit">JavaScript.js</p>
+                    </div>
+                    <div class="circle circle4">
+                        <p class="circleTit">PHP</p>
+                    </div>
+                    <div class="circle circle5">
+                        <p class="circleTit">HTML5/CSS3</p>
                     </div>
                 </div>
-                <div class="a-circle3">
-                    <div class="ab-circle">
-                        <div class="a-desc">
-                            <p>PHP</p>
+            </section>
+            <!-- //down-circle-wrap -->
+            <section class="last-section">
+                <div class="left-section">
+                    <div class="sectionBox">
+                        <h2 class="section-tit">HTML</h2>
+                        <div class="section-info">
+                            구조를 설계하다<span>Design</span>
                         </div>
-                    </div>
-                </div>
-                <div class="a-circle4">
-                    <div class="ab-circle">
-                        <div class="a-desc">
-                            <p>JavaScript</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="a-circle5">
-                    <div class="ab-circle">
-                        <div class="a-desc">
-                            <p>HTML5/CSS3</p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section id="skill">
-            <div class="skill">
-                <article id="html">
-                    <article class="html">
-                        <h2>HTML</h2>
-                        <h3>구조를 설계하다&nbsp;&nbsp;&nbsp;&nbsp;<span class="design">Design</span></h3>
-                        <p class="html-desc">HTML은 제목, 단락, 목록 등과 같은 본문을 위한 <br>
-                            구조적 의미를 나타내는 것뿐만 아니라 <br>
+                        <div class="section-desc">
+                            HTML은 제목, 단락, 목록 등과 같은 본문을 위한<br>
+                            구조적 의미를 나타내는 것뿐만 아니라<br>
                             링크, 인용과 그 밖의 항목으로 구조적 문서를<br> 
-                            만들 수 있는 방법을 제공한다.</p>
+                            만들 수 있는 방법을 제공한다.
+                        </div>
                         <div class="core">
-                            <h4>핵심&nbsp;&nbsp;&nbsp;<span>Core</span></h4>
+                            <h4>핵심<span>Core</span></h4>
                             <p>시맨틱 태그</p>
                             <p>메타 태그</p>
                             <p>웹 표준형</p>
                             <p>웹 접근성</p>
                         </div>
-                    </article>
-                    <div class="da">
-                        DESIGN &<br>
-                        ACTIVE
                     </div>
-                </article>
-                    <article class="css">
-                        <h2>CSS</h2>
-                        <h3>구조의 장식을 더하다&nbsp;&nbsp;&nbsp;&nbsp;<span class="decorate">Decorate</span></h3>
-                        <p class="css-desc">
-                            CSS는 Cascading Style Sheets의 약자입니다.<br>
-                            CSS는 HTML 요소들이 각종 미디어에서 <br>
-                            어떻게 보이는가를 정의하는 데 사용되는 스타일 시트 언어입니다.
-                        </p>
-                        <div class="core">
-                            <h4>핵심&nbsp;&nbsp;&nbsp;<span>Core</span></h4>
-                            <p>SCSS</p>
-                            <p>CSS3</p>
-                            <p>IR효과</p>
-                            <p>미디어 쿼리</p>
+                    <div class="sectionBox">
+                        <h2 class="section-tit">JAVASCRIPT</h2>
+                        <div class="section-info">
+                            구조에 움직임을 더하다<span>Active</span>
                         </div>
-                    </article>
-                <article class="javascript">
-                    <h2>JavaScript</h2>
-                        <h3>구조를 움직임을 더하다&nbsp;&nbsp;&nbsp;&nbsp;<span class="active">Active</span></h3>
-                        <p class="javascript-desc">HTML, CSS와 함께 웹을 구성하는 요소 중 하나다.<br>
-                            HTML이 웹 페이지의 기본 구조를 담당하고, <br>
-                            CSS가 디자인을 담당한다면 JavaScript는 <br>
-                            클라이언트 단에서 웹 페이지가 동작하는 것을 담당한다.</p>
+                        <div class="section-desc">
+                            HTML, CSS와 함께 웹을 구성하는 요소 중 하나다.<br>
+                            HTML이 웹 페이지의 기본 구조를 담당하고,<br>
+                            CSS가 디자인을 담당한다면 JavaScript는<br>
+                            클라이언트 단에서 웹 페이지가 동작하는 것을 담당한다.<br>
+                        </div>
                         <div class="core">
-                            <h4>핵심&nbsp;&nbsp;&nbsp;<span>Core</span></h4>
+                            <h4>핵심<span>Core</span></h4>
                             <p>객체</p>
                             <p>함수</p>
                             <p>프로토타입</p>
                             <p>실행 컨텍스트와 클로저</p>
                         </div>
-                </article>
-                <article class="jquery">
-                    <h2>jQuery</h2>
-                    <h3>움직임에 효율을 더하다&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="efficiency">Efficiency</span></h3>
-                    <p class="jquery-desc">
-                        jQuery는 자바스크립트의 생산성을 향상시켜주는 <br>
-                        자바스크립트 라이브러리 입니다. <br>
-                        라이브러리란 자주 사용되는 로직들을 재활용,유통 가능하도록 만든 <br>
-                        로직들의 묶음을 의미합니다.
-                    </p>
-                    <div class="core">
-                        <h4>핵심&nbsp;&nbsp;&nbsp;<span>Core</span></h4>
-                        <p>크로스브라우징 지원</p>
-                        <p>플러그인 풍부</p>
-                        <p>좋은 확장성</p>
-                        <p>ajax 기능</p>
                     </div>
-                    <div class="a-me">
-                        <h2>About ME</h2>
+                </div>
+                <div class="right-section">
+                    <div class="sectionBox">
+                        <div class="right-tit">
+                            DESIGN &<br>
+                            ACTIVE
+                        </div>
+                        <h2 class="section-tit">CSS</h2>
+                        <div class="section-info">
+                            구조의 장식을 더하다<span>Decorate</span>
+                        </div>
+                        <div class="section-desc">
+                            CSS는 Cascading Style Sheets의 약자입니다.<br>
+                            CSS는 HTML 요소들이 각종 미디어에서<br>
+                            어떻게 보이는가를 정의하는 데 사용되는 스타일 시트 언어입니다.
+                        </div>
+                        <div class="core">
+                            <h4>핵심<span>Core</span></h4>
+                            <p>SCSS</p>
+                            <p>CSS3</p>
+                            <p>IR효과</p>
+                            <p>미디어 쿼리</p>
+                        </div>
                     </div>
-                </article>
-                <a class="next-site" href="site4.html">Site<span>_</span></a>
-            </div>
-        </section>
-        
-        <!-- footer  -->
-        <footer id="footer">
-            <ul>
-                <li><a href="#"><img class="img" src="assets/img/github.svg" alt="깃허브"></a></li>
-                <li><a href="#"><img class="img" src="assets/img/codepen.svg" alt="코드펜"></a></li>
-                <li><a href="#"><img class="img" src="assets/img/blog.svg" alt="블로그"></a></li>
-            </ul>
-            <address>Copyright &copy; Daewoong</address>
-        </footer>
+                    <div class="sectionBox">
+                        <h2 class="section-tit">jQuery</h2>
+                        <div class="section-info">
+                            움직임에 효율을 더하다<span>Efficiency</span>
+                        </div>
+                        <div class="section-desc">
+                            jQuery는 자바스크립트의 생산성을 향상시켜주는<br>
+                            자바스크립트 라이브러리 입니다.<br> 
+                            라이브러리란 자주 사용되는 로직들을 재활용,유통 가능하도록 <br>
+                            만든 로직들의 묶음을 의미합니다.
+                        </div>
+                        <div class="core">
+                            <h4>핵심<span>Core</span></h4>
+                            <p>크로스브라우징 지원</p>
+                            <p>플러그인 풍부</p>
+                            <p>좋은 확장성</p>
+                            <p>ajax 기능</p>
+                        </div>
+                        <div class="next-box">
+                            <a class="next-site" href="site.html">site<span>_</span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
+
+
+
+
+    <!-- footer  -->
+    <footer id="footer">
+        <ul>
+            <li><a href="#"><img class="img" src="assets/img/github.svg" alt="깃허브"></a></li>
+            <li><a href="#"><img class="img" src="assets/img/codepen.svg" alt="코드펜"></a></li>
+            <li><a href="#"><img class="img" src="assets/img/blog.svg" alt="블로그"></a></li>
+        </ul>
+        <address>Copyright &copy; Daewoong</address>
+    </footer>
+    <!-- //footer  -->
+
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script>
+        setTimeout(function(){
+            gsap.fromTo($(".loading-wrap"),{opacity:1},{opacity:0});
+            gsap.fromTo($(".loading-wrap"),{"z-index":1000},{"z-index":-1});
+            gsap.to($(".left-tit span"),{opacity:1,filter:"blur(0px)",duration:1.3, stagger:0.15 ,delay:.8})
+            gsap.to($(".right-tit"),{opacity:1,duration:1.5,delay:1})
+            gsap.to($(".circle-container .circle"),{opacity:1,stagger:.3, duration:2, delay:2})
+        },2000);
+    </script>
 </body>
 </html>
