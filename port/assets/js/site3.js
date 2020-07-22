@@ -66,6 +66,7 @@ setTimeout(function(){
     gsap.fromTo($(".loading-wrap"),{opacity:1},{opacity:0});
     gsap.fromTo($(".loading-wrap"),{"z-index":1000},{"z-index":-1});
     gsap.to($(".site-tit span"),{opacity:1,filter:"blur(0px)",duration:1.3, stagger:0.1 ,delay:.7})
+    gsap.to("body",{overflow:"visible",delay:1})
 },2000);
 
 //레이어 팝업 탭메뉴

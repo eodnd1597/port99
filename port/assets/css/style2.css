@@ -1,6 +1,7 @@
 /* layout */
 @charset "utf-8";
 * {box-sizing: border-box;}
+body {overflow: hidden;}
 
 .line {
     position: fixed; left: 0; top: 0;

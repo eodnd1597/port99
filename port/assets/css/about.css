@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat';
 }
-
+body {overflow: hidden;}
 .container {margin: 0px 16.6666%;}
 
 
@@ -223,6 +223,9 @@
 /* down-circle-wrap */
 .down-circle-wrap {
     width: 100%; height: 50vh;
+    opacity: 0;
+    transition: all .5;
+    filter: blur(20px);
 }
 .down-circle-wrap .circle-wrap {
     position: relative;
@@ -286,6 +289,7 @@
 .last-section .right-section {float: left; width: 50%; height: 100%;}
 .last-section .sectionBox {
     margin-bottom: 100px;
+    opacity: 0; filter: blur(20px);
 }
 .last-section .right-section .right-tit {
     font-size: 94px; font-weight: bold;

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/style2.css">
     <link rel="stylesheet" href="assets/css/reset.css">
 </head>
-<body>
+<body class="hidden">
     
     <div class="line">
         <div></div>
@@ -306,9 +306,8 @@
         //스크롤 값
         window.addEventListener("scroll", () => {
             let pageYOffset = window.pageYOffset || document.documentElement.scrollTop
-            document.querySelector(".scrollTop").textContent = pageYOffset;
+            document.querySelector(".scrollTop").textContent = parseInt(pageYOffset);
         });
-        
         
         setTimeout(function(){
             gsap.to(".line > div", {height: "100vh", borderColor: "#e9e9e9", duration: 1, stagger: 0.1});
@@ -323,8 +322,8 @@
             gsap.fromTo("#section1 p span", {opacity:0},{opacity:1, duration:1.7, delay:3.5});
             gsap.fromTo(".scrollTop", {opacity:0},{opacity:1, duration:1, delay:3.5});
             gsap.fromTo("#scroll", {opacity:0},{opacity:1, duration:1, delay:3.8});
+            gsap.to("body",{overflow:"visible",delay:5})
         }, 1000);
-
     </script>
 </body>
 </html>
