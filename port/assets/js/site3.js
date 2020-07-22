@@ -62,11 +62,46 @@ $(".theme-set:nth-child(3)").click(function(){
     $(".code-view").removeClass("over-night-owl");
     $(".code-view").addClass("white");
 });
+
+//loading
 setTimeout(function(){
     gsap.fromTo($(".loading-wrap"),{opacity:1},{opacity:0});
     gsap.fromTo($(".loading-wrap"),{"z-index":1000},{"z-index":-1});
     gsap.to($(".site-tit span"),{opacity:1,filter:"blur(0px)",duration:1.3, stagger:0.1 ,delay:.7})
     gsap.to("body",{overflow:"visible",delay:1})
 },2000);
+
+$(window).scroll(function(){
+    if($(".section1").offset().top/2 <= $(window).scrollTop()*2){
+        gsap.to($(".section1"),{opacity:1,transform:"translateY(0%)",filter:"blur(0px)"})
+    }else{
+        gsap.to($(".section1"),{opacity:0,transform:"translateY(50%)",filter:"blur(50px)"})
+    }
+    if($(".section2").offset().top <= $(window).scrollTop()*1.2){
+        gsap.to($(".section2"),{opacity:1,transform:"translateY(0%)", filter:"blur(0px)"})
+    }else{
+        gsap.to($(".section2"),{opacity:0,transform:"translateY(50%)", filter:"blur(50px)"})
+    }
+    if($(".section3").offset().top <= $(window).scrollTop()*1.2){
+        gsap.to($(".section3"),{opacity:1,transform:"translateY(0%)", filter:"blur(0px)"})
+    }else{
+        gsap.to($(".section3"),{opacity:0,transform:"translateY(50%)", filter:"blur(50px)"})
+    }
+    if($(".section4").offset().top <= $(window).scrollTop()*1.2){
+        gsap.to($(".section4"),{opacity:1,transform:"translateY(0%)", filter:"blur(0px)"})
+    }else{
+        gsap.to($(".section4"),{opacity:0,transform:"translateY(50%)", filter:"blur(50px)"})
+    }
+    if($(".section5").offset().top <= $(window).scrollTop()*1.2){
+        gsap.to($(".section5"),{opacity:1,transform:"translateY(0%)", filter:"blur(0px)"})
+    }else{
+        gsap.to($(".section5"),{opacity:0,transform:"translateY(50%)", filter:"blur(50px)"})
+    }
+    if($(".section6").offset().top <= $(window).scrollTop()*1.2){
+        gsap.to($(".section6"),{opacity:1,transform:"translateY(0%)", filter:"blur(0px)"})
+    }else{
+        gsap.to($(".section6"),{opacity:0,transform:"translateY(50%)", filter:"blur(50px)"})
+    }
+});
 
 //레이어 팝업 탭메뉴
