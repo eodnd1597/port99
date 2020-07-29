@@ -193,9 +193,9 @@
     <!-- footer  -->
     <footer id="footer">
         <ul>
-            <li><a href="#"><img class="img" src="assets/img/github.svg" alt="깃허브"></a></li>
-            <li><a href="#"><img class="img" src="assets/img/codepen.svg" alt="코드펜"></a></li>
-            <li><a href="#"><img class="img" src="assets/img/blog.svg" alt="블로그"></a></li>
+            <li><a href="https://github.com/eodnd1597/port99"><img class="img" src="assets/img/github.svg" alt="깃허브"></a></li>
+            <li><a href="https://codepen.io/dashboard/"><img class="img" src="assets/img/codepen.svg" alt="코드펜"></a></li>
+            <li><a href="https://eodnd1597.tistory.com/"><img class="img" src="assets/img/blog.svg" alt="블로그"></a></li>
         </ul>
         <address>Copyright &copy; Daewoong</address>
     </footer>
@@ -222,7 +222,7 @@
             }
             $(".sectionBox").each(function(){
                 if(scroll >= $(".sectionBox").offset().top/2){
-                gsap.to($(".sectionBox"),{opacity:1,filter:"blur(0px)",duration:1})
+                    gsap.to($(".sectionBox"),{opacity:1,filter:"blur(0px)",duration:1})
                 }else{
                     gsap.to($(".sectionBox"),{opacity:0,filter:"blur(20px)",duration:1})
                 }

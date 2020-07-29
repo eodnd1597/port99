@@ -62,6 +62,45 @@ $(".theme-set:nth-child(3)").click(function(){
     $(".code-view").removeClass("over-night-owl");
     $(".code-view").addClass("white");
 });
+
+$(window).scroll(function(){
+    let scroll = $(window).scrollTop();
+    if($(".section1").offset().top/2 <= scroll){
+        gsap.to($(".section1"),{opacity:1, filter:"blur(0px)",y:"0%",duration:.5})
+    }else{
+        gsap.to($(".section1"),{opacity:0, filter:"blur(50px)",y:"20%",duration:.5})
+    }
+    if($(".section2").offset().top/1.7 <= scroll){
+        gsap.to($(".section2"),{opacity:1, filter:"blur(0px)",y:"0%",duration:.5})
+    }else{
+        gsap.to($(".section2"),{opacity:0, filter:"blur(50px)",y:"20%",duration:.5})
+    }
+    if($(".section3").offset().top/1.5 <= scroll){
+        gsap.to($(".section3"),{opacity:1, filter:"blur(0px)",y:"0%",duration:.5})
+    }else{
+        gsap.to($(".section3"),{opacity:0, filter:"blur(50px)",y:"20%",duration:.5})
+    }
+    if($(".section4").offset().top/1.4 <= scroll){
+        gsap.to($(".section4"),{opacity:1, filter:"blur(0px)",y:"0%",duration:.5})
+    }else{
+        gsap.to($(".section4"),{opacity:0, filter:"blur(50px)",y:"20%",duration:.5})
+    }
+    if($(".section5").offset().top/1.3 <= scroll){
+        gsap.to($(".section5"),{opacity:1, filter:"blur(0px)",y:"0%",duration:.5})
+    }else{
+        gsap.to($(".section5"),{opacity:0, filter:"blur(50px)",y:"20%",duration:.5})
+    }
+    if($(".section6").offset().top/1.2 <= scroll){
+        gsap.to($(".section6"),{opacity:1, filter:"blur(0px)",y:"0%",duration:.5})
+    }else{
+        gsap.to($(".section6"),{opacity:0, filter:"blur(50px)",y:"20%",duration:.5})
+    }
+});
+
+
+
+
+//로딩 애니메이션
 setTimeout(function(){
     gsap.fromTo($(".loading-wrap"),{opacity:1},{opacity:0});
     gsap.fromTo($(".loading-wrap"),{"z-index":1000},{"z-index":-1});
