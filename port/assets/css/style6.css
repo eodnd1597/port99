@@ -296,10 +296,12 @@ body {overflow: hidden;}
 .code-view .cont-title .menu li.active {opacity: 1;transition: all 0.33s 0.2s ease; }
 .code-view .cont-title .menu li.active a {opacity: 1;transition: all 0.33s 0.2s ease; }
 
-
+/* 코드뷰 애니메이션 */
 /* .layer-site.show .cont .code-view.night-owl pre{opacity: 1; transition: all 0.33s .2s ease;}
 .layer-site.show .cont .code-view.over-night-owl pre{opacity: 1; transition: all 0.33s .2s ease;}
 .layer-site.show .cont .code-view.white pre{opacity: 1; transition: all 0.33s .2s ease;} */
+/* //코드뷰 애니메이션 */
+
 /* //애니메이션 */
 /* //layer-site */
 
