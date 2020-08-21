@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT ME</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <h1 class="logo"><a href="#"><img src="assets/img/main-logo.png" alt="about me"></a></h1>
+            <ul class="nav">
+                <li><a href="#">shopping</a>
+                    <ul class="container tab-menu">
+                        <li style="padding: 20px; background: #333;">
+                            <h2>SHOPPING</h2>
+                            <p>당신의 피부에 꼭 필요한<br>최적의 뷰티 제품을<br>만나보세요!</p>
+                        </li>
+                        <li style="background: red;">1</li>
+                        <li style="background: yellow;">2</li>
+                        <li style="background: green;">3</li>
+                        <li style="background: blue;">4</li>
+                        <li style="background: red;">5</li>
+                    </ul>
+                </li>
+                <li><a href="#">event</a></li>
+                <li><a href="#">review</a></li>
+                <li><a href="#">brand</a></li>
+            </ul>
+            <ul class="right-menu">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li>
+                    <ul class="last-menu">
+                        <li><input type="text" placeholder="검색어를 입력해주세요"></li>
+                        <li><a href="#"><img src="assets/img/search.png" alt="검색"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section id="banner">
+        <div class="container">
+            <div class="slide-wrap">
+                <div class="slide-img">
+                    <a href="#"><img src="assets/img/banner01.jpg" alt=""></a>
+                    <a href="#"><img src="assets/img/banner02.jpg" alt=""></a>
+                    <a href="#"><img src="assets/img/banner03.jpg" alt=""></a>
+                    <a href="#"><img src="assets/img/banner04.jpg" alt=""></a>
+                </div>
+                <div class="slide-btn"><a href="#" class="prev"></a></div>
+                <div class="slide-btn"><a href="#" class="next"></a></div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/jquery.min_1.12.4.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script>
+        $(".slide-img").slick({
+            draggable : false
+        });
+        $(".nav li:first-child").hover(function(){
+            $(".tab-menu").css("display","block");
+        },function(){
+            $(".tab-menu").css("display","none");
+        })
+
+        // $(".nav li:first-child").mouseover(function(){
+        //     $(".tab-menu").css("display","block")
+        // });
+        // $(".tab-menu").mouseout(function(){
+        //     $(".tab-menu").css("display","none")
+        // });
+    </script>
+</body>
+</html>
